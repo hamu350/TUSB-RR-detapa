@@ -21,13 +21,10 @@ execute if entity @s[tag=RedRider] run function tusb_remake:enemy/skill/red_ride
 execute if entity @s[tag=BlackRider] run function tusb_remake:enemy/skill/black_rider/
 ### ペイルライダー
 execute if entity @s[tag=PaleRider] run function tusb_remake:enemy/skill/pale_rider/
-# 追加部分
-### 新星ノ王
-# 本家は王に使用スキル全部tagつけてるけどこっちは一つのtagで管理します
-execute if entity @s[tag=NewStar_King] run function time_limit:boss/newstar_king/skill/
-### 新星様
-execute if entity @s[tag=Shinsei] run function tusb_remake:enemy/skill/shinsei/
-#####
+
+# AWでの追加部分
+### 開闢様
+execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_sama/
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得
