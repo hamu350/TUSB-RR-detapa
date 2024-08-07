@@ -1,7 +1,5 @@
-#> tusb_aw:enemy/skill/genesis_sama/teleport
-# 開闢様のスキル
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#> tusb_aw:enemy/skill/genesis_sama/syukuhuku
+# 開闢様が自身を強化するバフスキル
 
 me は極光の祝福を唱えた！
 

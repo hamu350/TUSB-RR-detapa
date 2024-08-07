@@ -1,5 +1,7 @@
-me は聖合ノ秩序を唱えた！
+#> tusb_aw:enemy/skill/genesis_sama/tituzyo
+# 32ブロックの範囲にいたプレイヤーのバフ全削除
 
+me は聖合ノ秩序を唱えた！
 effect clear @a[distance=..32] minecraft:strength
 effect clear @a[distance=..32] minecraft:speed
 effect clear @a[distance=..32] minecraft:haste

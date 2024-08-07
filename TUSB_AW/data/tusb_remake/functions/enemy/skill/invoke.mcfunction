@@ -23,8 +23,13 @@ execute if entity @s[tag=BlackRider] run function tusb_remake:enemy/skill/black_
 execute if entity @s[tag=PaleRider] run function tusb_remake:enemy/skill/pale_rider/
 
 # AWでの追加部分
+### 白銀の守護者
+execute if entity @s[tag=SilverGuardian] run function tusb_remake:enemy/skill/silver_guardian/
+### 白銀の支配者
+execute if entity @s[tag=SilverRuler] run function tusb_remake:enemy/skill/silver_ruler/
 ### 開闢様
 execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_sama/
+
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得
