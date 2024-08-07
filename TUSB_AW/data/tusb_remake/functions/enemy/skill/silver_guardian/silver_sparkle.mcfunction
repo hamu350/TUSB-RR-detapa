@@ -3,5 +3,5 @@
 
 me は白銀の煌めきを唱えた！
 tp @s @p[distance=..32]
-effect @p blindness 1 0
-effect @p night_vision 1 126
+effect give @p blindness 1 0
+effect give @p night_vision 1 126
