@@ -9,20 +9,16 @@
             "name": "minecraft:light_gray_banner",
             "functions": [
               {
-                "function": "set_count",
-                "count": 1
-              },
-              {
                 "function": "set_nbt",
-                "tag": "{HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:bo,Color:0},{Pattern:flo,Color:4},{Pattern:sc,Color:0},{Pattern:cbo,Color:0}]},display:{Name:'[\"\",{\"text\":\"白銀の旗\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[\"\",{\"text\":\"白銀の眷属が賜る旗\",\"italic\":false,\"color\":\"white\"}]']}}"
+                "tag": "{HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:bo,Color:0},{Pattern:sc,Color:0},{Pattern:cbo,Color:0}]}}}"
               },
               {
                 "function": "set_name",
                 "name": [
                   {
-                    "text": "白銀の旗",
+                    "text": "純白の旗",
                     "color": "light_purple",
-                    "italic": false
+                    "italic": "false"
                   }
                 ]
               },
@@ -30,9 +26,9 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": "白銀部隊の象徴たる旗",
+                    "text": "純白の戦士が掲げる旗",
                     "color": "white",
-                    "italic": false
+                    "italic": "false"
                   }
                 ]
               }
