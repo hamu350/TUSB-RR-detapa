@@ -22,4 +22,4 @@ data modify storage asset:context new_spawner.SpawnData.entity set from storage 
 execute if predicate tusb_remake:is_riding_spawner run data modify entity @s Passengers[0].SpawnPotentials merge from storage asset:context new_spawner
 execute if block ~ ~ ~ spawner unless predicate tusb_remake:is_riding_spawner run data modify block ~ ~ ~ SpawnPotentials merge from storage asset:context new_spawner
 
-#contextの削除は親functionで実行しているため不要
+# contextの削除は親functionで実行しているため不要
