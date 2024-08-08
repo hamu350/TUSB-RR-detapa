@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "lakes": false,
+        "features": false,
+        "layers": []
+      }
+    }
+  }
+  
