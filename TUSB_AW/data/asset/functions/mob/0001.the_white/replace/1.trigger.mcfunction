@@ -1,1 +1,0 @@
-#> asset:mob/0001.the_white/replace/1.trigger
