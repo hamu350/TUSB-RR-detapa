@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:bo,Color:0},{Pattern:sc,Color:0},{Pattern:cbo,Color:0}]}}}"
+                "tag": "{HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:bo,Color:0},{Pattern:sc,Color:0},{Pattern:cbo,Color:0}]}}"
               },
               {
                 "function": "set_name",
@@ -18,7 +18,7 @@
                   {
                     "text": "純白の旗",
                     "color": "light_purple",
-                    "italic": "false"
+                    "italic": false
                   }
                 ]
               },
@@ -28,7 +28,7 @@
                   {
                     "text": "純白の戦士が掲げる旗",
                     "color": "white",
-                    "italic": "false"
+                    "italic": false
                   }
                 ]
               }
