@@ -257,6 +257,10 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
 
+### スポナー用score
+scoreboard objectives add SpawnerId dummy "スポナーId"
+scoreboard objectives add SpawnerUpdata dummy "スポナーのアップデート"
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam friendlyFire false
