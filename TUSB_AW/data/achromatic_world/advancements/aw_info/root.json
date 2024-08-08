@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:book"
         },
-        "title": "Welecome to TUSB AW!        ",
+        "title":"Welecome to TUSB AW!",
         "description": "TUSB Achromatic World にようこそ！\nここにはあなたの冒険の旅路、\nその一歩一歩が刻まれていきます。",
         "background": "minecraft:textures/block/light_blue_wool.png",
         "frame": "task",
@@ -13,7 +13,7 @@
     },
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:tick"
         }
     }
 }
