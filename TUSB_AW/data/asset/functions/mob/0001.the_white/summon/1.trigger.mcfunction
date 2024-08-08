@@ -1,0 +1,1 @@
+#> asset:mob/0001.the_white/summon/1.trigger
