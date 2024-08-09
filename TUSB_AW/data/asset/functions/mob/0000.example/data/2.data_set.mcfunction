@@ -74,39 +74,40 @@ kill @e[tag=ItemHolder,limit=1]
 ### ActiveEffects
 # 直接nbtを指定して追加します
 #effect一覧
-    #{Name:speed,id:1}
-    #{Name:slowness,id:2}
-    #{Name:haste,id:3}
-    #{Name:mining_fatigue,id:4}
-    #{Name:strength,id:5}
-    #{Name:instant_health,id:6}
-    #{Name:instant_damage,id:7}
-    #{Name:jump_boost,id:8}
-    #{Name:nausea,id:9}
-    #{Name:regeneration,id:10}
-    #{Name:resistance,id:11}
-    #{Name:fire_resistance,id:12}
-    #{Name:water_breathing,id:13}
-    #{Name:invisibility,id:14}
-    #{Name:blindness,id:15}
-    #{Name:night_vision,id:16}
-    #{Name:hunger,id:17}
-    #{Name:weakness,id:18}
-    #{Name:poison,id:19}
-    #{Name:wither,id:20}
-    #{Name:health_boots,id:21}
-    #{Name:absorption,id:22}
-    #{Name:saturation,id:23}
-    #{Name:glowing,id:24}
-    #{Name:levitation,id:25}
-    #{Name:luck,id:26}
-    #{Name:bad_luck,id:27}
-    #{Name:slow_falling,id:28}
-    #{Name:conduit_power,id:29}
-    #{Name:dolphins_grace,id:30}
-    #{Name:bad_omen,id:31}
-    #{Name:hero_of_the_village,id:32}
-    #{Name:darkness,id:33}
+    #{Name:speed,id:1}　移動速度上昇
+    #{Name:slowness,id:2}　移動速度低下
+    #{Name:haste,id:3}　採掘速度上昇
+    #{Name:mining_fatigue,id:4}　採掘速度低下
+    #{Name:strength,id:5}　攻撃力上昇
+    #{Name:instant_health,id:6}　即時回復
+    #{Name:instant_damage,id:7}　即時ダメージ
+    #{Name:jump_boost,id:8}　跳躍力上昇
+    #{Name:nausea,id:9}　吐き気
+    #{Name:regeneration,id:10}　再生
+    #{Name:resistance,id:11}　耐性
+    #{Name:fire_resistance,id:12}　火炎耐性
+    #{Name:water_breathing,id:13}　水中呼吸
+    #{Name:invisibility,id:14}　透明化
+    #{Name:blindness,id:15}　盲目
+    #{Name:night_vision,id:16}　暗視
+    #{Name:hunger,id:17}　空腹
+    #{Name:weakness,id:18}　弱体化
+    #{Name:poison,id:19}　毒
+    #{Name:wither,id:20}　ウィザー
+    #{Name:health_boots,id:21}　体力増強
+    #{Name:absorption,id:22}　緩衝体力増加
+    #{Name:saturation,id:23}　満腹度回復
+    #{Name:glowing,id:24}　発光
+    #{Name:levitation,id:25}　浮遊
+    #{Name:luck,id:26}　運
+    #{Name:bad_luck,id:27}　不運
+    #{Name:slow_falling,id:28}　低速落下
+    #{Name:conduit_power,id:29}　コンジットパワー
+    #{Name:dolphins_grace,id:30}　イルカの好意
+    #{Name:bad_omen,id:31}　不吉な予感
+    #{Name:hero_of_the_village,id:32}　村の英雄
+    #{Name:darkness,id:33}　暗闇
+    # 詳しくはwiki見てね！
 data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
 data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
 # 或いは...
