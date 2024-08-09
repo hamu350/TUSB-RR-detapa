@@ -14,5 +14,4 @@ function #asset:mob/get_data
 # このfunctionを開き、中の説明にそってmobを作ります
 
 # 完成！お疲れ様でした
-# asset:context idに設定したidを入れて#asset:mob/summonなどを実行すれば、mobが出てきます。直接functionを
-呼び出しても構いません
+# asset:context idに設定したidを入れて#asset:mob/summonなどを実行すれば、mobが出てきます。直接functionを呼び出しても構いません
