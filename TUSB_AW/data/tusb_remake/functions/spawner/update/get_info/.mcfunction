@@ -1,4 +1,4 @@
-#> tusb_remake:spawner/replace/
+#> tusb_remake:spawner/update/
 # スポナーのデータを取得する
 
 

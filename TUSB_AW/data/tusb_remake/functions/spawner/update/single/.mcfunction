@@ -1,4 +1,4 @@
-#> tusb_remake:spawner/replace/single
+#> tusb_remake:spawner/update/single
 # 一種類のスポナーの置き換え
 
 # idを取得

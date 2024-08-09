@@ -1,4 +1,4 @@
-#> tusb_remake:spawner/replace/multi/repeat
+#> tusb_remake:spawner/update/multi/repeat
 # idの列がなくなるまで繰り返す
 
 # idの1番目のmobを取得
@@ -15,4 +15,4 @@ data remove storage asset:context ids[0]
 data remove storage asset:context spawner.SpawnPotentials[0]
 
 # idの列がまだあれば再帰
-execute if data storage asset:context ids[0] run function tusb_remake:spawner/replace/multi/repeat
+execute if data storage asset:context ids[0] run function tusb_remake:spawner/update/multi/repeat
