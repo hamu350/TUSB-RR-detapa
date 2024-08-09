@@ -50,6 +50,9 @@ data modify storage asset: mob.Attributes append value {Name:generic.attack_knoc
 # Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
 data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
 # Operation:0はn+x+y+z、Operation:1はn×(1+x+y+z)、Operation:2はn×(1+x)×(1+y)×(1+z) Nameは必須ではなさそう
+# Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
+data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
+# Operation:0はn+x+y+z、Operation:1はn×(1+x+y+z)、Operation:2はn×(1+x)×(1+y)×(1+z) Nameは必須ではなさそう
 
 
 ### ArmorItems
@@ -112,6 +115,7 @@ data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Dura
 # 或いは...
 # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
+# Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
 # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
 
 
