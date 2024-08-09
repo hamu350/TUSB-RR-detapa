@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### メッセージ
-tellraw @a {"translate":"%1$sにルーラの効果がかかった。","color":"green","with":[{"selector":"@a[distance=..10,gamemode=!spectator,scores={Job=1..}]"}]}	 
+tellraw @a {"translate":"%1$sにルーラの効果がかかった。","color":"green","with":[{"selector":"@a[distance=..10,gamemode=!spectator,scores={Job=1..}]"}]}
 
 playsound entity.illusioner.prepare_mirror master @a[distance=..10,gamemode=!spectator,scores={Job=1..}] ~ ~ ~ 1.5 0.5 1
 

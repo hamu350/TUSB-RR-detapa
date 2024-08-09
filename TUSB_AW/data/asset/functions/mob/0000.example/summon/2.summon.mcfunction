@@ -1,0 +1,1 @@
+#> asset:mob/0000.example/summon/2.summon
