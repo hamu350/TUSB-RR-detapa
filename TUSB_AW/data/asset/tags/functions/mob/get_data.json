@@ -1,5 +1,6 @@
 {
     "values": [
-        "asset:mob/0001.the_white/data/1.trigger"
+        "asset:mob/0001.the_white/data/1.trigger",
+        "asset:mob/0002.fine_bat/data/1.trigger"
     ]
 }
