@@ -6,6 +6,8 @@ data modify storage asset: mob.Tags append value "SpawnMob"
 data modify entity @e[type=experience_orb,limit=1,tag=SummonMob,sort=nearest] Passengers append from storage asset: mob
 # ここのMobIdを作るmobのidに変えます
 scoreboard players set @e[tag=SpawnMob,limit=1] MobId 1
+# 騎乗させたことで座標がずれているので修正します
+data modify entity @e[tag=SpawnMob,limit=1] Pos set from entity @e[tag=SummonMob,limit=1] Pos
 
 tag @e[tag=SpawnMob,limit=1] remove SpawnMob
 kill @e[type=experience_orb,tag=SummonMob,limit=1,sort=nearest]
