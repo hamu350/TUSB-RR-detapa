@@ -1,0 +1,1 @@
+#> asset:villager/trade_info/2.summon

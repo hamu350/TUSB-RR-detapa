@@ -5,7 +5,9 @@ execute if score @s SpawnerId matches -1 run function tusb_remake:spawner/update
 execute if score @s SpawnerId matches 1.. run function tusb_remake:spawner/update/single/
 
 # contextを削除
-data remove storage asset:context {}
+data remove storage asset:context id
+data remove storage asset:context ids
+data remove storage asset:context new_spawner
 
 # 最後に更新済みにする
 scoreboard players operation @s SpawnerUpdate = _ SpawnerUpdate
