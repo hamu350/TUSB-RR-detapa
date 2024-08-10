@@ -1,0 +1,21 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "minecraft:shield",
+                "weight": 1,
+                "functions": [
+                    {
+                        "function": "set_nbt",
+                        "tag": "{RepairCost: 1000000000, HideFlags: 32, BlockEntityTag: {Patterns: [{Pattern: \"gra\", Color: 15}, {Pattern: \"sku\", Color: 7}, {Pattern: \"bri\", Color: 0}, {Pattern: \"tts\", Color: 0}, {Pattern: \"gru\", Color: 9}, {Pattern: \"gra\", Color: 0}], Base: 9}, display: {Lore: ['{\"text\":\"§r簡単に復元できる素材でできた盾。\"}', '{\"text\":\"§r足元が濡れやすく注意が必要。\"}'], Name: '{\"text\":\"§b§l氷の盾\"}'}, Enchantments: [{lvl: 1s, id: \"minecraft:mending\"}, {lvl: 5s, id: \"minecraft:sharpness\"}], Damage: 0, AttributeModifiers: [{Amount: -0.2d, Slot: \"offhand\", AttributeName: \"generic.knockback_resistance\", Operation: 0, UUID: [I; 0, 2, 0, 1], Name: \"KB\"}, {Amount: -0.2d, Slot: \"mainhand\", AttributeName: \"generic.knockback_resistance\", Operation: 0, UUID: [I; 0, 1, 0, 2], Name: \"KB\"}]}"
+                    }
+                ]
+            }
+        ]
+      }
+    ]
+  }
+  
