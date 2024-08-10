@@ -261,6 +261,10 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 scoreboard objectives add SpawnerId dummy "スポナーId"
 scoreboard objectives add SpawnerUpdata dummy "スポナーのアップデート"
 
+### mob score
+scoreboard objectives add MobId dummy "Mobの識別子"
+scoreboard objectives add VillagerId dummy "村人の識別子"
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam friendlyFire false
