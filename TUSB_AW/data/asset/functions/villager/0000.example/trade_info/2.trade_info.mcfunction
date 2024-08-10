@@ -1,4 +1,4 @@
-#> asset:villager/trade_info/2.trade_info
+#> asset:villager/0000.example/trade_info/2.trade_info
 
 # まずアイテムを持たせる防具立てを召喚します
 summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}

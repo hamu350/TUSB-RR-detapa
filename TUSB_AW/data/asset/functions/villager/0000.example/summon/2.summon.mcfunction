@@ -1,4 +1,4 @@
-#> asset:villager/trade_info/2.summon
+#> asset:villager/0000.example/summon/2.summon
 
 # まず取引情報を取得します
 function asset:villager/0000.example/trade_info/2.trade_info
