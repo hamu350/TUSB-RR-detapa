@@ -259,7 +259,7 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 
 ### スポナー用score
 scoreboard objectives add SpawnerId dummy "スポナーId"
-scoreboard objectives add SpawnerUpdata dummy "スポナーのアップデート"
+scoreboard objectives add SpawnerUpdate dummy "スポナーのアップデート"
 
 ### mob score
 scoreboard objectives add MobId dummy "Mobの識別子"
