@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ## 古いCanPlaceOn -> "minecraft:all"
-# execute if entity @s[advancements={tusb_remake:inventory_event={old_can_place_on_all=true}}] run function tusb_remake:inventory_event/old_can_place_on_all
+execute if entity @s[advancements={tusb_remake:inventory_event={old_can_place_on_all=true}}] run function tusb_remake:inventory_event/old_can_place_on_all
 
 ## ハロウィンヘッドをくりぬく！
 execute if entity @s[advancements={tusb_remake:inventory_event={carve_halloween=true}}] run function tusb_remake:inventory_event/carve_halloween
