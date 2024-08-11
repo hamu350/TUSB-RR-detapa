@@ -1,5 +1,8 @@
 #> asset:villager/0000.example/trade_info/2.trade_info
 
+# まずデータを初期化します(これは消さないでね)
+data remove storage asset: villager
+
 # まずアイテムを持たせる防具立てを召喚します
 summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}
 
