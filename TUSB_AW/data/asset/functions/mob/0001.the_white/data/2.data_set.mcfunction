@@ -68,10 +68,10 @@ data modify storage asset: mob.Attributes append value {Name:generic.follow_rang
 # data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limit=1] ArmorItems
 # data modify storage asset: mob.HandItems set from entity @e[tag=ItemHolder,limit=1] HandItems
 # kill @e[tag=ItemHolder,limit=1]
-# 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
+# 直接ArmorItemsなどにitemを突っ込んでも大丈夫です [足,脚,胸,頭]
 # 今回は↑これ使います(ただの革防具なので)
-data modify storage asset: mob.ArmorItems set value [{},{id:"leather_chest_plate"},{id:"leather_leggings"},{id:"leather_boots"}]
-data modify storage asest: mob.ArmorItems[] merge value {tag:{display:{color:14737632}}}
+data modify storage asset: mob.ArmorItems set value [{id:"leather_boots"},{id:"leather_leggings"},{id:"leather_chestplate"},{}]
+data modify storage asset: mob.ArmorItems[] merge value {tag:{display:{color:14737632}}}
 # 防具のドロップ率を設定します。基本0で [足,脚,胸,頭]
 data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
 

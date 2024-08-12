@@ -1,13 +1,7 @@
 #> asset:mob/0001.the_white/summon/2.summon
 
 function asset:mob/0001.the_white/data/2.data_set
-summon experience_orb ~ ~ ~ {Age:6000, Tags:["SummonMob"]}
-data modify storage asset: mob.Tags append value "SpawnMob"
-data modify entity @e[type=experience_orb,limit=1,tag=SummonMob,sort=nearest] Passengers append from storage asset: mob
-# ここのMobIdを作るmobのidに変えます
-scoreboard players set @e[tag=SpawnMob,limit=1] MobId 1
-# 騎乗させたことで座標がずれているので修正します
-data modify entity @e[tag=SpawnMob,limit=1] Pos set from entity @e[tag=SummonMob,limit=1] Pos
-
-tag @e[tag=SpawnMob,limit=1] remove SpawnMob
-kill @e[type=experience_orb,tag=SummonMob,limit=1,sort=nearest]
+summon spawner_minecart ~ ~ ~ {SpawnCount:1,SpawnRange:4,Delay:0,MaxNearbyEntities:99,RequiredPlayerRange:99,SpawnData:{entity:{}},Tags:["CooldownRequired","SummonMob"],PortalCooldown:2}
+data modify entity @e[type=spawner_minecart,limit=1,tag=SummonMob,sort=nearest] SpawnData.entity set from storage asset: mob
+data modify entity @e[type=spawner_minecart,limit=1,tag=SummonMob,sort=nearest] SpawnData.entity merge value {custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}}
+tag @e[tag=SummonMob] remove SummonMob

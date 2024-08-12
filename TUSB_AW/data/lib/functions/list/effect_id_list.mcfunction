@@ -1,4 +1,0 @@
-#> lib:list/effect_id_list
-# effectをnameで指定できるlist
-
-execute unless data storage lib: effect_id_list run data modify storage lib: effect_id_list set value [{Name:speed,id:1},{Name:slowness,id:2},{Name:haste,id:3},{Name:mining_fatigue,id:4},{Name:strength,id:5},{Name:instant_health,id:6},{Name:instant_damage,id:7},{Name:jump_boost,id:8},{Name:nausea,id:9},{Name:regeneration,id:10},{Name:resistance,id:11},{Name:fire_resistance,id:12},{Name:water_breathing,id:13},{Name:invisibility,id:14},{Name:blindness,id:15},{Name:night_vision,id:16},{Name:hunger,id:17},{Name:weakness,id:18},{Name:poison,id:19},{Name:wither,id:20},{Name:health_boots,id:21},{Name:absorption,id:22},{Name:saturation,id:23},{Name:glowing,id:24},{Name:levitation,id:25},{Name:luck,id:26},{Name:bad_luck,id:27},{Name:slow_falling,id:28},{Name:conduit_power,id:29},{Name:dolphins_grace,id:30},{Name:bad_omen,id:31},{Name:hero_of_the_village,id:32},{Name:darkness,id:33}]
