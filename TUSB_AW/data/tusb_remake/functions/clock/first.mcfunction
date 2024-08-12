@@ -53,6 +53,6 @@ execute if data storage tusb_remake: {_:false} run gamerule mobGriefing true
 ### ハード固定
 difficulty hard
 
-### 魂の共鳴
-
+### ドロッパー島転移防止
+execute as @a[x=-2812,y=315,z=-442,dx=34,dy=10,dz=34] run tp @s -2794 76 -419
 
