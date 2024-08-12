@@ -37,15 +37,23 @@ data modify storage asset: mob.PortalCooldown set value 0
 
 
 ### Attributes
+# 最大体力
 data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
+# (近接)攻撃力
 data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
+# 移動速度
 data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
+# 防具値
 data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+# 防具強度
 data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
+# ノックバック耐性(0~1)
 data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
+# 索敵範囲
 data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
+# 攻撃のノックバック(0~5)
 data modify storage asset: mob.Attributes append value {Name:generic.attack_knockback, Base:1}
-# それぞれの意味はwikiとかで調べてください
+# それぞれの詳しい仕様はwikiなどで調べてください
 # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 # Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
 data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
@@ -69,6 +77,8 @@ data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limi
 data modify storage asset: mob.HandItems set from entity @e[tag=ItemHolder,limit=1] HandItems
 kill @e[tag=ItemHolder,limit=1]
 # 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
+# 防具のドロップ率を設定します。基本0で [足,脚,胸,頭]
+data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
 
 
 ### ActiveEffects
