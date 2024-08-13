@@ -17,6 +17,19 @@ scoreboard players set Difficulty Settings 0
 ### 攻略対象最大数
 scoreboard players set MaxPortalCount Settings 50
 
+scoreboard objectives add Temporary dummy
+scoreboard objectives add Const dummy
+
+### スポナー用score
+scoreboard objectives add SpawnerId dummy "スポナーId"
+scoreboard objectives add SpawnerUpdate dummy "スポナーのアップデート"
+
+### mob用score
+scoreboard objectives add MobId dummy "Mobの識別子"
+
+### 村人用score
+scoreboard objectives add VillagerId dummy "村人の識別子"
+scoreboard objectives add VillagerUpdate dummy "村人のアップデート"
 
 ### Global
 scoreboard objectives add Global dummy
@@ -324,5 +337,8 @@ execute store result storage tusb_remake: start_time int 1 run time query gameti
 
 ### スキルスロットのタイトルを設定
 data modify storage tusb_remake: skill_slot_titles set value {instant:{a:'[{"text":"サポートアクション","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"サポートアクション","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'},mode:{a:'[{"text":"モードスキル","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"モードスキル","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'}}
+
+# 定数設定
+function tusb_remake:load/define_const
 
 # execute in minecraft:overworld positioned -1896.000000 118.000000 -136.000000 run summon minecraft:marker ~ ~ ~ {CustomName:'"システムマーカー"',UUID:[I;0,1,0,1]}

@@ -74,5 +74,7 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 ### 共鳴
-tag @a remove Kyoumei
-execute if data entity @s Inventory[{tag:{Kyoumei:true}}] run function tusb_remake:clock/kyoumei/
+execute as @a if data entity @s Inventory[0] run tag @s add KyoumeiCheak
+tag @a[tag=KyoumeiCheak] remove Kyoumei
+execute as @a[tag=KyoumeiCheak] if data entity @s Inventory[{tag:{Kyoumei:true}}] at @s run function tusb_remake:clock/kyoumei/
+tag @a remove KyoumeiCheak
