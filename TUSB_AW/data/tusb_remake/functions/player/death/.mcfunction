@@ -19,9 +19,10 @@ execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear
 # これ上のclear @sも消さないとだめだなぁ()
 
 
-# AW追加部分(ﾅﾆﾓﾅｲ)
+# AW追加部分
 
-# アイテム保護を実装しようとして失敗しました
+# 共鳴アイテム回収
+execute if entity @s[tag=Kyoumei] run function tusb_remake:player/death/kyoumei
 
 ### ネザーアスレチック
 execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
