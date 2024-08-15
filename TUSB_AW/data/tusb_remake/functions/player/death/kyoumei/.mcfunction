@@ -1,8 +1,6 @@
 #> tusb_remake:player/death/kyoumei
 # storageに保存したアイテムを取り出す
 
-say test
-
 # まず個人ストレージを呼び出します
 function oh_my_dat:please
 # セッションも開いておきます
@@ -10,7 +8,8 @@ function lib:array/session/open
 
 # 共鳴メッセージを出します(うるさいとか言うな)
 data modify storage _: _.KyoumeiItems set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].KyoumeiItems
-function tusb_remake:player/death/kyoumei/message
+data remove storage _: _.KyoumeiItems[].Slot
+function tusb_remake:player/death/kyoumei/messege/
 data remove storage _: _
 
 # lib用に
@@ -33,4 +32,4 @@ loot give @s mine 3500 0 3500 debug_stick
 function lib:array/session/close
 
 # 最後にシュルカーボックスを初期化しちゃう(必要あるのかは知らない)
-# data remove block 3500 0 3500 Items
+data remove block 3500 0 3500 Items
