@@ -4,7 +4,7 @@
 # oh_my_datを呼び出し
 function #oh_my_dat:please
 # idを別のリストに避難させる
-data modify storage asset:context ids set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ids
+data modify storage asset:context ids set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].id
 # Spawnerデータを取得しておく
 function tusb_remake:spawner/update/get_info/
 # 新しいSpawnPotentialsを作っておく
@@ -14,7 +14,7 @@ data modify storage asset:context new_spawner set value {SpawnData:{entity:{}},S
 function tusb_remake:spawner/update/multi/repeat
 
 # idsの1番目のmobを取得し、SpawnDataに突っ込む
-data modify storage asset:context id set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ids[0]
+data modify storage asset:context id set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].id[0]
 function #asset:mob/get_data
 data modify storage asset:context new_spawner.SpawnData.entity set from storage asset:mob {}
 
