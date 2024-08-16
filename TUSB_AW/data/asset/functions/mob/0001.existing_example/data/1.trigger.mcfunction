@@ -2,6 +2,6 @@
 #↑このパスも変えてね
 # 一括編集使うと楽。一回書き換えたらコピーすると更に楽
 
-# asset:context {id:0}の部分を取ってくるmobのidに変える
-execute if data storage asset:context {id:0} run function asset:mob/0000.example/data/2.data_set
-# functionの0000.exampleを変えたフォルダの名前にする(例:0010.deadra)
+# asset:context {id:1}の部分を作るmobのidに変える(例(デイドラ):asset:context {id:10})
+execute if data storage asset:context {id:1} run function asset:mob/0001.existing_example/data/2.data_set
+# functionの0001.existing_exampleを変えたフォルダの名前にする(例:0010.deadra)
