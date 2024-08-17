@@ -7,6 +7,6 @@ execute if data storage debug:set_spawner {_:{merge:true}} run data modify stora
 execute if data storage debug:set_spawner {_:{merge:false}} run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].set_spawner merge from storage debug:set_spawner _.data
 data remove storage debug:set_spawner merge
 
-execute if data storage debug:set_spawner {_:{set:true}} as @a if score @s DebugId = _ DebugId run function debug:set_spawner/
+execute if data storage debug:set_spawner {_:{set:true}} as @a if score @s DebugId = _ DebugId at @s run function debug:set_spawner/
 
 data remove storage debug:set_spawner DebugId
