@@ -11,8 +11,8 @@ data modify storage asset:context new_spawner set value {SpawnData:{entity:{}},S
 # idのmobのdataを取得、代入
 function #asset:mob/get_data
 data modify storage asset:context new_spawner.SpawnData.entity set from storage asset: mob
-execute if data storage asset:context spawner.SpawnPotentials[0] run data modify storage asset:context new_spawner.SpawnPotentials.data.entity set from storage asset: mob
+execute if data storage asset:context spawner.SpawnPotentials[0] run data modify storage asset:context new_spawner.SpawnPotentials[0].data.entity set from storage asset: mob
 
 # 取得したデータを適応
-execute if predicate tusb_remake:is_riding_spawner on passengers run data modify entity @s SpawnPotentials merge from storage asset:context new_spawner
-execute if block ~ ~ ~ spawner unless predicate tusb_remake:is_riding_spawner run data modify block ~ ~ ~ SpawnPotentials merge from storage asset:context new_spawner
+execute if predicate tusb_remake:is_riding_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
+execute if block ~ ~ ~ spawner unless predicate tusb_remake:is_riding_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
