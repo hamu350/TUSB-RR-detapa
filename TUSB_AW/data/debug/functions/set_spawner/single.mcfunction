@@ -13,6 +13,7 @@ data modify storage _: _.SpawnData.entity set from storage _: _.SpawnPotentials[
 execute if data storage _: {_:{Once:true}} run data remove storage _: _.SpawnPotentials
 function debug:set_spawner/spawn_potentials
 
-execute align xyz run summon armor_stand ~0.5 ~ ~0.5 {NoBasePlate:true,Marker:true,Small:true,NoAI:true,Invisible:true,Invulnerable:true,Tags:["Spawner","SystemEntity"],Passengers:[{SpawnCount:0,id:"spawner_minecart",Invulnerable:true,Tags:["SystemEntity","Spawner","SpawnerCore","TypeCheacked","this"]}]}
-data modify entity @e[limit=1,tag=this] {} merge from storage _: _
-execute store result score @e[limit=1,tag=this] SpawnerId run data get storage _: _.SpawnMob[0].AssetId
+execute align xyz run summon armor_stand ~0.5 ~ ~0.5 {NoBasePlate:true,Marker:true,Small:true,NoAI:true,Invisible:true,Invulnerable:true,Tags:["Spawner","SystemEntity","this"],Passengers:[{SpawnCount:0,id:"spawner_minecart",Invulnerable:true,Tags:["SystemEntity","Spawner","SpawnerCore","TypeChecked","this"]}]}
+data modify entity @e[limit=1,tag=this,tag=SpawnerCore] {} merge from storage _: _
+execute store result score @e[limit=1,tag=this,tag=!SpawnerCore] SpawnerId run data get storage _: _.SpawnMob[0].AssetId
+tag @e[tag=this] remove this
