@@ -4,7 +4,7 @@
 # oh_my_datを呼び出し
 function #oh_my_dat:please
 # idを別のリストに避難させる
-data modify storage asset:context ids set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].id
+data modify storage asset:context id set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].id
 # Spawnerデータを取得しておく
 function tusb_remake:spawner/update/get_info/
 # 新しいSpawnPotentialsを作っておく

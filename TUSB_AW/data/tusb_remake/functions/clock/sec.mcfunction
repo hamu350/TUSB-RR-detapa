@@ -64,9 +64,6 @@ execute as @a[tag=Doom] run function tusb_remake:doom/
 ## サバイバルスポナー処理
 execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air align xyz run kill @e[dx=0,tag=Spawner]
 
-## スポナー更新
-execute as @e[tag=Spawner,type=armor_stand] at @s run function tusb_remake:spawner/
-
 ## CooldownRequired 誤差許容長期用
 tag @e[tag=CooldownRequiredLong,nbt={PortalCooldown:0}] add Garbage
 
