@@ -10,7 +10,7 @@ data modify storage _: _.SpawnPotentials[0] set from storage _: _.SpawnMob[0]
 # SpawnDataに突っ込む
 data modify storage _: _.SpawnData.entity set from storage _: _.SpawnPotentials[0].data.entity
 # 一回湧きだったらSpawnPotentialsを消し飛ばす
-execute if data storage _: {_:{Ones:true}} run data remove storage _: _.SpawnPotentials
+execute if data storage _: {_:{Once:true}} run data remove storage _: _.SpawnPotentials
 function debug:set_spawner/spawn_potentials
 
 execute align xyz run summon armor_stand ~0.5 ~ ~0.5 {NoAI:true,Invisible:true,Invulnerable:true,Tags:["Spawner","SystemEntity"],Passengers:[{SpawnCount:0,id:"spawner_minecart",Invulnerable:true,Tags:["SystemEntity","Spawner","SpawnerCore","this"]}]}
