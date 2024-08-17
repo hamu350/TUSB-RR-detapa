@@ -1,4 +1,4 @@
-#> asset:mob/0001.existing_example/data/2.data_set
+#> asset:mob/0230.Aassaultghust/data/2.data_set
 
 # 最終的にPassengersやスポナーの中身に使える形になればそこまでがどのような形でもいい
 

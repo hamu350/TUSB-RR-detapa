@@ -1,4 +1,4 @@
-#> asset:mob/0001.existing_example/summon/2.summon
+#> asset:mob/0230.Aassaultghust/summon/2.summon
 
 # functionの0001.existing_exampleの変えたフォルダの名前にする(例:0010.deadra)
 function asset:mob/0230.assaultghust/data/2.data_set

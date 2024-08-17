@@ -1,4 +1,4 @@
-#> asset:mob/0001.existing_example/summon/1.trigger
+#> asset:mob/0230.Aassaultghust/summon/1.trigger
 # ↑このパスも変えてね
 
 # asset:context {id:1}の部分を作るmobのidに変える(例(デイドラ):asset:context {id:10})
