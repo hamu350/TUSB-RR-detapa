@@ -1,4 +1,4 @@
-#> asset:mob/0230.Addaultghust/data/230.trigger
+#> asset:mob/0230.Assaultghust/data/230.trigger
 #↑このパスも変えてね
 # 一括編集使うと楽。一回書き換えたらコピーすると更に楽
 
