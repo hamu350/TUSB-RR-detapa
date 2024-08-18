@@ -30,6 +30,8 @@
         "asset:mob/0206.sat/data/1.trigger",
         "asset:mob/0220.teleport_creeper/data/1.trigger",
         "asset:mob/0224.gate_keeper/data/1.trigger",
+        "asset:mob/0230.assaultghust/data/1.trigger",
+        "asset:mob/0238.ikazuti/data/1.trigger",
         "asset:mob/0275.wizard/data/1.trigger",
         "asset:mob/0280.fogs/data/1.trigger",
         "asset:mob/0304.crimsoneye/data/1.trigger",

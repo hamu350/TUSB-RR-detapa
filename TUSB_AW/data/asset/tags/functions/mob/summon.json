@@ -30,6 +30,8 @@
         "asset:mob/0206.sat/summon/1.trigger",
         "asset:mob/0220.teleport_creeper/summon/1.trigger",
         "asset:mob/0224.gate_keeper/summon/1.trigger",
+        "asset:mob/0230.assaultghust/summon/1.trigger",
+        "asset:mob/0238.ikazuti/summon/1.trigger",
         "asset:mob/0275.wizard/summon/1.trigger",
         "asset:mob/0280.fogs/summon/1.trigger",
         "asset:mob/0304.crimsoneye/summon/1.trigger",
