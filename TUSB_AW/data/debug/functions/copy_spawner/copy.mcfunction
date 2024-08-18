@@ -14,6 +14,8 @@ data modify storage _: _.DisplayOffset set from storage _: spawner.DisplayOffset
 data modify storage _: _.DisplayState set from storage _: spawner.DisplayState
 execute if data storage _: _.SpawnPotentials[0].data.entity.id run data modify storage _: _.Once set value true
 
+data modify storage _: _.SpawnMob append value {AssetId:0}
 execute store result storage _: _.SpawnMob[0].AssetId int 1 run scoreboard players get @s SpawnerId
+tellraw @a {"storage": "_:","nbt": "_.SpawnMob"}
 
 data remove storage _: spawner
