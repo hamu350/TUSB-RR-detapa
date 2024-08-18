@@ -16,6 +16,5 @@ execute if data storage _: _.SpawnPotentials[0].data.entity.id run data modify s
 
 data modify storage _: _.SpawnMob append value {AssetId:0}
 execute store result storage _: _.SpawnMob[0].AssetId int 1 run scoreboard players get @s SpawnerId
-tellraw @a {"storage": "_:","nbt": "_.SpawnMob"}
 
 data remove storage _: spawner
