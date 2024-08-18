@@ -6,8 +6,8 @@
 # 次に、mobを登録します
 function #asset:mob/get_data
 # このfunctionsに、data/1.triggerを入れます
-# function #asset:mob/summon
-# まだありませんが、このfunctionsにはsummon/1.triggerを入れます
+function #asset:mob/summon
+# このfunctionsにはsummon/1.triggerを入れます
 
 # そうしたら、いよいよmob作りです
 # data/2.data_set
