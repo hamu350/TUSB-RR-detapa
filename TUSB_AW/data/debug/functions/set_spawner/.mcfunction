@@ -20,8 +20,8 @@ data modify storage _: _.RequiredPlayerRange set from storage _: _.ReqRange
 # MaxEntities
 data modify storage _: _.MaxNearbyEntities set from storage _: _.MaxEntities
 # Display
-execute unless data storage _: {Display:"boss"} run data modify storage _: _ merge value {CustomDisplayTile:1b,DisplayOffset:12,DisplayState:{Name:"minecraft:chorus_plant"}}
-execute if data storage _: {Display:"boss"} run data modify storage _: _ merge value {CustomDisplayTile:1b,DisplayOffset:12,DisplayState:{Name:"minecraft:redstone_torch"}}
+execute if data storage _: _.DisplayState unless data storage _: {_:{Display:"boss"}} run data modify storage _: _ merge value {CustomDisplayTile:1b,DisplayOffset:12,DisplayState:{Name:"minecraft:chorus_plant"}}
+execute if data storage _: {_:{Display:"boss"}} run data modify storage _: _ merge value {CustomDisplayTile:1b,DisplayOffset:12,DisplayState:{Name:"minecraft:redstone_torch"}}
 
 # 湧くmobの種類が複数ならmultiを、一種類ならsingleを起動
 execute if data storage _: _.SpawnMob[1] run function debug:set_spawner/multi
