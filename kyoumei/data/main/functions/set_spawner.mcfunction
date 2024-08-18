@@ -1,6 +1,8 @@
+#> main:set_spawner
+
 function #oh_my_dat:please
 
-summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["TypeChecked","SystemEntity","Spawner"],Passengers:[{id:"minecraft:spawner_minecart",Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["TypeChecked","SystemEntity","SpawnerCore","Spawner","SetSpawner"],DisplayState:{Name:"minecraft:chorus_plant"}}]}
+execute align xyz run summon armor_stand ~0.5 ~ ~0.5 {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["TypeChecked","SystemEntity","Spawner"],Passengers:[{SpawnCount:0,id:"minecraft:spawner_minecart",Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["TypeChecked","SystemEntity","SpawnerCore","Spawner","SetSpawner"],DisplayState:{Name:"minecraft:chorus_plant"}}]}
 
 data modify entity @e[limit=1,tag=SetSpawner] SpawnData set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].spawner.SpawnData
 
@@ -12,7 +14,7 @@ data modify entity @e[limit=1,tag=SetSpawner] MinSpawnDelay set from storage oh_
 
 data modify entity @e[limit=1,tag=SetSpawner] MaxSpawnDelay set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].spawner.MaxSpawnDelay
 
-data modify entity @e[limit=1,tag=SetSpawner] RequiredPlayerRenge set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].spawner.RequiredPlayerRenge
+data modify entity @e[limit=1,tag=SetSpawner] RequiredPlayerRange set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].spawner.RequiredPlayerRenge
 
 data modify entity @e[limit=1,tag=SetSpawner] SpawnCount set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].spawner.SpawnCount
 
