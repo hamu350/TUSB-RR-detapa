@@ -104,31 +104,20 @@
 data remove storage asset: mob
 
 # キャリアーガストのデータを突っ込む
-data modify storage asset: mob set value {Passengers: [{Life: 2, id: "minecraft:firework_rocket", Passengers: [{Passengers: [{Passengers: [{Passengers: [{RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Name: "minecraft:enchanting_table"}, DisplayTile: "minecraft:enchanting_table", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 120s, Delay: -1s, DisplayOffset: 8, CustomName: '{"text":"スティーブキャリアー"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 6s, MinSpawnDelay: 40s}, {Particle: "end_rod", Radius: 0.05f, ReapplicationDelay: 0, CustomName: '{"text":"キャリアーオーラ"}', RadiusOnUse: 0.0f, Duration: 80, id: "minecraft:area_effect_cloud", Effects: []}], CustomName: '{"text":"ガストキャリアー"}', Health: 100.0f, Attributes: [{Base: 100.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 0.0d, Name: "generic.follow_range"}], Silent: 1b, id: "minecraft:ghast", ExplosionPower: 0}], CustomName: '{"text":"ﾅﾋﾞｹﾞｰﾄ"}', Size: 5, Attributes: [{Base: 0.5d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:magma_cube", AbsorptionAmount: 100.0f, ActiveEffects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: -1b, Duration: 2147483647, Id: 25b}, {Amplifier: 0b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"ﾗﾝﾀﾞﾑﾑｰﾊﾞｰ"}', Health: 5.0f, Attributes: [{Base: 5.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", ActiveEffects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: 127b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"不発弾"}', LifeTime: 30}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", type: "minecraft:plains", level: 1}, id: "minecraft:villager"}
+data modify storage asset: mob set value {Passengers: [{Life: 2, id: "minecraft:firework_rocket", Passengers: [{Passengers: [{Passengers: [{Passengers: [{RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Name: "minecraft:enchanting_table"}, DisplayTile: "minecraft:enchanting_table", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 120s, Delay: -1s, DisplayOffset: 8, CustomName: '{"text":"〇〇キャリアー"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 6s, MinSpawnDelay: 40s}, {Particle: "end_rod", Radius: 0.05f, ReapplicationDelay: 0, CustomName: '{"text":"キャリアーオーラ"}', RadiusOnUse: 0.0f, Duration: 80, id: "minecraft:area_effect_cloud", Effects: []}], CustomName: '{"text":"ガストキャリアー"}', Health: 100.0f, Attributes: [{Base: 100.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 0.0d, Name: "generic.follow_range"}], Silent: 1b, id: "minecraft:ghast", ExplosionPower: 0}], CustomName: '{"text":"ﾅﾋﾞｹﾞｰﾄ"}', Size: 5, Attributes: [{Base: 0.5d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:magma_cube", AbsorptionAmount: 100.0f, ActiveEffects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: -1b, Duration: 2147483647, Id: 25b}, {Amplifier: 0b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"ﾗﾝﾀﾞﾑﾑｰﾊﾞｰ"}', Health: 5.0f, Attributes: [{Base: 5.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", ActiveEffects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: 127b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"不発弾"}', LifeTime: 30}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", type: "minecraft:plains", level: 1}, id: "minecraft:villager"}
 
 # Delayとかを設定する
-data modify storage asset: mob.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0] merge value {Delay:-1, MinSpawnDelay:40, MaxSpawnDelay:120}
+data modify storage asset: mob.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0] merge value {Delay:-1, MinSpawnDelay:40, MaxSpawnDelay:120, SpawnCount:1, SpawnRange:6, RequiredPlayerRange:32, CustomName:'{"text":"〇〇キャリアー"}'}
 
-# スポナーに中身を詰め込む
+### スポナーに中身を詰め込む
+# 仮storageにmobを移す
 data modify storage _: _ set from storage asset: mob
+# 湧かせたいmobのdataを呼び出す
 function asset:mob/0340.curse_sword_alpha/data/2.data_set
+# SpawnPotentialsに詰め込む
 data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
 data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
-function asset:mob/0341.curse_sword_beta/data/2.data_set
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
-function asset:mob/0342.curse_sword_gamma/data/2.data_set
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
-function asset:mob/0343.curse_shield_alpha/data/2.data_set
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
-function asset:mob/0344.curse_shield_beta/data/2.data_set
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
-function asset:mob/0345.curse_shield_gamma/data/2.data_set
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
-data modify storage _: _.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].SpawnPotentials append from storage asset: mob
+# これを繰り返す。最後にmobのdataを戻して終了
 data modify storage asset: mob set from storage _: _
 data remove storage _: _
 
