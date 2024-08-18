@@ -12,6 +12,7 @@ merge:既にあるデータに統合するか上書きするか(trueで統合)�
 set:スポナーを設置するか
 data:スポナーのデータ
     SpawnMob:湧くmobをAssetMobのidで指定する。weightも設定してね。1番目が最初に湧くmobになるよ
+        AssetIdはTUSB_AW\data\asset\functions\mob\id.txt ここに全て纏めてある
     Delay:最初に湧くまで、次湧くまでの最小、最大時間(tick)
     Count:mobが湧く数
     Range:mobが湧く範囲
