@@ -61,6 +61,8 @@
         "asset:mob/0818.ygoronac/data/1.trigger",
         "asset:mob/0822.void_witch/data/1.trigger",
         "asset:mob/0898.shinen/data/1.trigger",
-        "asset:mob/2400.curse_career/data/1.trigger"
+        "asset:mob/2400.curse_career/data/1.trigger",
+        "asset:mob/4100.masterskeleton/data/1.trigger",
+        "asset:mob/4806.old_shinen/data/1.trigger"
     ]
 }
