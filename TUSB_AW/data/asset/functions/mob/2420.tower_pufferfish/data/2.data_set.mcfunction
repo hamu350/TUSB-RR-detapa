@@ -153,8 +153,8 @@ data modify storage asset: mob.Attributes append value {Name:generic.max_health,
 # 2
 data modify storage asset: mob.Passengers append from storage asset: mob
 # 4
-data modify storage asset: mob.Passengers append from storage asset: mob
+data modify storage asset: mob.Passengers[0].Passengers append from storage asset: mob
 # 8
-data modify storage asset: mob.Passengers append from storage asset: mob
+data modify storage asset: mob.Passengers[0].Passengers[0].Passengers[0].Passengers append from storage asset: mob
 # 16
-data modify storage asset: mob.Passengers append from storage asset: mob
+data modify storage asset: mob.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers append from storage asset: mob
