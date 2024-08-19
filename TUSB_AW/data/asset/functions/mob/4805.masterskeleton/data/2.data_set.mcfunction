@@ -1,4 +1,4 @@
-#> asset:mob/4100.masterskeleton/data/2.data_set
+#> asset:mob/4805.masterskeleton/data/2.data_set
 
 # 最終的にPassengersやスポナーの中身に使える形になればそこまでがどのような形でもいい
 

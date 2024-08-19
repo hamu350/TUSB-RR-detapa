@@ -5,18 +5,14 @@
 # dataを初期化
 data remove storage asset: mob
 
-# ここに取ってきたデータを入れる。取得用コマンド：/data get entity @e[type=minecraft:spawner_minecart,limit=1,sort=nearest,distance=..6] SpawnData.entity
-data modify storage asset: mob set value {Brain: {memories: {}}, HurtByTimestamp: 0, IsBaby:0b,Attributes: [{Base: 60.0d, Name: "minecraft:generic.follow_range"}, {Base: 1020.0d, Name: "minecraft:generic.max_health"}, {Base: 0.0d, Name: "minecraft:generic.armor_toughness"}, {Base: 444.0d, Name: "minecraft:generic.attack_damage"}, {Base: 0.05d, Name: "minecraft:generic.movement_speed"}, {Base: 1.0d, Name: "minecraft:generic.knockback_resistance"}, {Base: 2.0d, Name: "minecraft:generic.armor"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, InWaterTime: -1, FallDistance: 0.0f, DeathTime: 0s, HandDropChances: [0.0f, 0.0f], PersistenceRequired: 0b, Tags: ["AbyssWarp", "TypeChecked", "Poofable", "akuu", "Enemy"], Health: 1020.0f,HandItems: [{id: "minecraft:diamond_pickaxe", Count: 65b, tag: {Damage: 0, display: {Name: '"全能ノ一"'}, Enchantments: [{lvl: 5s, id: "sharpness"}, {lvl: 5s, id: "knockback"}, {lvl: 5s, id: "fire_aspect"}, {lvl: 5s, id: "efficiency"}, {lvl: 5s, id: "unbreaking"}, {lvl: 5s, id: "fortune"}]}}, {}], ArmorDropChances: [0.0f, 0.0f, 0.0f, 0.0f], CustomName: '{"bold":true,"color":"dark_purple","text":"古の深淵様"}', CanBreakDoors: 0b, Fire: -1s, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:chorus_flower", Count: 65b, tag: {Enchantments: [{lvl: 20s, id: "minecraft:protection"}]}}], CanPickUpLoot: 0b, HurtTime: 0s, ActiveEffects: [{Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 14, Amplifier: 127b}, {Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 8, Amplifier: 4b}, {Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 11, Amplifier: 1b}], DrownedConversionTime: -1}
-# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], id: "minecraft:zombie", ActiveEffects: [{ShowParticles: 0b, Duration: 2000000000, Id: 14b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 12b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 1b, Amplifier: 4b}, {ShowParticles: 0b, Duration: 2000000000, Id: 8b, Amplifier: 10b}], HandItems: [{id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
-
 # この下のコメント郡は無視！mobを編集する時には使うよ
 
 ### idを設定
-# data modify storage asset: mob.id set value "skeleton"
+data modify storage asset: mob.id set value "minecraft:zombie"
 
 ### 体力等nbtを設定
 # 体力
-# data modify storage asset: mob.Health set value 20
+data modify storage asset: mob.Health set value 1020
 # 緩衝体力
 # data modify storage asset: mob.AbsorptionAmount set value 20
 # AIを持っているか
@@ -28,35 +24,34 @@ data modify storage asset: mob set value {Brain: {memories: {}}, HurtByTimestamp
 # 光るか
 # data modify storage asset: mob.Glowing set value true
 # デスポーンするか
-# data modify storage asset: mob.PersistenceRequired set value true
+data modify storage asset: mob.PersistenceRequired set value true
 # 名前
-# data modify storage asset: mob.CustomName set value '{"text":"Example"}'
+data modify storage asset: mob.CustomName set value '{"text":"古の深淵様"}'
 # 名前を表示するか
 # data modify storage asset: mob.CustomNameVisible set value true
 # 死亡時のルートテーブル
-# data modify storage asset: mob.DeathLootTable set value "empty"
+data modify storage asset: mob.DeathLootTable set value "empty"
 # Tags
-# data modify storage asset: mob.Tags set value ["example"]
+data modify storage asset: mob.Tags set value ["AkuuWarp","AbyssWarp"]
 # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
 # data modify storage asset: mob.PortalCooldown set value 0
 # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
-
 ### Attributes
 # 最大体力
-# data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
+data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:1020}
 # (近接)攻撃力
-# data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
+data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:300}
 # 移動速度
-# data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
+data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.15}
 # 防具値
-# data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:2}
 # 防具強度
-# data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
+data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:0}
 # ノックバック耐性(0~1)
-# data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
+data modify storage asset: mob.Attributes append value {Name:generic.knockback_resistance, Base:1}
 # 索敵範囲
-# data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:64}
+data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:60}
 # 攻撃のノックバック(0~5)
 # data modify storage asset: mob.Attributes append value {Name:generic.attack_knockback, Base:1}
 # それぞれの詳しい仕様はwikiなどで調べてください
@@ -84,7 +79,9 @@ data modify storage asset: mob set value {Brain: {memories: {}}, HurtByTimestamp
 # kill @e[tag=ItemHolder,limit=1]
 # 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
 # 防具のドロップ率を設定します。基本0で [足,脚,胸,頭]
-# data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
+data modify storage asset: mob merge value {HandItems: [{id: "minecraft:diamond_pickaxe", Count: 65b, tag: {Damage: 0, display: {Name: '"全能ノ一"'}, Enchantments: [{lvl: 5s, id: "sharpness"}, {lvl: 5s, id: "knockback"}, {lvl: 5s, id: "fire_aspect"}, {lvl: 5s, id: "efficiency"}, {lvl: 5s, id: "unbreaking"}, {lvl: 5s, id: "fortune"}]}}, {}], ArmorDropChances: [0.0f, 0.0f, 0.0f, 0.0f], ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {Damage: 0, display: {color: 8339378, Name: '"終焉ヲ告ゲル者"'}, Enchantments: [{lvl: 0s, id: "protection"}, {lvl: 1s, id: "fire_protection"}, {lvl: 2s, id: "feather_falling"}, {lvl: 3s, id: "blast_protection"}, {lvl: 4s, id: "projectile_protection"}, {lvl: 5s, id: "respiration"}, {lvl: 6s, id: "aqua_affinity"}, {lvl: 7s, id: "thorns"}, {lvl: 8s, id: "depth_strider"}]}}, {id: "minecraft:chorus_flower", Count: 65b, tag: {Enchantments: [{lvl: 20s, id: "minecraft:protection"}]}}]}
+data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
+data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
 
 ### ActiveEffects
@@ -130,6 +127,7 @@ data modify storage asset: mob set value {Brain: {memories: {}}, HurtByTimestamp
 # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
 # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+data modify storage asset: mob.ActiveEffects set value [{Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 14, Amplifier: 127b}, {Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 8, Amplifier: 4b}, {Ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, Duration: 2147483482, Id: 11, Amplifier: 1b}]
 
 
 ### Passengers
@@ -154,3 +152,9 @@ data modify storage asset: mob set value {Brain: {memories: {}}, HurtByTimestamp
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _
 # data remove storage _: _
+
+# 最後に、経験値騎乗にします
+data modify storage _: _ set from storage asset: mob
+data modify storage asset: mob set value {id:"experience_orb",Age:6000s}
+data modify storage asset: mob.Passengers append from storage _: _
+data remove storage _: _
