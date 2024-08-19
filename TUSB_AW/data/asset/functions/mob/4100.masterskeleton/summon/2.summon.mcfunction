@@ -1,6 +1,6 @@
 #> asset:mob/4100.masterskeleton/summon/2.summon
 
-# functionの0050.meegaの変えたフォルダの名前にする(例:0010.deadra)
+# functionの0050.masterskeletonの変えたフォルダの名前にする(例:0010.deadra)
 function asset:mob/4100.masterskeleton/data/2.data_set
 # AiUtilを使ってmobを召喚します
 data modify storage util: in set from storage asset: mob

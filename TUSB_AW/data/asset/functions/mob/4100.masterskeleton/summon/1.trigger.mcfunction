@@ -1,4 +1,4 @@
-#> asset:mob/4100.meega/summon/1.trigger
+#> asset:mob/4100.masterskeleton/summon/1.trigger
 # ↑このパスも変えてね
 
 # asset:context {id:1}の部分を作るmobのidに変える(例(デイドラ):asset:context {id:10})
