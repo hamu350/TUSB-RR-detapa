@@ -24,7 +24,7 @@ data modify storage asset: mob.id set value "minecraft:pufferfish"
 # デスポーンするか
 # data modify storage asset: mob.PersistenceRequired set value true
 # 名前
-# data modify storage asset: mob.CustomName set value '{"text":"タワー河豚"}'
+data modify storage asset: mob.CustomName set value '{"text":"タワー河豚"}'
 # 名前を表示するか
 # data modify storage asset: mob.CustomNameVisible set value true
 # 死亡時のルートテーブル
