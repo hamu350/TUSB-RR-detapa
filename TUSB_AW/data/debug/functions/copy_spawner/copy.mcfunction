@@ -1,5 +1,7 @@
 #> debug:copy_spawner/copy
 
+data remove storage _: _
+
 # 軽量化のため一度storageに移す
 data modify storage _: spawner set from entity @s Passengers[0]
 

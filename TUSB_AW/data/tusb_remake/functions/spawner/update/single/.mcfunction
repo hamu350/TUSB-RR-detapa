@@ -16,3 +16,4 @@ execute if data storage asset:context spawner.SpawnPotentials[0] run data modify
 # 取得したデータを適応
 execute if predicate tusb_remake:is_riding_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
 execute if block ~ ~ ~ spawner unless predicate tusb_remake:is_riding_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
+function asset:aa
