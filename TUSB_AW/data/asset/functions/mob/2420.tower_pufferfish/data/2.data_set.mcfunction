@@ -6,11 +6,11 @@
 data remove storage asset: mob
 
 ### idを設定
-data modify storage asset: mob.id set value "pufferfish"
+data modify storage asset: mob.id set value "minecraft:pufferfish"
 
 ### 体力等nbtを設定
 # 体力
-data modify storage asset: mob.Health set value 20
+# data modify storage asset: mob.Health set value 20
 # 緩衝体力
 # data modify storage asset: mob.AbsorptionAmount set value 20
 # AIを持っているか
@@ -38,7 +38,7 @@ data modify storage asset: mob.CustomName set value '{"text":"タワー河豚"}'
 
 ### Attributes
 # 最大体力
-data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:20}
+# data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:20}
 # (近接)攻撃力
 # data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
 # 移動速度
