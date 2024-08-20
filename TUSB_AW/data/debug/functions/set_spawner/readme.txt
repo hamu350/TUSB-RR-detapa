@@ -20,3 +20,13 @@ data:スポナーのデータ
     Display:"boss"と設定すると見た目がレッドストーントーチになる
     Once:trueの場合一回湧きになる
     Aura:trueの場合新世代のスポナーオーラを纏う(10m以内に採掘速度低下Ⅱ(×0.09))
+
+スポナーのCopy方法
+/function debug:copy_spawner/
+このコマンドを打ってスポナーをコピーできます
+/function debug:set_spawner/
+このコマンドを打ってコピーしたスポナーを設置します
+
+スポナーの消去方法
+/function debug:delete_spawner/
+このコマンドを打つとボタンが出てくるのでそれを押すと5m以内の最寄りのスポナーを消去します(現状advは未対応)

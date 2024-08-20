@@ -15,6 +15,7 @@ data modify storage _: _.CustomDisplayTile set from storage _: spawner.CustomDis
 data modify storage _: _.DisplayOffset set from storage _: spawner.DisplayOffset
 data modify storage _: _.DisplayState set from storage _: spawner.DisplayState
 execute if data storage _: _.SpawnPotentials[0].data.entity.id run data modify storage _: _.Once set value true
+execute if predicate tusb_remake:is_aura_spawner run data modify storage _: _.Aura set value true
 
 data modify storage _: _.SpawnMob append value {AssetId:0}
 execute store result storage _: _.SpawnMob[0].AssetId int 1 run scoreboard players get @s SpawnerId
