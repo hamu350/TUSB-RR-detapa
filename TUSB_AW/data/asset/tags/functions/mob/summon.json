@@ -70,6 +70,7 @@
         "asset:mob/4200.panic_creeper/summon/1.trigger",
         "asset:mob/4201.marmalade/summon/1.trigger",
         "asset:mob/4202.danna/summon/1.trigger",
-        "asset:mob/4802.magic_bullet_prince/summon/1.trigger"
+        "asset:mob/4802.magic_bullet_prince/summon/1.trigger",
+        "asset:mob/4101.dracoon/summon/1.trigger"
     ]
 }
