@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 
 ## X軸上にある辺からのチェックのための向き
-execute positioned 0.0 0.0 0.0 positioned ^ ^ ^1 positioned 0.0 ~ ~ facing 0.0 0.0 0.0 positioned 
+# execute positioned 0.0 0.0 0.0 positioned ^ ^ ^1 positioned 0.0 ~ ~ facing 0.0 0.0 0.0 positioned 
 
 # execute as 0-0-ff-0-ff
 execute anchored eyes positioned ^ ^ ^ facing entity 0-0-ff-0-ff feet positioned ^ ^ ^4 rotated as 0-0-ff-0-ff positioned ^ ^3 ^ unless entity @s[distance=..5]

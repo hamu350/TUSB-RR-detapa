@@ -5,4 +5,4 @@
 
 scoreboard players reset @s PastorFlag
 
-tellraw @s {"text":"[牧師] これは失礼しました。どうかお気をつけて。"}	 
+tellraw @s {"text":"[牧師] これは失礼しました。どうかお気をつけて。"}
