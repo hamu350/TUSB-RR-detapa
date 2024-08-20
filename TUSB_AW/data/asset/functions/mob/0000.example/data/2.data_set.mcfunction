@@ -13,15 +13,15 @@ data modify storage asset: mob.id set value "skeleton"
 data modify storage asset: mob.Health set value 20
 # 緩衝体力
 data modify storage asset: mob.AbsorptionAmount set value 20
-# AIを持っているか
+# AIを持っているか(trueで持たない
 data modify storage asset: mob.NoAI set value true
 # 無敵か
 data modify storage asset: mob.Invulnerable set value true
-# 音を出すか
+# 音を出すか(trueでしない)
 data modify storage asset: mob.Silent set value true
 # 光るか
 data modify storage asset: mob.Glowing set value true
-# デスポーンするか
+# デスポーンするか(trueでしない)
 data modify storage asset: mob.PersistenceRequired set value true
 # 名前
 data modify storage asset: mob.CustomName set value '{"text":"Example"}'
@@ -79,19 +79,20 @@ kill @e[tag=ItemHolder,limit=1]
 # 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
 # 防具のドロップ率を設定します。基本0で [足,脚,胸,頭]
 data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
+data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
 
 ### ActiveEffects
 # 直接nbtを指定して追加します
 #effect一覧
-    #{Name:speed,id:1} 移動速度上昇 +lv*20%
-    #{Name:slowness,id:2} 移動速度低下 -lv*15%
-    #{Name:haste,id:3} 採掘速度上昇 +lv*20%
-    #{Name:mining_fatigue,id:4} 採掘速度低下 1*0.3^lv
-    #{Name:strength,id:5} 攻撃力上昇 +lv*3
-    #{Name:instant_health,id:6} 即時回復 2^lv*2
-    #{Name:instant_damage,id:7} 即時ダメージ 2^lv*3
-    #{Name:jump_boost,id:8} 跳躍力上昇 1.25*(lv*0.5)
+    #{Name:speed,id:1} 移動速度上昇 +(lv*20)%
+    #{Name:slowness,id:2} 移動速度低下 -(lv*15)%
+    #{Name:haste,id:3} 採掘速度上昇 +(lv*20)%
+    #{Name:mining_fatigue,id:4} 採掘速度低下 1*(0.3^lv)
+    #{Name:strength,id:5} 攻撃力上昇 +(lv*3)
+    #{Name:instant_health,id:6} 即時回復 (2^lv)*2
+    #{Name:instant_damage,id:7} 即時ダメージ (2^lv)*3
+    #{Name:jump_boost,id:8} 跳躍力上昇 1.25*(1+lv*0.5)
     #{Name:nausea,id:9} 吐き気
     #{Name:regeneration,id:10} 再生
     #{Name:resistance,id:11} 耐性 100-lv*20%
@@ -101,12 +102,12 @@ data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
     #{Name:blindness,id:15} 盲目
     #{Name:night_vision,id:16} 暗視
     #{Name:hunger,id:17} 空腹
-    #{Name:weakness,id:18} 弱体化 -lv*4
+    #{Name:weakness,id:18} 弱体化 -(lv*4)
     #{Name:poison,id:19} 毒
     #{Name:wither,id:20} ウィザー
-    #{Name:health_boots,id:21} 体力増強 +lv*4
-    #{Name:absorption,id:22} 緩衝体力増加 +lv*4
-    #{Name:saturation,id:23} 満腹度回復 +lv*1
+    #{Name:health_boots,id:21} 体力増強 +(lv*4)
+    #{Name:absorption,id:22} 緩衝体力増加 +(lv*4)
+    #{Name:saturation,id:23} 満腹度回復 +(lv*1)
     #{Name:glowing,id:24} 発光
     #{Name:levitation,id:25} 浮遊
     #{Name:luck,id:26} 運
@@ -150,4 +151,4 @@ data modify storage asset: mob set from storage _: _
 data remove storage _: _
 
 
-# 全て完了！お疲れ様でした(to me)
+# 全て完了！お疲れ様でした！
