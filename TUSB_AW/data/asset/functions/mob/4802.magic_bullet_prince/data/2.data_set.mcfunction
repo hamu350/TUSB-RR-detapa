@@ -13,7 +13,7 @@ data remove storage asset: mob
 ##### 魔弾の皇子 #####
     
     ### idを設定
-    data modify storage asset: mob.id set value "stray"
+    data modify storage asset: mob.id set value "minecraft:stray"
     
     ### 体力等nbtを設定
     # 体力
@@ -39,7 +39,7 @@ data remove storage asset: mob
     # Tags
     data modify storage asset: mob.Tags set value ["SkillMob","akuu","MagicBulletPrince"]
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
-    data modify storage asset: mob.PortalCooldown set value 0
+    # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
     
     
@@ -83,7 +83,7 @@ data remove storage asset: mob
     loot replace entity @e[tag=ItemHolder,limit=1] weapon.offhand loot asset:item/arrow/12.7_99mm_nato_bullet
     data modify entity @e[tag=ItemHolder,limit=1] HandItems[1].Count set value 8
     # 最後に、防具立ての防具のnbtと持っているアイテムのnbtをstorageに移し、killします
-    data modify storage asset: mob.ArmorItems set value [{},{},{id:"chainmail_chestplate",Count:65b,tag:{Enchantments:[{lvl:20,id:0}]}},{Count:65b,id:"minecraft:skull",tag:{SkullOwner:{Id:"56a3aa3b-9b29-4ca8-9208-bfb306560f05",Properties:{textures:[{Value:"eyJ0aW1lc3RhbXAiOjE0Njg4NDQxMjg2OTcsInByb2ZpbGVJZCI6IjRiMjJmMDliNTM4ZjQ3ZDdiN2VhYzc5YWIyMjI3NmZkIiwicHJvZmlsZU5hbWUiOiJhbm1pbm1ha3VyYSIsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lZGVkNTE5YjY0ZjgxNDc0N2U2OTA4NTdjNDJiMjk3MjAzOWVlZDYxNWJiNmVkMDY3ZGNmOWU0MjYwZTYifX19"}]},Name:"anminmakura"}},Damage:3}]
+    data modify storage asset: mob.ArmorItems set value [{},{},{id:"chainmail_chestplate",Count:65b,tag:{Enchantments:[{lvl:20,id:"protection"}]}},{id: "minecraft:player_head", Count: 65b, tag: {SkullOwner: {Id: [I; 1453566523, -1691792216, -1844920397, 106303237], Properties: {textures: [{Value: "eyJ0aW1lc3RhbXAiOjE0Njg4NDQxMjg2OTcsInByb2ZpbGVJZCI6IjRiMjJmMDliNTM4ZjQ3ZDdiN2VhYzc5YWIyMjI3NmZkIiwicHJvZmlsZU5hbWUiOiJhbm1pbm1ha3VyYSIsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lZGVkNTE5YjY0ZjgxNDc0N2U2OTA4NTdjNDJiMjk3MjAzOWVlZDYxNWJiNmVkMDY3ZGNmOWU0MjYwZTYifX19"}]}, Name: "anminmakura"}}}]
     # data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limit=1] ArmorItems
     data modify storage asset: mob.HandItems set from entity @e[tag=ItemHolder,limit=1] HandItems
     kill @e[tag=ItemHolder,limit=1]
@@ -231,6 +231,9 @@ data remove storage asset: mob
     data modify storage asset: mob.Passengers append value {RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Properties: {facing: "down"}, Name: "minecraft:end_rod"}, DisplayTile: "minecraft:end_rod", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 10s, Glowing: 1b, Delay: -1s, DisplayOffset: -23, CustomName: '{"text":"魔のワゴン"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 0s, MinSpawnDelay: 5s, SpawnPotentials: [{data: {entity: {ParticleParam2: 5, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ05"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 5b}, {Duration: 50, Id: 25b, Amplifier: -3b}]}}, weight: 1}, {data: {entity: {ParticleParam2: 3, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ06"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 7b}, {Duration: 10, Id: 25b, Amplifier: -4b}]}}, weight: 3}, {data: {entity: {ParticleParam2: 11, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ07"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 10b}, {Duration: 10, Id: 25b, Amplifier: -8b}]}}, weight: 5}, {data: {entity: {ParticleParam2: 10, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ08"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 20b}, {Duration: 10, Id: 25b, Amplifier: -16b}]}}, weight: 7}, {data: {entity: {Motion: [0.0d, -3.0d, 0.0d], Passengers: [{Particle: "witchMagic", Radius: 10.0f, ReapplicationDelay: 0, CustomName: '{"text":"HEALTH_DOWNER"}', RadiusOnUse: 0.0f, Duration: 10, id: "minecraft:area_effect_cloud", WaitTime: 120, Effects: [{Duration: 100, Id: 17b, Amplifier: 70b}, {Duration: 160, Id: 9b, Amplifier: 0b}, {Duration: 100, Id: 21b, Amplifier: 0b}, {Duration: 100, Id: 25b, Amplifier: 5b}]}, {Particle: "dragon_breath", Radius: 0.3f, ReapplicationDelay: 0, CustomName: '{"text":"HEALTH_DOWNER"}', RadiusOnUse: 0.0f, Duration: 100, id: "minecraft:area_effect_cloud", Effects: []}], Value: 0s, id: "minecraft:experience_orb", Age: 5900s}}, weight: 1}]}
     # ラインオーラ(射手産)
     data modify storage asset: mob.Passengers append value {Particle: "end_rod", Radius: 0.001f, ParticleParam1: 7, ReapplicationDelay: 0, CustomName: '{"text":"ラインオーラ"}', Duration: 80, id: "minecraft:area_effect_cloud", Effects: [], CustomNameVisible: 0b}
+
+    # 皇子を乗せる
+    data modify storage asset: mob.Passengers append from storage _: MagicBulletPrince
 
     data modify storage _: MagicWagon set from storage asset: mob
 
