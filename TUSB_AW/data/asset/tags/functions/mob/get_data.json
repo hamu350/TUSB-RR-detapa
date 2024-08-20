@@ -68,6 +68,8 @@
         "asset:mob/4805.masterskeleton/data/1.trigger",
         "asset:mob/4806.old_shinen/data/1.trigger",
         "asset:mob/4300.runati-/data/1.trigger",
-        "asset:mob/4320.necklace_of_artemis/data/1.trigger"
+        "asset:mob/4320.necklace_of_artemis/data/1.trigger",
+        "asset:mob/4202.danna/data/1.trigger",
+        "asset:mob/4802.magic_bullet_prince/data/1.trigger"
     ]
 }
