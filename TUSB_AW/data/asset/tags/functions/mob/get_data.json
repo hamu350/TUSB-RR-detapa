@@ -71,6 +71,7 @@
         "asset:mob/4320.necklace_of_artemis/data/1.trigger",
         "asset:mob/4202.danna/data/1.trigger",
         "asset:mob/4802.magic_bullet_prince/data/1.trigger",
-        "asset:mob/4101.dracoon/data/1.trigger"
+        "asset:mob/4101.dracoon/data/1.trigger",
+        "asset:mob/4804.spetsnaz/data/1.trigger"
     ]
 }
