@@ -5,3 +5,7 @@
 scoreboard players set _ SpawnerUpdate 1
 # 更新済みでなければfunctionを実行
 execute unless score @s SpawnerUpdate = _ SpawnerUpdate run function tusb_remake:spawner/update/
+
+
+# オーラスポナー
+execute if entity @s[tag=AuraSpawner] run function tusb_remake:spawner/aura

@@ -14,4 +14,5 @@ data modify entity @e[limit=1,tag=this,tag=SpawnerCore] {} merge from storage _:
 execute as @e[limit=1,tag=this,tag=!SpawnerCore] run function oh_my_dat:please
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].id set from storage _: AssetId
 scoreboard players set @e[limit=1,tag=this,tag=!SpawnerCore] SpawnerId -1
-tag @e[tag=this] remove this
+
+# thisは元functionで消します

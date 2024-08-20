@@ -14,6 +14,5 @@ data modify storage asset:context new_spawner.SpawnData.entity set from storage 
 execute if data storage asset:context spawner.SpawnPotentials[0] run data modify storage asset:context new_spawner.SpawnPotentials[0].data.entity set from storage asset: mob
 
 # 取得したデータを適応
-execute if predicate tusb_remake:is_riding_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
-execute if block ~ ~ ~ spawner unless predicate tusb_remake:is_riding_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
-function asset:aa
+execute if predicate tusb_remake:is_vechicle_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
+execute if entity @s[tag=BlockSpawner] if block ~ ~ ~ spawner unless predicate tusb_remake:is_vechicle_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
