@@ -1,4 +1,4 @@
-#> debug:set_spawner/
+#> debug:set_block_spawner/
 # storageの情報通りにスポナーを設置します
 
 function oh_my_dat:please
@@ -21,11 +21,11 @@ data modify storage _: _.RequiredPlayerRange set from storage _: _.ReqRange
 data modify storage _: _.MaxNearbyEntities set from storage _: _.MaxEntities
 
 # 湧くmobの種類が複数ならmultiを、一種類ならsingleを起動
-execute if data storage _: _.SpawnMob[1] run function debug:set_spawner/multi
-execute unless data storage _: _.SpawnMob[1] run function debug:set_spawner/single
+execute if data storage _: _.SpawnMob[1] run function debug:set_block_spawner/multi
+execute unless data storage _: _.SpawnMob[1] run function debug:set_block_spawner/single
 
 # Aura:trueならオーラを乗っける
-execute if data storage _: {_:{Aura:true}} as @e[type=armor_stand,tag=this,limit=1] run function debug:set_spawner/aura
+execute if data storage _: {_:{Aura:true}} as @e[type=armor_stand,tag=this,limit=1] run function debug:set_block_spawner/aura
 
 tag @e[tag=this] remove this
 

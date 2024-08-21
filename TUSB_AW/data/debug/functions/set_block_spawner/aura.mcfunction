@@ -1,4 +1,4 @@
-#> debug:set_spawner/aura
+#> debug:set_block_spawner/aura
 
 summon area_effect_cloud 0.0 0.0 0.0 {Radius:7.0f,Effects:[],Particle:"portal",Tags:["TypeChecked","SystemEntity","SpawnerAura"],ReapplicationDelay:30,Duration:2,CustomName:'"新世代のスポナーオーラ"'}
 

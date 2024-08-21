@@ -1,4 +1,4 @@
-#> debug:set_spawner/multi
+#> debug:set_block_spawner/multi
 
 # idを他のリストに移す
 data modify storage _: AssetId set value []
@@ -7,7 +7,7 @@ data remove storage _: _.AssetId
 
 # 再帰でSpawnPotentialsを作る
 data modify storage _: __ set from storage _: _.SpawnMob
-function debug:set_spawner/spawn_potentials
+function debug:set_block_spawner/spawn_potentials
 
 execute align xyz run summon armor_stand ~0.5 ~ ~0.5 {NoBasePlate:true,Marker:true,Small:true,Invisible:true,Invulnerable:true,Tags:["Spawner","SystemEntity","this"]}
 setblock ~ ~ ~ spawner replace
