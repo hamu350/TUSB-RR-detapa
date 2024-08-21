@@ -75,6 +75,8 @@
         "asset:mob/4804.spetsnaz/summon/1.trigger",
         "asset:mob/4000.the_old_one/summon/1.trigger",
         "asset:mob/4110.black_hole_generator/summon/1.trigger",
-        "asset:mob/4301.full_color_eye/summon/1.trigger"
+        "asset:mob/4301.full_color_eye/summon/1.trigger",
+        "asset:mob/4210.maju/summon/1.trigger",
+        "asset:mob/4211.mahyouju/summon/1.trigger"
     ]
 }
