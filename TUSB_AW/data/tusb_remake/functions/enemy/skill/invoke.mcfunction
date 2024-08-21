@@ -30,6 +30,9 @@ execute if entity @s[tag=SilverRuler] run function tusb_remake:enemy/skill/silve
 ### 開闢様
 execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_sama/
 
+# CWスキル
+### 亜空間転移
+execute if entity @s[tag=akuu] run function tusb_remake:enemy/skill/akuu
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得
