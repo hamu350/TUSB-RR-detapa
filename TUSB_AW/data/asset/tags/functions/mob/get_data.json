@@ -63,6 +63,8 @@
         "asset:mob/0898.shinen/data/1.trigger",
         "asset:mob/2400.curse_career/data/1.trigger",
         "asset:mob/2420.tower_pufferfish/data/1.trigger",
+        "asset:mob/2421.bumper_pufferfish_16/data/1.trigger",
+        "asset:mob/2422.bumper_pufferfish_32/data/1.trigger",
         "asset:mob/4200.panic_creeper/data/1.trigger",
         "asset:mob/4201.marmalade/data/1.trigger",
         "asset:mob/4805.masterskeleton/data/1.trigger",
