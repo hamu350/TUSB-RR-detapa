@@ -5,7 +5,7 @@ debug:set_spawnerというstorageに要素を代用してどうこうします
 
 自分にDebugIdというscoreを設定しておいてください。他の人と被らないように
 
-テンプレ：/data modify storage debug:set_block_spawner _ set value {DebugId:,merge:false,set:true,data:{SpawnMob:[{AssetId:,weight:1}],Delay:{Delay:1,Min:100,Max:700},Count:1,Range:4,ReqRange:32}
+テンプレ：/data modify storage debug:set_block_spawner _ set value {DebugId:,merge:false,set:true,data:{SpawnMob:[{AssetId:,weight:1}],Delay:{Delay:1,Min:100,Max:700},Count:1,Range:4,ReqRange:32}}
 
 各要素についての説明
 DebugId:誰を起点としてスポナーを設置するか
