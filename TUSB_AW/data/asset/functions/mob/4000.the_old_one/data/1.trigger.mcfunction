@@ -3,5 +3,5 @@
 # 一括編集使うと楽。一回書き換えたらコピーすると更に楽
 
 # asset:context {id:1}の部分を作るmobのidに変える(例(デイドラ):asset:context {id:10})
-execute if data storage asset:context {id:4101} run function asset:mob/4000.the_old_one/data/2.data_set
+execute if data storage asset:context {id:4000} run function asset:mob/4000.the_old_one/data/2.data_set
 # functionの4000.the_old_oneを変えたフォルダの名前にする(例:0010.deadra)
