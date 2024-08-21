@@ -71,6 +71,12 @@
         "asset:mob/4320.necklace_of_artemis/data/1.trigger",
         "asset:mob/4202.danna/data/1.trigger",
         "asset:mob/4802.magic_bullet_prince/data/1.trigger",
-        "asset:mob/4101.dracoon/data/1.trigger"
+        "asset:mob/4101.dracoon/data/1.trigger",
+        "asset:mob/4804.spetsnaz/data/1.trigger",
+        "asset:mob/4000.the_old_one/data/1.trigger",
+        "asset:mob/4110.black_hole_generator/data/1.trigger",
+        "asset:mob/4301.full_color_eye/data/1.trigger",
+        "asset:mob/4210.maju/data/1.trigger",
+        "asset:mob/4211.mahyouju/data/1.trigger"
     ]
 }
