@@ -21,7 +21,7 @@ summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}
 
 # 持たせたアイテムを元にstorage上の取引を追加します
 # data modify storage _: _ set from entity @e[tag=ItemHolder,limit=1]
-# data modify storage asset: villager.Offers.Recipes append value {buy:{},buyB:{},sell:{}}
+# data modify storage asset: villager.Offers.Recipes set value {buy:{},buyB:{},sell:{}}
 # data modify storage asset: villager.Offers.Recipes[-1].buy set from storage _: _.HandItems[0]
 # data modify storage asset: villager.Offers.Recipes[-1].buyB set from storage _: _.HandItems[1]
 # data modify storage asset: villager.Offers.Recipes[-1].sell set from storage _: _.ArmorItems[0]
