@@ -84,3 +84,6 @@ execute as @a[tag=KyoumeiCheak] if data entity @s Inventory[{tag:{Kyoumei:true}}
 tag @a[tag=KyoumeiCheak] remove KyoumeiCheak
 tag @a[tag=EmptyInventory] remove EmptyInventory
 execute as @a unless data entity @s Inventory[0] run tag @s add EmptyInventory
+
+### leap(跳躍妨害)
+execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
