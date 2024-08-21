@@ -22,7 +22,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:end_crystal",
-                    "weight": 1,
+                    "weight": 2,
                     "functions": [
                         {
                             "function": "set_count",
