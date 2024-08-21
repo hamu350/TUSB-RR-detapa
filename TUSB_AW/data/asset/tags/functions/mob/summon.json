@@ -72,6 +72,9 @@
         "asset:mob/4202.danna/summon/1.trigger",
         "asset:mob/4802.magic_bullet_prince/summon/1.trigger",
         "asset:mob/4101.dracoon/summon/1.trigger",
-        "asset:mob/4804.spetsnaz/summon/1.trigger"
+        "asset:mob/4804.spetsnaz/summon/1.trigger",
+        "asset:mob/4000.the_old_one/summon/1.trigger",
+        "asset:mob/4110.black_hole_generator/summon/1.trigger",
+        "asset:mob/4301.full_color_eye/summon/1.trigger"
     ]
 }
