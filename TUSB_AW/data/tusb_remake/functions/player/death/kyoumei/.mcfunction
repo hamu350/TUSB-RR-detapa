@@ -33,3 +33,5 @@ function lib:array/session/close
 
 # 最後にシュルカーボックスを初期化しちゃう(必要あるのかは知らない)
 data remove block 3500 0 3500 Items
+
+data remove storage _: _

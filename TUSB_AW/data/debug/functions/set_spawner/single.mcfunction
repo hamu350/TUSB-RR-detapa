@@ -4,9 +4,9 @@
 
 ### SpawnPotentialsとSpawnDataを作る
 # SpawnPotentialsのidが設定されていない場合豚を入れる
-execute unless data storage _: _.SpawnMob[0].id run data modify storage _: _.SpawnMob[0].id set value "pig"
+execute unless data storage _: _.SpawnMob[0].data run data modify storage _: _.SpawnMob[0].data.entity.id set value "pig"
 # SpawnPotentialsに移す
-execute unless data storage _: _.SpawnPotentials run data modify storage _: _.SpawnPotentials[0] set from storage _: _.SpawnMob[0]
+execute unless data storage _: _.SpawnPotentials run data modify storage _: _.SpawnPotentials set from storage _: _.SpawnMob
 # SpawnDataに突っ込む
 execute unless data storage _: _.SpawnData run data modify storage _: _.SpawnData.entity set from storage _: _.SpawnPotentials[0].data.entity
 # 一回湧きだったらSpawnPotentialsを消し飛ばす

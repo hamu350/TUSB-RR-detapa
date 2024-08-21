@@ -24,6 +24,8 @@ data modify storage _: _.MaxNearbyEntities set from storage _: _.MaxEntities
 execute if data storage _: _.SpawnMob[1] run function debug:set_block_spawner/multi
 execute unless data storage _: _.SpawnMob[1] run function debug:set_block_spawner/single
 
+tag @e[tag=this,limit=1] add BlockSpawner
+
 # Aura:trueならオーラを乗っける
 execute if data storage _: {_:{Aura:true}} as @e[type=armor_stand,tag=this,limit=1] run function debug:set_block_spawner/aura
 
