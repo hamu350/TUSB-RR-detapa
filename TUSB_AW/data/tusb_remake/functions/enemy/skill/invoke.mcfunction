@@ -33,6 +33,11 @@ execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_s
 # CWスキル
 ### 亜空間転移
 execute if entity @s[tag=akuu] run function tusb_remake:enemy/skill/akuu
+# RiderR
+    execute if entity @s[tag=BlackRiderR] run function tusb_remake:enemy/skill/remix_rider/black_rider_remix/
+    execute if entity @s[tag=WhiteRiderR] run function tusb_remake:enemy/skill/remix_rider/white_rider_remix/
+    execute if entity @s[tag=RedRiderR] run function tusb_remake:enemy/skill/remix_rider/red_rider_remix/
+    execute if entity @s[tag=PaleRiderR] run function tusb_remake:enemy/skill/remix_rider/pale_rider_remix/
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得
