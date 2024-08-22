@@ -12,6 +12,3 @@ execute if score @s MobCastTime matches 8..10 run function tusb_remake:enemy/ski
 execute if score @s MobCastTime matches 11..14 run function tusb_remake:enemy/skill/genesis_sama/sennkou
 #聖合ノ秩序：周囲32mのプレイヤーのバフを全消去する
 execute if score @s MobCastTime matches 15..19 run function tusb_remake:enemy/skill/genesis_sama/tituzyo
-
-
-
