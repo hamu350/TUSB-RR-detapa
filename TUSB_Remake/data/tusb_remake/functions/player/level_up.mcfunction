@@ -23,7 +23,7 @@ execute if score @s CoolTickSpan matches -50.. run scoreboard players set @s Coo
 ### MP回復量 = MPMax / 50 + 3
 execute store result storage tusb_remake: _ int 0.02 run scoreboard players get @s MPMax
 execute store result score @s MPIncrement run data get storage tusb_remake: _
-scoreboard players add @s MPIncrement 3
+scoreboard players add @s MPIncrement 10
 
 ### レベルアップの演出
 playsound minecraft:entity.player.levelup master @a[distance=..16] ~ ~ ~ 2 0.7 0
