@@ -81,6 +81,7 @@
         "asset:mob/4802.magic_bullet_prince/data/1.trigger",
         "asset:mob/4804.spetsnaz/data/1.trigger",
         "asset:mob/4805.masterskeleton/data/1.trigger",
-        "asset:mob/4806.old_shinen/data/1.trigger"
+        "asset:mob/4806.old_shinen/data/1.trigger",
+        "asset:mob/4103.dorasama/data/1.trigger"
     ]
 }
