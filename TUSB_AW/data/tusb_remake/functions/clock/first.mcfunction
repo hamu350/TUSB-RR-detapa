@@ -54,5 +54,5 @@ execute if data storage tusb_remake: {_:false} run gamerule mobGriefing true
 difficulty hard
 
 ### ドロッパー島転移防止
-execute as @a[x=-2812,y=315,z=-442,dx=34,dy=10,dz=34] at @s if block ~ ~-1 ~ barrier run tp @s -2794 76 -419
+# execute as @a[x=-2812,y=315,z=-442,dx=34,dy=10,dz=34] at @s if block ~ ~-1 ~ barrier run tp @s -2794 76 -419
 

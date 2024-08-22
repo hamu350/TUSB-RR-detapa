@@ -164,3 +164,9 @@ data modify storage _: _.Passengers[0].SpawnPotentials[-1].data.entity set from 
 # 最後に、mobデータを戻して避難用storageを削除します
 data modify storage asset: mob set from storage _: _
 data remove storage _: _
+
+# 最後に、経験値騎乗にします
+data modify storage _: _ set from storage asset: mob
+data modify storage asset: mob set value {id:"experience_orb",Age:6000s}
+data modify storage asset: mob.Passengers append from storage _: _
+data remove storage _: _
