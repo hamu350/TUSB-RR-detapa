@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/data_reset",
         "asset:mob/0000.example/data/1.trigger",
         "asset:mob/0001.existing_example/data/1.trigger",
         "asset:mob/0010.deadra/data/1.trigger",
@@ -65,20 +66,20 @@
         "asset:mob/2420.tower_pufferfish/data/1.trigger",
         "asset:mob/2421.bumper_pufferfish_16/data/1.trigger",
         "asset:mob/2422.bumper_pufferfish_32/data/1.trigger",
+        "asset:mob/4000.the_old_one/data/1.trigger",
+        "asset:mob/4101.dracoon/data/1.trigger",
+        "asset:mob/4110.black_hole_generator/data/1.trigger",
         "asset:mob/4200.panic_creeper/data/1.trigger",
         "asset:mob/4201.marmalade/data/1.trigger",
-        "asset:mob/4805.masterskeleton/data/1.trigger",
-        "asset:mob/4806.old_shinen/data/1.trigger",
+        "asset:mob/4202.danna/data/1.trigger",
+        "asset:mob/4210.maju/data/1.trigger",
+        "asset:mob/4211.mahyouju/data/1.trigger",
+        "asset:mob/4301.full_color_eye/data/1.trigger",
         "asset:mob/4300.runati-/data/1.trigger",
         "asset:mob/4320.necklace_of_artemis/data/1.trigger",
-        "asset:mob/4202.danna/data/1.trigger",
         "asset:mob/4802.magic_bullet_prince/data/1.trigger",
-        "asset:mob/4101.dracoon/data/1.trigger",
         "asset:mob/4804.spetsnaz/data/1.trigger",
-        "asset:mob/4000.the_old_one/data/1.trigger",
-        "asset:mob/4110.black_hole_generator/data/1.trigger",
-        "asset:mob/4301.full_color_eye/data/1.trigger",
-        "asset:mob/4210.maju/data/1.trigger",
-        "asset:mob/4211.mahyouju/data/1.trigger"
+        "asset:mob/4805.masterskeleton/data/1.trigger",
+        "asset:mob/4806.old_shinen/data/1.trigger"
     ]
 }

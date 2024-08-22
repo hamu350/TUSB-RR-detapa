@@ -1,6 +1,7 @@
 #> tusb_remake:spawner/update/
 # スポナーのentityを置き換え
 
+# SpawnerIdが-1の場合は複数湧き、1以上の場合は単体湧き
 execute if score @s SpawnerId matches -1 run function tusb_remake:spawner/update/multi/
 execute if score @s SpawnerId matches 1.. run function tusb_remake:spawner/update/single/
 
