@@ -21,6 +21,7 @@ function lib:array/session/open
     loot give @s mine 3500 0 3500 debug_stick
 
 # 二回目
+    data remove storage lib: Package
     function lib:array/packing_chest
     data modify block 3500 0 3500 Items set from storage lib: Package
     loot give @s mine 3500 0 3500 debug_stick
