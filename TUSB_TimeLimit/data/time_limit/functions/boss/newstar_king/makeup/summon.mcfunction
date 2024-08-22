@@ -8,7 +8,7 @@ scoreboard players reset Count MakeupTick
 
 #> タイトル表示
 title @a times 10 60 20
-title @a title {"text":"§4§k|§c§k|§4§k|§d§k|§4§k|§r §5§l深淵ノ王 §4§k|§d§k|§4§k|§c§k|§4§k|§r §1§k|§9§k|§1§k|§b§k|§1§k|§r §3§l新星ノ王 §1§k|§b§k|§1§k|§9§k|§1§k|§r"}
+title @a title {"text":"§4§k|§c§k|§4§k|§d§k|§4§k|§r §5§l深淵ノ王§r §6§lRemix§r §4§k|§d§k|§4§k|§c§k|§4§k|§r §1§k|§9§k|§1§k|§b§k|§1§k|§r §3§l新星ノ王 §1§k|§b§k|§1§k|§9§k|§1§k|§r"}
 title @a subtitle {"text":"§4§ka§c§kb§4§ky§d§ks§4§ks§r～時を司りしもの達～§1§ks§9§kt§1§ka§b§kr§1§ks§r","color":"dark_red","bold":true}
 
 #> 音

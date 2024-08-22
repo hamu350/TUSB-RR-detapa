@@ -82,6 +82,10 @@
         "asset:mob/4802.magic_bullet_prince/summon/1.trigger",
         "asset:mob/4804.spetsnaz/summon/1.trigger",
         "asset:mob/4805.masterskeleton/summon/1.trigger",
-        "asset:mob/4806.old_shinen/summon/1.trigger"
+        "asset:mob/4806.old_shinen/summon/1.trigger",
+        "asset:mob/3600.black_rider_remix/summon/1.trigger",
+        "asset:mob/3601.white_rider_remix/summon/1.trigger",
+        "asset:mob/3602.red_rider_remix/data/1.trigger",
+        "asset:mob/3603.pale_rider_remix/summon/1.trigger"
     ]
 }
