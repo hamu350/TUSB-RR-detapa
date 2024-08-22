@@ -14,12 +14,12 @@ scoreboard players operation @s MP = @s MPMax
 ### 最大体力計算 = min(MPMax / 8, 50)
 execute store result storage tusb_remake: _ int 0.125 run scoreboard players get @s MPMax
 execute store result score @s HPMax run data get storage tusb_remake: _
-scoreboard players set @s[scores={HPMax_min=51..}] HPMax 50
+scoreboard players set @s[scores={HPMax_min=101..}] HPMax 100
 
 ### MP回復間隔 = 100 - Level 
 scoreboard players set @s CoolTickSpan -100
 scoreboard players operation @s CoolTickSpan += @s Level
-
+execute if score @s CoolTickSpan matches -50.. run scoreboard players set @s CoolTickSpan -50
 ### MP回復量 = MPMax / 50 + 3
 execute store result storage tusb_remake: _ int 0.02 run scoreboard players get @s MPMax
 execute store result score @s MPIncrement run data get storage tusb_remake: _
@@ -37,8 +37,10 @@ title @s subtitle [{"text":"現在のレベル : ","italic":true},{"score":{"nam
 title @s title {"text":"LEVEL UP ！","color":"green","bold":true}
 
 ### レベル49までと、レベル50になりたての場合、新しいスキル取得メッセージを表示
-execute if entity @s[scores={Level=1..50,NextExp=..349}] run function tusb_remake:player/skill/learn/
-
+execute if entity @s[scores={Level=1..50,NextExp=..249}] run function tusb_remake:player/skill/learn/
+execute if entity @s[scores={Level=51}] run function tusb_remake:player/skill/learn/
+execute if entity @s[scores={Level=75}] run function tusb_remake:player/skill/learn/
+execute if entity @s[scores={Level=100,NextExp=..349}] run function tusb_remake:player/skill/learn/
 ### 次の経験値の設定
 function tusb_remake:player/hp/set_max
 effect give @s instant_health 1 6 true
