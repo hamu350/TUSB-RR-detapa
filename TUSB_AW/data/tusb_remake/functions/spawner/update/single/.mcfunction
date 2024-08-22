@@ -1,9 +1,6 @@
 #> tusb_remake:spawner/update/single
 # 一種類のスポナーの置き換え
 
-# スポナーのデータを取得
-function tusb_remake:spawner/update/get_info/
-
 # idを取得
 execute store result storage asset:context id int 1 run scoreboard players get @s SpawnerId
 # idのmobのdataを取得
@@ -14,8 +11,6 @@ data modify storage asset:context new_spawner set value {SpawnData:{entity:{}},S
 data modify storage asset:context new_spawner.SpawnData.entity set from storage asset: mob
 # SpawnPotentialsが設定されている場合、そこにもmobを突っ込む
 execute if data storage asset:context spawner.SpawnPotentials[0] unless data storage asset:context {spawner:{SpawnPotentials:[{data:{entity:{id:"minecraft:pig"}}}]}} run data modify storage asset:context new_spawner.SpawnPotentials[0].data.entity set from storage asset: mob
-# mobのデータがなければfunctionを中断
-execute unless data storage asset: mob run return 0
 # 取得したデータを適応
-execute if predicate tusb_remake:is_vechicle_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
-execute if entity @s[tag=BlockSpawner] if block ~ ~ ~ spawner unless predicate tusb_remake:is_vechicle_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
+execute if data storage asset: mob if predicate tusb_remake:is_vechicle_spawner on passengers run data modify entity @s {} merge from storage asset:context new_spawner
+execute if data storage asset: mob if entity @s[tag=BlockSpawner] if block ~ ~ ~ spawner unless predicate tusb_remake:is_vechicle_spawner run data modify block ~ ~ ~ {} merge from storage asset:context new_spawner
