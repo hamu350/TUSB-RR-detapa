@@ -54,6 +54,7 @@
         "asset:mob/0374.bumper_storm/summon/1.trigger",
         "asset:mob/0800.curse_omega/summon/1.trigger",
         "asset:mob/0801.farao/summon/1.trigger",
+        "asset:mob/0802.thanatos/summon/1.trigger",
         "asset:mob/0811.black_rider/summon/1.trigger",
         "asset:mob/0812.white_rider/summon/1.trigger",
         "asset:mob/0813.red_rider/summon/1.trigger",
@@ -69,6 +70,7 @@
         "asset:mob/4000.the_old_one/summon/1.trigger",
         "asset:mob/4101.dracoon/summon/1.trigger",
         "asset:mob/4110.black_hole_generator/summon/1.trigger",
+        "asset:mob/4103.dorasama/summon/1.trigger",
         "asset:mob/4200.panic_creeper/summon/1.trigger",
         "asset:mob/4201.marmalade/summon/1.trigger",
         "asset:mob/4202.danna/summon/1.trigger",
@@ -80,7 +82,6 @@
         "asset:mob/4802.magic_bullet_prince/summon/1.trigger",
         "asset:mob/4804.spetsnaz/summon/1.trigger",
         "asset:mob/4805.masterskeleton/summon/1.trigger",
-        "asset:mob/4806.old_shinen/summon/1.trigger",
-        "asset:mob/4103.dorasama/summon/1.trigger"
+        "asset:mob/4806.old_shinen/summon/1.trigger"
     ]
 }

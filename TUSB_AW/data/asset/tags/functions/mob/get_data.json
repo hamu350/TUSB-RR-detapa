@@ -55,6 +55,7 @@
         "asset:mob/0374.bumper_storm/data/1.trigger",
         "asset:mob/0800.curse_omega/data/1.trigger",
         "asset:mob/0801.farao/data/1.trigger",
+        "asset:mob/0802.thanatos/data/1.trigger",
         "asset:mob/0811.black_rider/data/1.trigger",
         "asset:mob/0812.white_rider/data/1.trigger",
         "asset:mob/0813.red_rider/data/1.trigger",
@@ -69,6 +70,7 @@
         "asset:mob/2422.bumper_pufferfish_32/data/1.trigger",
         "asset:mob/4000.the_old_one/data/1.trigger",
         "asset:mob/4101.dracoon/data/1.trigger",
+        "asset:mob/4103.dorasama/data/1.trigger",
         "asset:mob/4110.black_hole_generator/data/1.trigger",
         "asset:mob/4200.panic_creeper/data/1.trigger",
         "asset:mob/4201.marmalade/data/1.trigger",
@@ -81,7 +83,6 @@
         "asset:mob/4802.magic_bullet_prince/data/1.trigger",
         "asset:mob/4804.spetsnaz/data/1.trigger",
         "asset:mob/4805.masterskeleton/data/1.trigger",
-        "asset:mob/4806.old_shinen/data/1.trigger",
-        "asset:mob/4103.dorasama/data/1.trigger"
+        "asset:mob/4806.old_shinen/data/1.trigger"
     ]
 }
