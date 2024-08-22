@@ -7,7 +7,7 @@
         data remove storage asset:context id
         data modify storage asset:context id set from storage _: _.SpawnMob[0].AssetId
         function #asset:mob/get_data
-        data modify storage _: _.SpawnMob.data.entity set from storage asset: mob
+        data modify storage _: _.SpawnMob[0].data.entity set from storage asset: mob
         # データがなければ豚に
             execute unless data storage _: _.SpawnMob[0].data run data modify storage _: _.SpawnMob[0].data.entity.id set value "pig"
     # SpawnPotentialsに移す
