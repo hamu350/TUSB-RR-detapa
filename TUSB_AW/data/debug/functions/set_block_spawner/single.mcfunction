@@ -5,9 +5,9 @@
         data remove storage asset:context id
         data modify storage asset:context id set from storage _: _.SpawnMob[0].AssetId
         # mob asset内で_: _を使うかも知れないので避難させる
-        data modify storage debug: _spawner_block_spawner set from storage _: _
+        data modify storage debug: _set_block_spawner set from storage _: _
         function #asset:mob/get_data
-        data modify storage _: _ set from storage debug: _spawner_block_spawner
+        data modify storage _: _ set from storage debug: _set_block_spawner
         data modify storage _: _.SpawnMob[0].data.entity set from storage asset: mob
         # データがなければ豚に
             execute unless data storage _: _.SpawnMob[0].data run data modify storage _: _.SpawnMob[0].data.entity.id set value "pig"
