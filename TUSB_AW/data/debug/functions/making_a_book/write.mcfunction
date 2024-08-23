@@ -21,9 +21,7 @@ data modify storage _: _.Item.tag.resolved set value 1b
 
 data modify storage making_a_book: _ set value "aaaaaaaaaaaaaaaaaaaaaaaaaa"
 
-data modify storage _: _.Item.tag set value ['{"nbt":"_","storage":"making_a_book:"}']
-
-
+data modify storage _: _.Item.tag.pages set value ['{"nbt":"_","storage":"making_a_book:"}']
 
 data remove storage making_a_book: _
 
