@@ -1,1 +1,0 @@
-data merge entity @e[type=spawner_minecart,limit=1,sort=nearest] {SpawnCount:2}

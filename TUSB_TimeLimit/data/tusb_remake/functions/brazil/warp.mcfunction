@@ -4,8 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ## 職業がないときハローワークに飛ぶ
-clear @s minecraft:white_wool 16
-give @s[scores={Job=..0}] minecraft:white_wool 16
+clear @s minecraft:white_wool 32
+give @s[scores={Job=..0}] minecraft:white_wool 32
 tp @s[scores={Job=..0}] -1786 113 -137 -90 0
 
 ## 職業があるとき通常世界

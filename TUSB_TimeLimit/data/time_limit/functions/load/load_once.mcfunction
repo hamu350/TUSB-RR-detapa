@@ -32,7 +32,7 @@ execute in overworld run forceload add 2 2 2 2
 # チュートリアル建築書き換え
 # これすでにあるもの書き換えてるから看板とか花/種などのアイテムもkillしないといけないだろうねぇー今までと違って
 
-place template time_limit:cloudia/sagyou -2737 70 -392
+
 
 
 
