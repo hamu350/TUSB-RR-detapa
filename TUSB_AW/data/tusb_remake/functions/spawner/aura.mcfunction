@@ -1,4 +1,4 @@
-#> tusb_remake:spawner/aura/
+#> tusb_remake:spawner/aura
 # オーラスポナーの毎tick処理
 
 execute unless predicate tusb_remake:is_aura_spawner run function debug:set_spawner/aura

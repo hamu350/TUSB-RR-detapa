@@ -77,13 +77,19 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 ### 共鳴
-execute as @a if data entity @s Inventory[0] run tag @s add KyoumeiCheak
-# execute as @a unless data entity @s Inventory[0] run tag @s[tag=EmptyInventory] add KyoumeiCheak
+# おのれもやんなのでインベントリが2t空白になったら共鳴をチェックする
+execute as @a unless data entity @s Inventory[0] run tag @s add EmptyInventory
+tag @a[tag=!EmptyInventory] add KyoumeiCheak
+tag @s[tag=EmptyInventory,tag=EmptyInventory2] add KyoumeiCheak
 tag @a[tag=KyoumeiCheak] remove Kyoumei
 execute as @a[tag=KyoumeiCheak] if data entity @s Inventory[{tag:{Kyoumei:true}}] at @s run function tusb_remake:clock/kyoumei/
 tag @a[tag=KyoumeiCheak] remove KyoumeiCheak
 tag @a[tag=EmptyInventory] remove EmptyInventory
-execute as @a unless data entity @s Inventory[0] run tag @s add EmptyInventory
+tag @a[tag=EmptyInventory1] add EmptyInventory2
+tag @a[tag=EmptyInventory] add EmptyInventory1
+tag @a[tag=!EmptyInventory] remove EmptyInventory1
+tag @a[tag=!EmptyInventory] remove EmptyInventory2
 
 ### leap(跳躍妨害)
-execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
+execute at @e[tag=leap] run effect give @a[distance=..7,nbt={ActiveEffects:[{Id:8,Amplifier:0b}]}] jump_boost 10 236
+execute at @e[tag=leap] run effect clear @a[distance=..32,nbt=!{ActiveEffects:[{Id:8,Amplifier:-20b}]}] jump_boost
