@@ -91,5 +91,5 @@ tag @a[tag=!EmptyInventory] remove EmptyInventory1
 tag @a[tag=!EmptyInventory] remove EmptyInventory2
 
 ### leap(跳躍妨害)
-execute at @e[tag=leap] run effect give @a[distance=..7,nbt={ActiveEffects:[{Id:8,Amplifier:0b}]}] jump_boost 10 236
+execute at @e[tag=leap] run effect give @a[distance=..7,nbt={ActiveEffects:[{Id:8,Amplifier:0b}]}] levitation 10 236
 execute at @e[tag=leap] run effect clear @a[distance=..32,nbt=!{ActiveEffects:[{Id:8,Amplifier:-20b}]}] jump_boost
