@@ -1,0 +1,1 @@
+data get entity @e[limit=1,sort=nearest,type=minecraft:spawner_minecart]
