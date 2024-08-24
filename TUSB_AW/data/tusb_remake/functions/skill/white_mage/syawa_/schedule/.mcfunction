@@ -8,4 +8,4 @@ execute as @e[type=snowball,tag=HolyShower] at @s run function tusb_remake:skill
 execute as @a[distance=..12] at @e[type=snowball,tag=HolyShower] run function tusb_remake:player/clear_bad_effect
 execute as @a[distance=..12] at @e[type=snowball,tag=HolyShower] run effect give @s absorption 60 10 true
 execute if data storage tusb_remake: {_:true} in minecraft:overworld run schedule function tusb_remake:skill/white_mage/syawa_/schedule/ 1t
-execute at @e[type=snowball,tag=HolyShower] run scoreboard players set @a[distance=..12] HealCount 60
+execute at @e[type=snowball,tag=HolyShower] run scoreboard players set @a[distance=..12] HealCount 10

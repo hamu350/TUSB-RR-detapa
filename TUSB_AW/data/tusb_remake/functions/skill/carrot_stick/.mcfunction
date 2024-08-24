@@ -6,6 +6,7 @@ execute as @s[scores={CurrentMode=2250..2259}] run function tusb_remake:skill/ni
 execute as @s[scores={CurrentMode=4200..4209}] run function tusb_remake:skill/white_mage/cure/spell
 execute as @s[scores={CurrentMode=4240..4249}] run function tusb_remake:skill/white_mage/tenki/spell
 execute as @s[scores={CurrentMode=4250..4259}] run function tusb_remake:skill/white_mage/syawa_/spell
+execute as @s[scores={CurrentMode=4260..4269}] run function tusb_remake:skill/white_mage/ora/spell
 execute as @s[scores={CurrentMode=5220..5229}] run function tusb_remake:skill/black_mage/thunder_bolt/spell
 execute as @s[scores={CurrentMode=5230..5239}] run function tusb_remake:skill/black_mage/geo_crush/spell
 execute as @s[scores={CurrentMode=5240..5249}] run function tusb_remake:skill/black_mage/drain/spell

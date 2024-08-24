@@ -21,8 +21,9 @@ data modify storage tusb_remake: _.20 set value {name:["ケアル","ケアルⅡ
 data modify storage tusb_remake: _.21 set value {name:["ディア","ディアⅡ","ディアⅢ","ディアⅣ","ディアⅤ"],level:[3,13,23,33,43],cost:10,description:[["敵単体を回復する。"]],condition:"雪玉を投げる"}
 data modify storage tusb_remake: _.22 set value {name:["フラワーギフト","フラワーギフトⅡ","フラワーギフトⅢ"],level:[15,30,45],cost:20,description:[["周囲の敵の戦意を低下させる魔法を放つ。"]],condition:"雪玉を投げる",range:[5]}
 data modify storage tusb_remake: _.23 set value {name:["ホーリー"],level:[50],cost:100,description:[["聖なる力を放ち、周囲の敵にダメージ。","アンデッドには効果が高い。"]],condition:"雪玉を投げる",range:[8]}
-data modify storage tusb_remake: _.24 set value {name:["天気雨"],level:[51],cost:15,description:[["雨の降る場所の周囲にいる味方の体力と魔力を持続的に回復する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[12]}
-data modify storage tusb_remake: _.25 set value {name:["ホーリーシャワー"],level:[100],cost:200,description:[["自身の周囲に聖なる力の雨を降らす。"]],condition:"ニンジン付きの棒を持って右クリック",range:[60]}
+data modify storage tusb_remake: _.24 set value {name:["§b天気雨"],level:[51],cost:15,description:[["雨の降る場所の周囲にいる味方の体力と魔力を持続的に回復する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[12]}
+data modify storage tusb_remake: _.25 set value {name:["§dホーリーシャワー"],level:[100],cost:150,description:[["自身の周囲に聖なる力の雨を降らす。"]],condition:"ニンジン付きの棒を持って右クリック",range:[60]}
+data modify storage tusb_remake: _.26 set value {name:["§dセイクリットオーラ"],level:[100],cost:100,description:[["範囲内の敵5体に大ダメージを与え、味方にバフを付与する"]],condition:"ニンジン付きの棒を持って右クリック",range:[30]}
 
 data modify storage tusb_remake: skill_table.white_mage set from storage tusb_remake: _
 data remove storage tusb_remake: _

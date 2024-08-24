@@ -29,8 +29,8 @@ data modify storage tusb_remake: _.22 set value {name:["サンダーボルト","
 data modify storage tusb_remake: _.23 set value {name:["ジオクラッシュ","ジオクラッシュⅡ","ジオクラッシュⅢ"],level:[15,35,49],cost:20,description:[["周囲に地響きを起こす。"]],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
 data modify storage tusb_remake: _.24 set value {name:["ドレイン","ドレインⅡ"],level:[17,37],cost:25,description:[["付近のアンデッドでない敵単体から体力を吸収する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
 data modify storage tusb_remake: _.25 set value {name:["パルプンテ"],level:[50],cost:100,description:[["何が起こるか分からない。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
-data modify storage tusb_remake: _.26 set value {name:["マジカルドレイン"],level:[75],cost:80,description:[["付近の敵から体力と魔力を吸い取る。"]],condition:"ニンジン付きの棒を持って右クリック"}
-data modify storage tusb_remake: _.27 set value {name:["ライトニングシャワー"],level:[100],cost:200,description:[["周囲の敵に一定時間雷を落とす。雷の近くにいる味方のデバフを解除し体力と魔力を回復する。"]],duration:[20],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
+data modify storage tusb_remake: _.26 set value {name:["§bマジカルドレイン"],level:[75],cost:80,description:[["付近の敵から体力と魔力を吸い取る。"]],condition:"ニンジン付きの棒を持って右クリック"}
+data modify storage tusb_remake: _.27 set value {name:["§dライトニングシャワー"],level:[100],cost:200,description:[["周囲の敵に一定時間雷を落とす。雷の近くにいる味方のデバフを解除し体力と魔力を回復する。"]],duration:[20],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
 
 data modify storage tusb_remake: skill_table.black_mage set from storage tusb_remake: _
 data remove storage tusb_remake: _
