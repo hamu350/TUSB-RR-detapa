@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### ダメージを与える
-data modify storage score_damage: Argument set value {Damage:900.00,DamageType:"Projectile"}
+data modify storage score_damage: Argument set value {Damage:800.00,DamageType:"Projectile"}
 function score_damage:api/attack
 
 execute as @e[distance=..30,type=#tusb_remake:mob,tag=Enemy] at @s run particle witch ~ ~1 ~ 0.2 4 0.2 3 20 force

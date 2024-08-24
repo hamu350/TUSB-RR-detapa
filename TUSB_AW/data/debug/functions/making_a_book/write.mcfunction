@@ -19,10 +19,8 @@ data modify storage _: _.Item.tag.author set value "ここを変える"
 # 
 data modify storage _: _.Item.tag.resolved set value 0b
 
-data modify storage making_a_book: _ set value {text:"aaaaaaaaaaaaaaaaaaaaaaaaaa"}
+data modify storage making_a_book: _ set value "aaaaaaa\\nddddddd"
 
 data modify storage _: _.Item.tag.pages set value ['{"nbt":"_","storage":"making_a_book:"}']
-
-data remove storage making_a_book: _
 
 execute as @s run function debug:making_a_book/
