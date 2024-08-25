@@ -10,3 +10,4 @@ give @s player_head{SkullOwner:"SataYamiumi"} 1
 give @s player_head{SkullOwner:"soba_08222"} 1
 give @s player_head{SkullOwner:"TAKA090"} 1
 give @s player_head{SkullOwner:"mamorukun_neo"} 1
+tellraw @a "TUSB RRを攻略した！！！"
