@@ -79,13 +79,13 @@ execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 ### 共鳴
 # おのれもやんなのでインベントリが2t空白になったら共鳴をチェックする
+tag @a[tag=EmptyInventory] remove EmptyInventory
 execute as @a unless data entity @s Inventory[0] run tag @s add EmptyInventory
 tag @a[tag=!EmptyInventory] add KyoumeiCheak
 tag @s[tag=EmptyInventory,tag=EmptyInventory2] add KyoumeiCheak
 tag @a[tag=KyoumeiCheak] remove Kyoumei
 execute as @a[tag=KyoumeiCheak] if data entity @s Inventory[{tag:{Kyoumei:true}}] at @s run function tusb_remake:clock/kyoumei/
 tag @a[tag=KyoumeiCheak] remove KyoumeiCheak
-tag @a[tag=EmptyInventory] remove EmptyInventory
 tag @a[tag=EmptyInventory1] add EmptyInventory2
 tag @a[tag=EmptyInventory] add EmptyInventory1
 tag @a[tag=!EmptyInventory] remove EmptyInventory1
