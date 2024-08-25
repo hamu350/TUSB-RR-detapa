@@ -96,3 +96,6 @@ execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
 
 # ボスチーム
 execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remake:clock/potion_barrier
+effect give @e[team=Boss] resistance 3 2 true
+effect clear @e[team=Boss] weakness
+effect clear @e[team=Boss] slowness

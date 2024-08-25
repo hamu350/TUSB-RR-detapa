@@ -87,7 +87,5 @@ execute as @a[predicate=time_limit:player] at @s if block ~ ~ ~ #time_limit:unbr
 
 
 
-
-
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
 

@@ -8,7 +8,7 @@ execute if score @s PotentialSkill matches 1220..1229 run function tusb_remake:s
 #手裏剣HIT処理
 execute if score @s PotentialSkill matches 2200..2209 run function tusb_remake:skill/ninja/suriken/hit
 #居縮HIT処理
-execute if score @s PotentialSkill matches 2230..2239 run function tusb_remake:skill/ninja/isukumi/hit
+execute unless entity @s[team=Boss] if score @s PotentialSkill matches 2230..2239 run function tusb_remake:skill/ninja/isukumi/hit
 #チェインアローHIT処理
 execute if score @s PotentialSkill matches 10000..99999 run function tusb_remake:skill/archer/chain_arrow/hit/
 execute if score @s PotentialSkill matches 100000.. run function tusb_remake:skill/archer/madan/hit/

@@ -286,6 +286,8 @@ team modify Yellow color yellow
 team modify Yellow collisionRule never
 team add NoCollision
 team modify NoCollision collisionRule never
+team add Boss
+team modify Boss color red
 
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false
