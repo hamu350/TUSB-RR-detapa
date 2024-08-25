@@ -93,3 +93,6 @@ tag @a[tag=!EmptyInventory] remove EmptyInventory2
 ### leap(跳躍妨害)
 execute at @e[tag=leap] run effect give @a[distance=..7,nbt={ActiveEffects:[{Id:8,Amplifier:0b}]}] levitation 10 236
 execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
+
+# ボスチーム
+execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remake:clock/potion_barrier
