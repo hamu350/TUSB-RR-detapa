@@ -20,4 +20,4 @@ place template time_limit:boss_field/boss_field_under_270 ~-45 ~-45 ~-45 none no
 
 # 王の間スポナー書き換え(ワープ用)
 execute in the_end run setblock -1388 206 9 cobweb
-execute in the_end run summon armor_stand -1388 206 9 {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["Boss_Enter"],DisabledSlots:4144959}
+# execute in the_end run summon armor_stand -1388 206 9 {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["Boss_Enter"],DisabledSlots:4144959}

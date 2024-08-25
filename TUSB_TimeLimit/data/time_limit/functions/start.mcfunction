@@ -16,7 +16,7 @@ data modify entity 25af5ce7-151a-1e8e-82f2-4eee17b4592a Offers.Recipes[16].sell.
 
 # ボス強化onならここでエンドの構造を変えておく
 # どうするかだけ決めておかないと
-execute if score Enhance_Boss Option matches 1 run execute in the_end at @e[type=armor_stand,tag=Boss_Marker] run function time_limit:settings/boss_enhance/field_generate/generate
+# execute if score Enhance_Boss Option matches 1 run execute in the_end at @e[type=armor_stand,tag=Boss_Marker] run function time_limit:settings/boss_enhance/field_generate/generate
 
 # forceload削除
 # タイミングずらさないと多分生成されん

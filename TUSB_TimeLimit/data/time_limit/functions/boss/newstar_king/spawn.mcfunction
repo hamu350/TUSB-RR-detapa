@@ -28,7 +28,7 @@
 # 難易度で補正割合変えるか、、？
 
 # 複数回すぽーんしてもいいように最初にベースの体力を設定しておく
-scoreboard players set $30720 Boss_x 20000
+scoreboard players set $30720 Boss_x 30720
 
 # ファイトフラグをセット
 scoreboard players set Flag FightingBoss 1
