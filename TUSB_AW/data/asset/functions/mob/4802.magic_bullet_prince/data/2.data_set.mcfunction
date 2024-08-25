@@ -28,6 +28,8 @@ data remove storage asset: mob
     # data modify storage asset: mob.Silent set value true
     # 光るか
     # data modify storage asset: mob.Glowing set value true
+    # 重力を持たないか
+    data modify storage asset: mob.NoGravity set value true
     # デスポーンするか(しない)
     data modify storage asset: mob.PersistenceRequired set value true
     # 名前
@@ -38,6 +40,8 @@ data remove storage asset: mob
     data modify storage asset: mob.DeathLootTable set value "usb:entities/ice/mob6"
     # Tags
     data modify storage asset: mob.Tags set value ["SkillMob","akuu","MagicBulletPrince"]
+    # Team
+    data modify storage asset: mob.Team set value Boss
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
     # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
@@ -150,8 +154,8 @@ data remove storage asset: mob
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-    data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+    # data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
+    # data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
     # 或いは...
     # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
