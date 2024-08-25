@@ -46,7 +46,7 @@ data modify storage asset: mob.DeathLootTable set value "empty"
 # 最大体力
 data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:650}
 # (近接)攻撃力
-data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:5}
+data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:50}
 # 移動速度
 data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.25}
 # 防具値
@@ -150,7 +150,7 @@ data modify storage _: _ set from storage asset: mob
 data modify storage _: _.Passengers set value [{}]
 data modify storage _: _.Passengers[0].id set value "minecraft:spawner_minecart"
 data modify storage _: _.Passengers[0].Invulnerable set value true
-data modify storage _: _.Passengers[0] merge value {RequiredPlayerRange:64,Delay:-1,SpawnCount: 1s, MinSpawnDelay:300, MaxSpawnDelay:300}
+data modify storage _: _.Passengers[0] merge value {RequiredPlayerRange:64,Delay:-1,SpawnCount: 1s, MinSpawnDelay:100, MaxSpawnDelay:300}
 function asset:mob/0010.deadra/data/2.data_set
 data modify storage _: _.Passengers[0].SpawnPotentials append value {data:{entity:{}},weight:1}
 data modify storage _: _.Passengers[0].SpawnPotentials[-1].data.entity set from storage asset: mob
