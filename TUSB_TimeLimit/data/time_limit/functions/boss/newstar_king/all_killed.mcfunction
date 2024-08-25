@@ -18,4 +18,6 @@ execute in the_end run kill @e[type=item,nbt={Item:{id:"minecraft:debug_stick",t
 
 # particleとかいるならあとで追加しようそうしよう
 
+# 混沌を示し者
+give @a firework_star{display:{Name:'{"text":"混沌を制し者","color":"dark_purple","bold":true,"italic":false,"underlined":true}',Lore:['{"text":"ありとあらゆる混沌を制したものの証","color":"dark_blue","italic":false}']},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}],Explosion:{Type:0,Colors:[I;6321814],FadeColors:[I;11908533]}} 1
 # playsoundの遅延とか
