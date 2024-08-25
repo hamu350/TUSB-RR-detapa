@@ -1,6 +1,8 @@
 #> tusb_remake:player/death/kyoumei
 # storageに保存したアイテムを取り出す
 
+tag @s remove KyoumeiDeath
+
 # まず個人ストレージを呼び出します
 function oh_my_dat:please
 # セッションも開いておきます
