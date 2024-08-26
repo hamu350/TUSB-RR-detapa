@@ -1,5 +1,7 @@
 #> clock/undying/
 
+tag @s remove UndyingReplace
+
 execute if data entity @s {SelectedItem:{tag:{Undying:true}}} run data modify storage _: _.mainhand set value true
 # execute if data entity @s {Inventory:[{Slot:-106b,tag:{Undying:true}}]} run data modify storage _: _.offhand set value true
 
