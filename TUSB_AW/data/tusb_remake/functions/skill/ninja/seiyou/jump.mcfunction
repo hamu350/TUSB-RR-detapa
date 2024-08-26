@@ -10,6 +10,6 @@ execute if score @s seiyou matches 1..19 run data modify storage score_damage: A
 execute if score @s seiyou matches 20..29 run data modify storage score_damage: Argument set value {Damage:100.00,DamageType:"Projectile"}
 execute if score @s seiyou matches 30.. run data modify storage score_damage: Argument set value {Damage:150.00,DamageType:"Projectile"}
 
-execute if score @s seiyou matches 1..12 as @e[distance=..25,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
-execute if score @s seiyou matches 13..22 as @e[distance=..35,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
-execute if score @s seiyou matches 23.. as @e[distance=..45,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
+execute if score @s seiyou matches 1..12 as @e[distance=..10,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
+execute if score @s seiyou matches 13..22 as @e[distance=..20,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
+execute if score @s seiyou matches 23.. as @e[distance=..30,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
