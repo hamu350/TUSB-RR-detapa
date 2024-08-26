@@ -1,6 +1,8 @@
 #> tusb_remake:spawner/update/
 # スポナーのentityを置き換え
 
+tellraw @a[tag=DebugInfo] {"translate":"function:tusb_remake:spawner/update/single\nId:$s\nPos:","with":[{"score":{"name": "@s","objective": "SpawnerId"}},{"nbt": "Pos","entity": "@s"}]}
+
 # スポナーのデータを取得
 function tusb_remake:spawner/update/get_info/
 
