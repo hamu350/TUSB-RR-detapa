@@ -18,18 +18,6 @@ title @s subtitle {"translate":"                            %1$s Charge!","with"
 title @s title {"text":""}
 
 
-effect give @s[scores={seiyou=1}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=2}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=3}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=4}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=5}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=6}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=7}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=8}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=9}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=10}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=11}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=12}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=13}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=13}] minecraft:instant_damage 3 2
-effect give @s[scores={seiyou=15}] minecraft:instant_damage 3 2
+effect give @s[scores={seiyou=1..5}] minecraft:instant_damage 2 1
+effect give @s[scores={seiyou=6..10}] minecraft:instant_damage 1 2
+effect give @s[scores={seiyou=11..15}] minecraft:instant_damage 1 3
