@@ -6,7 +6,8 @@ function oh_my_dat:please
 
 # なにかが投げられているかを確かめる
 data modify storage _: _.use set value false
-execute anchored eyes positioned ^ ^ ^ if entity @e[distance=..5,tag=!TypeChecked,type=#tusb_remake:projectile] run data modify storage _: _.use set value true
+data modify storage _: _.UUID set from entity @s UUID
+execute as @e[tag=!TypeChecked,type=#tusb_remake:projectile] run function tusb_remake:clock/undying/use/cheak_owner
 # 投げられていたならgive function
 execute if data storage _: {_:{use:true}} run function tusb_remake:clock/undying/use/give
 
