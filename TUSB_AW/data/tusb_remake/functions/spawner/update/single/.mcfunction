@@ -1,7 +1,7 @@
 #> tusb_remake:spawner/update/single
 # 一種類のスポナーの置き換え
 
-tellraw @a[tag=DebugInfo] {"translate":"function:tusb_remake:spawner/update/single\nId:$s\nPos:","with":[{"score":{"name": "@s","objective": "SpawnerId"}},{"nbt": "Pos","entity": "@s"}]}
+tellraw @a[tag=DebugInfo] {"translate":"function:tusb_remake:spawner/update/single\nId:%s\nPos:%s","with":[{"score":{"name": "@s","objective": "SpawnerId"}},{"nbt": "Pos","entity": "@s"}]}
 
 # idを取得
 execute store result storage asset:context id int 1 run scoreboard players get @s SpawnerId
