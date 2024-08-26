@@ -11,7 +11,7 @@ playsound item.trident.riptide_1 master @a[distance=..32] ~ ~ ~ 0.1 1 0
 particle dragon_breath ~ ~1 ~ 1 2 1 1 20 force
 playsound item.totem.use master @a[distance=..32] ~ ~ ~ 0.1 2 0
 playsound entity.lightning_bolt.impact master @a[distance=..32] ~ ~ ~ 0.3 0 0
-effect give @a[distance=..20] haste 30 3 true
+effect give @a[distance=..20] haste 30 2 true
 effect give @a[distance=..20] strength 30 11 true
 execute as @a[distance=..20] run scoreboard players add @s HealCount 10
 execute as @a[distance=..20] run function tusb_remake:player/clear_bad_effect
