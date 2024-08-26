@@ -19,7 +19,7 @@ execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear
 # これ上のclear @sも消さないとだめだなぁ()
 
 
-# AW追加部分
+# RR追加部分
 
 # 共鳴アイテム回収
 execute if entity @s[tag=Kyoumei,predicate=tusb_remake:in_overworld] run function tusb_remake:player/death/kyoumei/

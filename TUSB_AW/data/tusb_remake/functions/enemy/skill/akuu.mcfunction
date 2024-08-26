@@ -1,4 +1,4 @@
-#> TUSB_AW:enemy/skill/akuu
+#> tusb_remake:enemy/skill/akuu
 me は§5§l§n亜空間転移§rを発動した！
 tp @s @p
 effect give @p resistance 1 4

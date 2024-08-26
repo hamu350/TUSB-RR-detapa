@@ -16,7 +16,8 @@ function time_limit:tick/timer
 # enemyタグonlyのほうがいい説はある(1tick後じゃないとうまく実行されない可能性がある)
 # 取引村人は除外、るなちーみたいな騎乗モブもやりたいけどpassengersだと特殊モブ以外も乗ってたら盾つけれないしなぁ、、
 # AWではこのシステムを止めます
-# execute as @e[type=#tusb_remake:mob,tag=!ShieldTried,limit=1] run function time_limit:tick/detect_enemy
+# 一旦RRなので復活(リポジトリ別けろ)
+execute as @e[type=#tusb_remake:mob,tag=!ShieldTried,limit=1] run function time_limit:tick/detect_enemy
 
 # ボスバー色チェン
 function time_limit:tick/bossbar/bossbar_colorcalc
