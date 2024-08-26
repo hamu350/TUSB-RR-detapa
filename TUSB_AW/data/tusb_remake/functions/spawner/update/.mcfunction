@@ -8,7 +8,8 @@ function tusb_remake:spawner/update/get_info/
 
 # SpawnerIdが-1の場合は複数湧き、1以上の場合は単体湧き
 data modify storage tusb_remake: _ set value true
-execute if data storage asset:context {spawner:{SpawnData:{entity:{id:"minecraft:pig"}}}} unless data storage asset:context spawner.SpawnPotentials[0].id run data modify storage tusb_remake: _ set value false
+execute if data storage asset:context {spawner:{SpawnData:{entity:{id:"minecraft:pig"}}}} unless data storage asset:context spawner.SpawnPotentials[0].data.entity.id run data modify storage tusb_remake: _ set value false
+execute if data storage asset:context {spawner:{SpawnData:{entity:{id:"minecraft:pig"}}}} if data storage asset:context {spawner:{SpawnPotentials:[{data:{entity:{id:"minecraft:pig"}}}]}} run data modify storage tusb_remake: _ set value false
 execute if score @s SpawnerId matches -1 if data storage tusb_remake: {_:true} run function tusb_remake:spawner/update/multi/
 execute if score @s SpawnerId matches 1.. if data storage tusb_remake: {_:true} run function tusb_remake:spawner/update/single/
 
