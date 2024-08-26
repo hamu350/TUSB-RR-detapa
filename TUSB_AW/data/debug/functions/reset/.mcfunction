@@ -75,9 +75,9 @@ scoreboard players reset * MPMax
 # scoreboard players reset * RndMWCCarry 
 
 ### ディメンション
-# scoreboard players reset * USBDimension
-# scoreboard players reset * AreaChangeFlag
-# scoreboard players reset * EnderChestOpened
+scoreboard players reset * USBDimension
+scoreboard players reset * AreaChangeFlag
+scoreboard players reset * EnderChestOpened
 
 ### ジョブ
 scoreboard players reset * Job 
