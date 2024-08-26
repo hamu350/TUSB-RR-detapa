@@ -18,6 +18,6 @@ title @s subtitle {"translate":"                            %1$s Charge!","with"
 title @s title {"text":""}
 
 
-effect give @s[scores={seiyou=1..5}] minecraft:instant_damage 2 1
-effect give @s[scores={seiyou=6..10}] minecraft:instant_damage 1 2
-effect give @s[scores={seiyou=11..15}] minecraft:instant_damage 1 3
+effect give @s[scores={seiyou=1..12}] minecraft:instant_damage 1 1
+effect give @s[scores={seiyou=13..22}] minecraft:instant_damage 1 2
+effect give @s[scores={seiyou=23..}] minecraft:instant_damage 1 3
