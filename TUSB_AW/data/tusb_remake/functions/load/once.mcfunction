@@ -316,6 +316,7 @@ worldborder set 7000
 scoreboard objectives setdisplay list Level
 scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
+scoreboard players reset * MP
 
 ### ワールド初期設定
 time set 14000
