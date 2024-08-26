@@ -40,29 +40,29 @@ scoreboard objectives remove Settings
 # scoreboard players set #NetherBossWaitCount Global 36
 
 ### プレイヤー基礎
-scoreboard players reset * LeaveGame
+# scoreboard players reset * LeaveGame
 scoreboard players reset * HP
-scoreboard players reset * HPChanging
-scoreboard players reset * Food
-scoreboard players reset * FoodChanging
-scoreboard players reset * Hunger 
-scoreboard players reset * Armor
+# scoreboard players reset * HPChanging
+# scoreboard players reset * Food
+# scoreboard players reset * FoodChanging
+# scoreboard players reset * Hunger 
+# scoreboard players reset * Armor
 scoreboard players reset * HPMax 
-scoreboard players reset * FoodMax 
+# scoreboard players reset * FoodMax 
 
 # scoreboard players reset * RefreshHPMax
-scoreboard players reset * HealCount 
+# scoreboard players reset * HealCount 
 ## なくせるかも？
 # scoreboard players reset * EventRank 
 
-scoreboard players reset * TutorialRead 
-scoreboard players reset * TutorialReading 
+# scoreboard players reset * TutorialRead 
+# scoreboard players reset * TutorialReading 
 # scoreboard players reset * Drop
 
 ### MP
 scoreboard players reset * MP 
 scoreboard players reset * MPMax 
-scoreboard players reset * MPMaxFlag 
+# scoreboard players reset * MPMaxFlag 
 ### MP回復タイミング
 # scoreboard players reset * CoolTickSpan 
 # scoreboard players reset * CoolTickCounter
@@ -92,34 +92,34 @@ scoreboard players reset * ExpToLevel
 scoreboard players reset * Level 
 
 ### 即時スキル(すぐ効果がでるスキル)
-scoreboard players reset * InstantSkillA 
-scoreboard players reset * InstantCostA 
-scoreboard players reset * InstantChangeA 
-scoreboard players reset * InstantSkillB 
-scoreboard players reset * InstantCostB 
-scoreboard players reset * InstantChangeB 
+# scoreboard players reset * InstantSkillA 
+# scoreboard players reset * InstantCostA 
+# scoreboard players reset * InstantChangeA 
+# scoreboard players reset * InstantSkillB 
+# scoreboard players reset * InstantCostB 
+# scoreboard players reset * InstantChangeB 
 
 ### モードスキル(何かをすると効果がでるモードに変えるスキル)
-scoreboard players reset * ModeSkillA 
-scoreboard players reset * ModeCostA 
-scoreboard players reset * ModeChangeA 
-scoreboard players reset * ModeSkillB 
-scoreboard players reset * ModeCostB 
-scoreboard players reset * ModeChangeB 
-scoreboard players reset * CurrentMode 
-scoreboard players reset * CurrentModeCost 
-scoreboard players reset * ModeState 
+# scoreboard players reset * ModeSkillA 
+# scoreboard players reset * ModeCostA 
+# scoreboard players reset * ModeChangeA 
+# scoreboard players reset * ModeSkillB 
+# scoreboard players reset * ModeCostB 
+# scoreboard players reset * ModeChangeB 
+# scoreboard players reset * CurrentMode 
+# scoreboard players reset * CurrentModeCost 
+# scoreboard players reset * ModeState 
 
 ### スキル全般
-scoreboard players reset * ActivatedSkill 
-scoreboard players reset * ChangeSkill 
-scoreboard players reset * ShowSkill 
-scoreboard players reset * MPCost 
+# scoreboard players reset * ActivatedSkill 
+# scoreboard players reset * ChangeSkill 
+# scoreboard players reset * ShowSkill 
+# scoreboard players reset * MPCost 
 
 ### リスポーン地点変更検知用
-scoreboard players reset * SpawnX
-scoreboard players reset * SpawnY
-scoreboard players reset * SpawnZ
+# scoreboard players reset * SpawnX
+# scoreboard players reset * SpawnY
+# scoreboard players reset * SpawnZ
 
 ### スキルテーブルを初期化
 function tusb_remake:skill/init_table/
