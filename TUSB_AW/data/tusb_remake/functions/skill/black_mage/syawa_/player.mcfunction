@@ -1,3 +1,3 @@
-execute as @a at @e[type=#tusb_remake:mob,distance=..10] run scoreboard players add @s[distance=..10] HealCount 4
+execute as @e[distance=..10,type=#tusb_remake:mob,tag=Enemy,limit=4]scoreboard players add @s[distance=..10] HealCount 2
 
-execute as @a at @e[type=#tusb_remake:mob,distance=..10] run function tusb_remake:player/clear_bad_effect
+execute as @a[distance=..10] run function tusb_remake:player/clear_bad_effect
