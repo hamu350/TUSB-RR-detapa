@@ -13,7 +13,7 @@ scoreboard players operation @s mazikaru *= _ TUSB
 scoreboard players add @s mazikaru 40
 scoreboard players operation @s MP += @s mazikaru
 
-scoreboard players operation @s MP < MaxMP
+scoreboard players operation @s MP < MPMax
 
 scoreboard players set _ TUSB 10
 scoreboard players operation @s mazikaru /= _ TUSB
