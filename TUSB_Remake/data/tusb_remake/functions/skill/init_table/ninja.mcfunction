@@ -21,7 +21,7 @@ data modify storage tusb_remake: _.21 set value {name:["連舞","連舞Ⅱ","連
 data modify storage tusb_remake: _.22 set value {name:["跳躍","跳躍Ⅱ","跳躍Ⅲ"],level:[13,26,39],cost:3,description:[["スニーク時間に応じて跳躍力が上昇する。"]],condition:"スニークする",duration:[3]}
 data modify storage tusb_remake: _.23 set value {name:["居縮","居縮Ⅱ"],level:[28,46],cost:10,description:[["敵単体をすくみ上がらせ、金縛り状態にする。"]],condition:"雪玉を投げる",duration:[5]}
 data modify storage tusb_remake: _.24 set value {name:["サヨナラ"],level:[50],cost:0,description:[["爆発四散し、周囲に残りMPに応じたダメージを与える。","また、残りMPが100以上だった時、レイズの効果を得る。","レイズ：一定時間、（可能であれば、）","リスポーン時に死亡地点へ復帰する。"]],condition:"死亡する"}
-data modify storage tusb_remake: _.25 set value {name:["太素診要"],level:[100],cost:200,description:[["敵を攻撃し体力を回復させる。"]],condition:"ニンジン付きの棒を持って右クリック"}
+data modify storage tusb_remake: _.25 set value {name:["太素診要"],level:[100],cost:200,description:[["敵を継続的に攻撃し周りのプレイヤーの体力を回復させる。"]],condition:"ニンジン付きの棒を持って右クリック"}
 data modify storage tusb_remake: _.26 set value {name:["靖妖儺舞"],level:[100],cost:5,description:[["自身の体力を消耗し、自身が跳躍する度に広範囲にダメージを与える。"]],condition:"スニークする",range:[45]}
 
 
