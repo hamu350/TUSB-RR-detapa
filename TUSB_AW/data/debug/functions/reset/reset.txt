@@ -1,0 +1,4 @@
+まずはdebug:reset/
+プレイヤーデータを消し、level.datからも消し、timeも消し、
+scoreboard.datからteamの参加を消して、
+Settingsも消し、MPも消す
