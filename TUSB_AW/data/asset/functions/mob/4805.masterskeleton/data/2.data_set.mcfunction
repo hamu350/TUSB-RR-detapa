@@ -68,7 +68,7 @@ data modify storage asset: mob.Attributes append value {Name:generic.knockback_r
 
 ### ArmorItems
 # 防具立てを召喚してアイテムを持たせ、そのデータを代入します(座標は常時読み込みチャンク)
-summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}
+summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
 # /lootでloot_tableから装備させるか、/itemで直接持たせます
 # loot replace entity @e[tag=ItemHolder,limit=1] armor.head loot asset:items/silver_unit/silver_banner
 item replace entity @e[tag=ItemHolder,limit=1] armor.chest with golden_chestplate{Unbreakable:true,Enchantments:[{lvl:50s,id:protection},{lvl:10s,id:fire_protection},{lvl:20s,id:fire_protection},{lvl:127s,id:blast_protection},{lvl:2s,id:"thorns"},{lvl:5s,id:aqua_affinity},{lvl:50s,id:unbreaking}]} 1

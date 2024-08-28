@@ -19,7 +19,7 @@ scoreboard players set MaxPortalCount Settings 50
 
 ### シュルカーボックス
 forceload add 3500 3500 3500 3500
-setblock 3500 0 3500 lime_shulker_box
+schedule function tusb_remake:load/set_shulker_box 1t
 
 ### ライブラリ用
 scoreboard objectives add Temporary dummy

@@ -68,7 +68,7 @@ data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"�
 
 ### ArmorItems
 # 防具立てを召喚してアイテムを持たせ、そのデータを代入します(座標は常時読み込みチャンク)
-# summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}
+# summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
 # /lootでloot_tableから装備させるか、/itemで直接持たせます
 # loot replace entity @e[tag=ItemHolder,limit=1] armor.head loot asset:items/silver_unit/silver_banner
 # item replace entity @e[tag=ItemHolder,limit=1] armor.chest with diamond_chestplate{Unbreakable:true} 1

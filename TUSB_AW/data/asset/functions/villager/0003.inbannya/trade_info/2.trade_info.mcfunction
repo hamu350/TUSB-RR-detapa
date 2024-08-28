@@ -4,7 +4,7 @@
 # data remove storage asset: villager
 
 # まずアイテムを持たせる防具立てを召喚します
-summon armor_stand 0.0 0.0 0.0 {Tags:["ItemHolder"]}
+summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
 
 # 交易品となるアイテムを持たせます(Mainhand→buy、Offhand→buyB、Head→sell)
 # item replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand with diamond 5

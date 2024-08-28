@@ -1,0 +1,1 @@
+setblock 3500 0 3500 lime_shulker_box
