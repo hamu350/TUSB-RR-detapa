@@ -1,6 +1,6 @@
 execute at @s store result score @s petto if entity @e[type=#tusb_remake:friendly,distance=..15,limit=10]
 
-scoreboard players set _ TUSB 30
+scoreboard players set _ TUSB 20
 scoreboard players operation @s petto *= _ TUSB
 scoreboard players operation @s MP += @s petto
 
