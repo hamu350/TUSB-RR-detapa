@@ -4,8 +4,8 @@
 # 残っているアイテムホルダーを削除
 kill @e[tag=ItemHolder]
 
-# place template minecraft:sagyou
-#  -2737 70 -392
+place template minecraft:sagyou -2737 70 -392
 
 # forceloadを消す
-forceload remove 0 0 0 0
+execute in overworld run forceload remove 0 0 0 0
+execute in overworld run forceload remove -2727 -374 -2721 -372
