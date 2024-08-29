@@ -37,10 +37,10 @@ title @s subtitle [{"text":"現在のレベル : ","italic":true},{"score":{"nam
 title @s title {"text":"LEVEL UP ！","color":"green","bold":true}
 
 ### レベル49までと、レベル50になりたての場合、新しいスキル取得メッセージを表示
-execute if entity @s[scores={Level=1..50,NextExp=..249}] run function tusb_remake:player/skill/learn/
+execute if entity @s[scores={Level=1..50}] run function tusb_remake:player/skill/learn/
 execute if entity @s[scores={Level=51}] run function tusb_remake:player/skill/learn/
 execute if entity @s[scores={Level=75}] run function tusb_remake:player/skill/learn/
-execute if entity @s[scores={Level=100,NextExp=..349}] run function tusb_remake:player/skill/learn/
+execute if entity @s[scores={Level=100}] run function tusb_remake:player/skill/learn/
 ### 次の経験値の設定
 function tusb_remake:player/hp/set_max
 effect give @s instant_health 1 6 true
