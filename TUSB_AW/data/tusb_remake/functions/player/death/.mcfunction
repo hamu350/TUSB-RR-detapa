@@ -22,8 +22,7 @@ execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear
 # RR追加部分
 
 # 共鳴アイテム回収
-execute if entity @s[tag=Kyoumei,predicate=tusb_remake:in_overworld] run function tusb_remake:player/death/kyoumei/
-execute if entity @s[tag=Kyoumei,predicate=!tusb_remake:in_overworld] run tag @s add KyoumeiDeath
+execute if entity @s[tag=Kyoumei] in overworld run function tusb_remake:player/death/kyoumei/
 
 ### ネザーアスレチック
 execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
