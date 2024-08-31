@@ -13,7 +13,6 @@ execute as @a[scores={PickupPaper=1..}] run scoreboard players operation @s Trad
 execute as @a[scores={TradedVillager=1..}] run function tusb_remake:trade_event/
 
 ### 死亡処理
-execute as @a[tag=KyoumeiDeath] run function tusb_remake:player/death/kyoumei/
 execute as @a[scores={HP=..0,Hunger=..-1}] at @s run function tusb_remake:player/death/
 ### 生き返ったときは満腹度調整処理
 execute as @a[scores={HP=1..,Hunger=0..}] run function tusb_remake:player/apply_hunger
