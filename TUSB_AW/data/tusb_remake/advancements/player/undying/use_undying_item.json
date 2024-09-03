@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item"
+      }
+    },
+    "rewards": {
+      "function": "tusb_remake:undying/use/"
+    }
+  }
+  
