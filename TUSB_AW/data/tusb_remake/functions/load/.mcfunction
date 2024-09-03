@@ -22,3 +22,6 @@ execute in minecraft:overworld run schedule function tusb_remake:load/block_sett
 
 ### １秒タイマーをスケジュール
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
+
+### アップデートを確認
+execute unless data storage tusb_remake: {settings:{version:"1.0.1"}} run function tusb_remake:load/update/
