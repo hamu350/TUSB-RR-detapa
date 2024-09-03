@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "nbt": "{Undying:true}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tusb_remake:undying/use/"
+    }
+  }
+  
