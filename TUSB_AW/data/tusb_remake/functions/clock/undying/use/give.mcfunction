@@ -10,8 +10,10 @@
 
 # 手に持っているアイテムを足元にドロップする
 data remove block 3500 0 3500 Items
-execute unless data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from storage tusb_remake: SelectedItem
-loot spawn ~ ~ ~ mine 3500 0 3500 debug_stick
+execute unless data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from entity @s SelectedItem
+item replace entity @s weapon.mainhand with debug_stick{Clear:true}
+loot give @s mine 3500 0 3500 debug_stick
+clear @s debug_stick{Clear:true}
 
 # 上書き
 data remove block 3500 0 3500 Items

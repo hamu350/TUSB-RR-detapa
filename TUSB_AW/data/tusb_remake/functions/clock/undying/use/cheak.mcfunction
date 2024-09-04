@@ -2,11 +2,11 @@
 
 # 捨てられていないか確かめる。捨てられてなかったら非実行フラグを立てる
 data modify storage tusb_remake: cheak set value false
-execute as @e[tag=!TypeChecked,type=item] run function tusb_remake:clock/undying/use/cheak_owner
+execute as @e[tag=!TypeChecked,type=item] run function tusb_remake:clock/undying/use/cheak_item
 # 同じUUIDのアイテムを持っていたら非実行フラグを立てる
 execute store success score _ TUSB unless data storage tusb_remake: SelectedItem.tag.UUID
 data modify storage tusb_remake: test_array set from entity @s Inventory
-execute if data storage tusb_remake: {cheak:false} run function tusb_remake:clock/undying/use/inventory_cheak
+execute if data storage tusb_remake: {cheak:false} run function tusb_remake:clock/undying/use/cheak_inventory
 # execute if score _ TUSB matches 2.. run data modify storage tusb_remake: cheak set value true
 
 # そしてー、カーソルにあるかどうかも確かめる

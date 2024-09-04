@@ -47,7 +47,7 @@ execute unless data entity @s SelectedItem run data modify storage tusb_remake: 
 execute if data storage tusb_remake: {success:true} run function tusb_remake:clock/undying/use/cheak
 
 # Undyingアイテム保存
-data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying set from entity @s SelectedItem
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying set from entity @s[nbt={SelectedItem:{tag:{Undying:true}}}] SelectedItem
 
 # execute if data entity @s {SelectedItem:{tag:{Undying:true}}} run data modify storage _: _.mainhand set value true
 # execute if data entity @s {Inventory:[{Slot:-106b,tag:{Undying:true}}]} run data modify storage _: _.offhand set value true
