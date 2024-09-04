@@ -5,6 +5,8 @@
 data modify entity 3fb23272-cdf2-44b8-9bd3-8ad4d58dec03 Offers.Recipes[10].sell set value {id: "minecraft:ender_pearl", Count: 2b, tag: {Undying: 1b, display: {Lore: ['{"text":"§r§5奈落より生まれた、虚無の終玉"}', '{"text":"§r§5その手から離されようが、その手を離れることはない"}', '{"text":"§r§5とても不安定なため、片割れを失うと消滅する"}', '{"text":"§r§5利き手のみ対応"}'], Name: '{"text":"無限終玉","color":"#8000FF","bold":true,"italic":false,"underlined":true}'}, Enchantments: [{lvl: 10s, id: "minecraft:infinity"}]}}
 # 無限雪玉もアップデート
 data modify entity 3fb23272-cdf2-44b8-9bd3-8ad4d58dec03 Offers.Recipes[11].sell set value {id: "minecraft:snowball", Count: 2b, tag: {Undying: 1b, display: {Lore: ['{"text":"§r§f氷結世界より生まれた、無限の雪玉"}', '{"text":"§r§fその手から離されようが、その手を離れることはない"}', '{"text":"§r§fとても不安定なため、片割れを失うと消滅する"}', '{"text":"§r§f利き手のみ対応"}'], Name: '{"text":"無限雪玉","color":"#FFFFFF","bold":true,"italic":false,"underlined":true}'}, Enchantments: [{lvl: 10s, id: "minecraft:infinity"}]}}
+# 無限終玉についての研究を追加
+# data modify entity 3fb23272-cdf2-44b8-9bd3-8ad4d58dec03 Offers.Recipes append value {sell:{id:written_book,tag:{display:{Name:'{"text":"無限終玉についての研究"}'},title:"",author:"",pages:['{"translate":""}']}}}
 
 # コマンドを実行したい範囲をforceload
 execute in overworld run forceload add 0 0 0 0

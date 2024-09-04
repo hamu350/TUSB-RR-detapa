@@ -1,9 +1,31 @@
-#> clock/undying/use/cheak
+#> tusb_remake:clock/undying/use/give
 
-execute in overworld run data remove block 3500 0 3500 Items
-execute in overworld run data modify block 3500 0 3500 Items append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].UndyingItem
+# UUIDを付与し、削除、登録
+# data modify storage tusb_remake: test_array set from storage tusb_remake: undying_uuid
+# data modify storage tusb_remake: undying_uuid set value []
+# function tusb_remake:clock/undying/use/remove_uuid
+# function tusb_remake:clock/undying/use/set_uuid
+# data modify storage tusb_remake: undying_uuid append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying.tag.UUID
 
-# give
+
+# 手に持っているアイテムを足元にドロップする
+data remove block 3500 0 3500 Items
+execute unless data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from storage tusb_remake: SelectedItem
+loot spawn ~ ~ ~ mine 3500 0 3500 debug_stick
+
+# 上書き
+data remove block 3500 0 3500 Items
+data modify block 3500 0 3500 Items append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying
 item replace entity @s weapon.mainhand from block 3500 0 3500 container.0
 
-tag @s add UndyingReplace
+
+
+
+
+# execute in overworld run data remove block 3500 0 3500 Items
+# execute in overworld run data modify block 3500 0 3500 Items append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].UndyingItem
+
+# give
+# item replace entity @s weapon.mainhand from block 3500 0 3500 container.0
+
+# tag @s add UndyingReplace

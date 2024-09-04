@@ -19,9 +19,10 @@ execute as @e[type=item_frame,tag=MagicBlock] at @s run function tusb_remake:ski
 ### 不滅
 # TypeCheckedされると不都合なのでここ
 # 使用しても消えないようになるエンチャント
-execute as @a[tag=UndyingItem] at @s run function tusb_remake:clock/undying/
-tag @a[tag=UndyingItem,tag=!UndyingReplace] remove UndyingItem
-tag @a[nbt={SelectedItem:{tag:{Undying:true}}}] add UndyingItem
+tag @a[nbt={SelectedItem:{tag:{Undying:true}}}] add Undying
+execute as @a[tag=Undying] at @s unless predicate tusb_remake:open_container run function tusb_remake:clock/undying/
+tag @a[tag=Undying] remove Undying
+tag @a[nbt={SelectedItem:{tag:{Undying:true}}}] add Undying
 
 # タイプ設定 新しくでてきた敵に色々設定するやつ
 execute as @e[type=!#tusb_remake:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function tusb_remake:entity/type_check

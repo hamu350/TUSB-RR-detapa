@@ -32,7 +32,7 @@ execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_s
 
 # CWスキル
 ### 亜空間転移
-execute if entity @s[tag=akuu] MobCastTime matches 0..6 run function tusb_remake:enemy/skill/akuu
+execute if score @s[tag=akuu] MobCastTime matches 0..4 run function tusb_remake:enemy/skill/akuu
 # RiderR
     execute if entity @s[tag=BlackRiderR] run function tusb_remake:enemy/skill/remix_rider/black_rider_remix/
     execute if entity @s[tag=WhiteRiderR] run function tusb_remake:enemy/skill/remix_rider/white_rider_remix/
