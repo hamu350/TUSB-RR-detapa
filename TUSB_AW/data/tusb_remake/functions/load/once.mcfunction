@@ -18,7 +18,9 @@ scoreboard players set Difficulty Settings 0
 scoreboard players set MaxPortalCount Settings 50
 
 ### シュルカーボックス
-forceload add 3500 3500 3500 3500
+execute in overworld run forceload add 3500 3500 3500 3500
+execute in the_nether run forceload add 3500 3500 3500 3500
+execute in the_end run forceload add 3500 3500 3500 3500
 schedule function tusb_remake:load/set_shulker_box 1t
 
 ### ライブラリ用

@@ -9,6 +9,9 @@ data modify entity 3fb23272-cdf2-44b8-9bd3-8ad4d58dec03 Offers.Recipes[11].sell 
 # コマンドを実行したい範囲をforceload
 execute in overworld run forceload add 0 0 0 0
 execute in overworld run forceload add -2727 -374 -2721 -372
+# シュルカーボックスも追加
+execute in the_nether run forceload add 3500 3500 3500 3500
+execute in the_end run forceload add 3500 3500 3500 3500
 
 # forceloadが適応された状態で実行
 schedule function tusb_remake:load/update/1.0.1/schedule 1t
