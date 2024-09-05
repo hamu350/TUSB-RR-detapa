@@ -12,9 +12,10 @@
 data remove block 3500 0 3500 Items
 execute unless data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from entity @s SelectedItem
 item replace entity @s weapon.mainhand with debug_stick{Clear:true}
-loot give @s mine 3500 0 3500 debug_stick
-execute anchored eyes positioned ^ ^ ^ as @e[tag=!TypeChecked,type=item,distance=..0.1] run tp @s @p
-execute as @e[tag=!TypeChecked,type=item,distance=..0.1] run data modify entity @s {} merge value {Motion:[0.0,0.0,0.0],NoGravity:true,Glowing:true,PickupDelay:0}
+function tusb_remake:clock/undying/use/get_slot
+execute if score $Slot TUSB matches 1..35 run loot give @s mine 3500 0 3500 debug_stick
+execute if score $Slot TUSB matches 36.. run loot spawn ~ ~ ~ mine 3500 0 3500 debug_stick
+execute if score $Slot TUSB matches 36.. run data modify entity @e[limit=1,sort=nearest,tag=!TypeChecked,type=item] {} merge value {NoGravity:true,Motion:[0.0,0.0,0.0],Fire:2s}
 clear @s debug_stick{Clear:true}
 
 # 上書き

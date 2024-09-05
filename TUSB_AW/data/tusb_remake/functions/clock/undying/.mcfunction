@@ -33,21 +33,12 @@ data modify storage tusb_remake: SelectedItem set from entity @s SelectedItem
 # 入手時にUUIDを割り当てる
 execute if data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} unless data storage tusb_remake: SelectedItem.tag.UUID run function tusb_remake:clock/undying/first
 
-### 使用していたらfunctionを実行、スロットが変わっていたらしない
-# まずtest用functionに移す
-data modify storage tusb_remake: test set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying
-# 同じ内容で上書きはできないという仕様を利用して中身が変わったかを検知
-execute store success storage tusb_remake: success byte 1 run data modify storage tusb_remake: test set from storage tusb_remake: SelectedItem
-# こちらも同じ方法でスロットが変わっているかを調べる
-execute store success storage tusb_remake: success_b byte 1 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying_slot set from entity @s SelectedItemSlot
-# スロット変わってたら使用フラグを折る
-execute if data storage tusb_remake: {success_b:true} run data modify storage tusb_remake: success set value false
-# スロットが空なら使用フラグを立てる
-execute unless data entity @s SelectedItem run data modify storage tusb_remake: success set value true
-execute if data storage tusb_remake: {success:true} run function tusb_remake:clock/undying/use/cheak
+# Undyingを持っていたのならtestを実行
+execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying run function tusb_remake:clock/undying/test
 
 # Undyingアイテム保存
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying set from entity @s[nbt={SelectedItem:{tag:{Undying:true}}}] SelectedItem
+execute unless data entity @s SelectedItem.tag{Undying:true} run data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying
 
 # execute if data entity @s {SelectedItem:{tag:{Undying:true}}} run data modify storage _: _.mainhand set value true
 # execute if data entity @s {Inventory:[{Slot:-106b,tag:{Undying:true}}]} run data modify storage _: _.offhand set value true
