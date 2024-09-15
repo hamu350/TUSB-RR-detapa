@@ -35,9 +35,6 @@
         data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
-# スポナーから湧かせるための設定をします
-    data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
-
 ### Attributes
     # 最大体力
         data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
@@ -152,5 +149,7 @@
         data modify storage asset: mob set from storage _: _
         data remove storage _: _
 
+# スポナーから湧かせるための設定をします
+    data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
 
 # 全て完了！お疲れ様でした！
