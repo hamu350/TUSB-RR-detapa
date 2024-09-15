@@ -136,27 +136,17 @@ function #asset:mob/get_data
 
 
 ### Passengers
-# 一番面倒です
-# まず、mobデータを避難させます
-data modify storage _: _ set from storage asset: mob
-# 次に、乗せたいmobがasset mobの場合dataを呼び出します
-# 0001.the_white
-# data modify storage asset:context id set value 1
-# function #asset:mob/get_data
-# 呼び出したdataを避難させたdataのPassengersに追加します
-# data modify storage _: _.Passengers append from storage asset: mob
-# 最後にmobデータを戻す...といきたいところですが、他にも乗せたいmobがいる場合はこのまま続けます
-# 次のmobのためにmobデータを一度破棄します
-# data remove storage asset: mob
-# 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
-# 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
-data modify storage asset: mob.id set value "bat"
-data modify storage asset: mob.Health set value 100
-data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
-# スポナーから湧かせるための設定をします
+# 鋭角のデータを取得
+# 2202.eikaku
+data modify storage asset:context id set value 2202
+function #asset:mob/get_data
+# コウモリを作る
+data modify storage _: _.id set value "bat"
+data modify storage _: _.Health set value 100
+data modify storage _: _.Attributes append value {Name:generic.armor, Base:20}
+data modify storage _: _.Attributes append value {Name:generic.max_health, Base:100}
+# スポナーから湧かせるための設定
 data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
-data modify storage _: _.Passengers append from storage asset: mob
-# 最後に、mobデータを戻して避難用storageを削除します
-data modify storage asset: mob set from storage _: _
+# 乗せる
+data modify storage asset: mob.Passengers append from storage _: _
 data remove storage _: _
