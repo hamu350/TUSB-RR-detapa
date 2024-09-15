@@ -76,7 +76,7 @@ item replace entity @e[tag=ItemHolder,limit=1] armor.legs with leather_leggings{
 item replace entity @e[tag=ItemHolder,limit=1] armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}],display:{color:16772608}} 1
 # 手にも持たせます
 # 防具と同様に/lootか/itemで
-item replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand with bow{display:{Name:'{"text":"sharpbow","color":"yellow","bold":true}'},Enchantments:[{id:"minecraft:power",lvl:35s}]} 1
+item replace entity @e[tag=ItemHolder,limit=1] weapon.mainhand with bow{display:{Name:'{"text":"sharpbow","color":"yellow","bold":true}'},Enchantments:[{id:"minecraft:power",lvl:30s}]} 1
 # item replace entity @e[tag=ItemHolder,limit=1] weapon.offhand with shield{Damage:256} 1
 # 最後に、防具立ての防具のnbtと持っているアイテムのnbtをstorageに移し、killします
 data modify storage asset: mob.ArmorItems set from entity @e[tag=ItemHolder,limit=1] ArmorItems
