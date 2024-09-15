@@ -44,7 +44,7 @@ data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{mi
 
 ### Attributes
 # 最大体力
-# data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
+data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:450}
 # (近接)攻撃力
 # data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
 # 移動速度

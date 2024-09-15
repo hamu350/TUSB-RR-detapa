@@ -146,5 +146,6 @@ data modify storage _: _.Attributes append value {Name:generic.max_health, Base:
 # スポナーから湧かせるための設定
 data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
 # 乗せる
-data modify storage asset: mob.Passengers append from storage _: _
+data modify storage _: _.Passengers append from storage asset: mob
+data modify storage asset: mob set from storage _: _
 data remove storage _: _
