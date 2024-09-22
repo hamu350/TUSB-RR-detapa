@@ -31,9 +31,6 @@ execute if score #SecCount Global matches 61.. run function tusb_remake:clock/mi
 execute as @e[tag=FlyingObject,nbt=!{inGround:true,OnGround:true}] at @s run function tusb_remake:entity/check_projectile
 execute as @e[tag=InKasap] at @s run function tusb_remake:entity/check_kasap
 
-### くもの巣を設置してくる害悪
-execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:cobweb keep
-
 ### Freeze/Melt 居縮とかの
 execute as @e[tag=Freeze,nbt={PortalCooldown:0}] run function tusb_remake:clock/sec3
 

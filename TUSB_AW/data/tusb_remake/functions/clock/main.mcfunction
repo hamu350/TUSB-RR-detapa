@@ -99,3 +99,6 @@ execute at @e[team=Boss] as @e[type=potion,distance=..3] run function tusb_remak
 effect give @e[team=Boss] resistance 3 2 true
 effect clear @e[team=Boss] weakness
 effect clear @e[team=Boss] slowness
+
+### くもの巣を設置してくる害悪
+execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:cobweb keep
