@@ -59,6 +59,13 @@ tag @s[type=#tusb_remake:slimey,nbt=!{AbsorptionAmount:0f}] add FromSpawner
 
 # summon skeleton ~ ~ ~ {ArmorDropChances:[-1E40F,-1E40F,-1E40F,-1E40F],HandDropChances:[-1E40F,-1E40F]}
 
+### mob fix
+# バンパーストーム
+data modify storage tusb_remake: CustomName set from entity @s CustomName
+execute if data entity @s {CustomName:'{"text":"バンパーストーム"}'} run function tusb_remake:entity/mob_fix/bumper_storm
+execute if data entity @s {CustomName:'{"text":"ﾅﾋﾞｹﾞｰﾄ"}'} run function tusb_remake:entity/mob_fix/navigate
+execute if data entity @s {CustomName:'{"text":"鋼鉄の剣士"}'} run function tusb_remake:entity/mob_fix/steel_knight
+
 ### チェック済みにする
 tag @s add TypeChecked
 
