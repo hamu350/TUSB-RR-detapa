@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ## 職業がないときハローワークに飛ぶ
-clear @s[scores={Level=..1}] minecraft:white_wool 32
+clear @s[scores={MaxMP=..101}] minecraft:white_wool
 give @s[scores={Job=..0}] minecraft:white_wool 32
 tp @s[scores={Job=..0}] -1786 113 -137 -90 0
 
