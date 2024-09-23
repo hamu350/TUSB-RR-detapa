@@ -2,6 +2,8 @@
 
 # この予感が発動すると時計島のタイマーが起動する
 
+execute store result score _ TUSB run data get storage tusb_remake: conquer.count.total
+
 execute if score _ TUSB matches 11.. run me 「時計が鳴り響いている！」
 execute if score _ TUSB matches ..10 run me なんともなかったー...。
 # タイマーセット 
