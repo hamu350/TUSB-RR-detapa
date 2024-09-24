@@ -10,6 +10,6 @@
 ### スポナーの場合
 execute if entity @s[tag=SpawnerStand] run function tusb_remake:armor_stand/spawner
 ### スポナー以外の場合
-execute if entity @s[tag=!SpawnerStand] run function tusb_remake:armor_stand/sign
+execute if entity @s[tag=!SpawnerStand,tag=!PersonalLocker] run function tusb_remake:armor_stand/sign
 ### 個人ロッカー
 execute if entity @s[tag=PersonalLocker] run function tusb_remake:armor_stand/personal_locker

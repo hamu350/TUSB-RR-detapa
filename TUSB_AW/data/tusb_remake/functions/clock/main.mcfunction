@@ -102,3 +102,6 @@ effect clear @e[team=Boss] slowness
 
 ### くもの巣を設置してくる害悪
 execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:cobweb keep
+
+### 個人ロッカー(印板)
+execute as @e[tag=PersonalLockerSign] at @s run function tusb_remake:clock/personal_locker_sign
