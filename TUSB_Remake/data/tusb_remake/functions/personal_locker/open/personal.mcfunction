@@ -13,8 +13,8 @@ execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].TUSB.Pe
 scoreboard players set _ TUSB 0
 ### もしも制圧済みのポータルの上だったら、個人ロッカーを有効化
 execute if block ~ ~-1 ~ minecraft:end_portal_frame[eye=true] run function tusb_remake:personal_locker/open/activate
-### サモンエンチェスで呼び出されたものだったとしても個人ロッカーを有効化
-execute align xyz if entity @e[dx=0,tag=MagicBlock] run function tusb_remake:personal_locker/open/activate
+### サモンエンチェスや印板で呼び出されたものだったとしても個人ロッカーを有効化
+execute align xyz if entity @e[dx=0,tag=PersonalLocker] run function tusb_remake:personal_locker/open/activate
 ### テーブルマウンテンなら無効化
 execute if predicate tusb_remake:area/table_mountain run scoreboard players set _ TUSB 0
 

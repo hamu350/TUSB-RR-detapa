@@ -5,6 +5,6 @@
 
 setblock ~ ~ ~ minecraft:ender_chest keep
 
-execute if block ~ ~ ~ ender_chest run summon minecraft:item_frame ~ ~ ~ {Fixed:true,Invulnerable:true,Invisible:true,Facing:1b,Tags:[MagicBlock,MagicEnderChest,PreMagicBlock,SystemEntity,TypeChecked]}
+execute if block ~ ~ ~ ender_chest run summon minecraft:item_frame ~ ~ ~ {Fixed:true,Invulnerable:true,Invisible:true,Facing:1b,Tags:[MagicBlock,MagicEnderChest,PreMagicBlock,SystemEntity,TypeChecked,ParsonalLocker]}
 
 execute unless block ~ ~ ~ ender_chest positioned ~-0.5 ~1 ~-0.5 if entity @s[dx=0] positioned ~0.5 ~ ~0.5 run function tusb_remake:skill/summoner/summon_ender_chest/place
