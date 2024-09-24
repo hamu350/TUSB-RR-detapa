@@ -26,10 +26,14 @@ function tusb_remake:load/update/1.0.1/update_room
 # 煉獄報酬修正
 data modify block 0 4 -29 Items[4] set value {id: "minecraft:ender_pearl", Slot:4b, Count: 2b, tag: {Undying: 1b, display: {Lore: ['{"text":"§r§5奈落より生まれた、虚無の終玉"}', '{"text":"§r§5何度投げようとも、この終玉は虚無から現れる"}', '{"text":"§r§5利き手のみ対応"}'], Name: '{"text":"無限終玉","color":"#8000FF","bold":true,"italic":false,"underlined":true}'}, Enchantments: [{lvl: 10s, id: "minecraft:infinity"}]}}
 
+# 土塊に個人ロッカー設置の印板
+loot replace block -25 4 12 container.14 loot asset:item/instant/sign/personal_locker
+
 # forceloadを消す
 execute in overworld run forceload remove 0 0 0 0
 execute in overworld run forceload remove -2727 -374 -2721 -372
 execute in overworld run forceload remove 0 -29 0 -29
+execute in overworld run forceload remove -25 12 -25 12
 
 # 通知
 tellraw @a {"translate": "§4§l[Update-Program]ver1.0.1へのアップデートが完了しました"}
