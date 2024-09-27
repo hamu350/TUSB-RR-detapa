@@ -41,6 +41,10 @@
         data modify block 39 6 67 Items[{slot:18b}] set value {Slot: 18b, id: "minecraft:sugar_cane", Count: 1b, tag: {RepairCost: 1000000000, Legacy: 1b, display: {Name: '{"text":"かつての脅威"}'}, Enchantments: [{lvl: 80s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}, {lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 20s, id: "minecraft:knockback"}]}}
         data modify block 39 6 67 Items[{slot:26b}] set value {Slot: 26b, id: "minecraft:sugar_cane", Count: 1b, tag: {RepairCost: 1000000000, Legacy: 1b, display: {Name: '{"text":"かつての脅威"}'}, Enchantments: [{lvl: 80s, id: "minecraft:sharpness"}, {lvl: 10s, id: "minecraft:smite"}, {lvl: 10s, id: "minecraft:bane_of_arthropods"}, {lvl: 20s, id: "minecraft:knockback"}]}}
 
+# スポナー修正
+    # 溶岩ボトルのダイフンカ
+        data modify entity 8d3fe0d7-f005-4906-adc8-02b736c787ce SpawnRange set value 10
+
 # forceloadを消す
     execute in overworld run forceload remove 0 0 0 0
     execute in overworld run forceload remove -2727 -374 -2721 -372
@@ -48,6 +52,7 @@
     execute in overworld run forceload remove -25 12 -25 12
     execute in overworld run forceload remove 154 -136 154 -136
     execute in overworld run forceload remove 39 67 39 67
+    execute in overworld run forceload remove 93 38 93 38
 
 # 通知
     tellraw @a {"translate": "§4§l[Update-Program]ver1.0.1へのアップデートが完了しました"}
