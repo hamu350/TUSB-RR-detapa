@@ -65,6 +65,8 @@
         "asset:mob/0822.void_witch/data/1.trigger",
         "asset:mob/0890.buri/data/1.trigger",
         "asset:mob/0898.shinen/data/1.trigger",
+        "asset:mob/2000.hunter/data/2.data_set",
+        "asset:mob/2001.hugukawa/data/2.data_set",
         "asset:mob/2200.donkaku/data/1.trigger",
         "asset:mob/2201.donkakubat/data/1.trigger",
         "asset:mob/2202.eikaku/data/1.trigger",
