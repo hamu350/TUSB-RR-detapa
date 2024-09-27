@@ -6,6 +6,8 @@ execute in overworld run forceload add 0 0 0 0
 execute in overworld run forceload add -2727 -374 -2721 -372
 execute in overworld run forceload add 0 -29 0 -29
 execute in overworld run forceload add -25 12 -25 12
+execute in overworld run forceload add 154 -136 154 -136
+execute in overworld run forceload add 39 67 39 67
 # シュルカーボックスも追加
 execute in the_nether run forceload add 3500 3500 3500 3500
 execute in the_end run forceload add 3500 3500 3500 3500
