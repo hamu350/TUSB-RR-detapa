@@ -17,7 +17,7 @@
     kill @e[tag=ItemHolder]
 
 # 超作業台を更新
-    place template tusb_remake:super_crafting_table -2737 70 -392
+    place template time_limit:cloudia/sagyou -2737 70 -392
 
 # シュルカーボックス配置
     execute in the_nether run setblock 3500 0 3500 lime_shulker_box
@@ -49,7 +49,7 @@
 
 # ブロック修正
     # 煉獄商のとこのエンドポータル
-        setblock -1935 119 -29 minecraft:end_portal_frame[eye=true]
+        execute in the_nether run setblock -1935 119 -29 minecraft:end_portal_frame[eye=true]
 
 # forceloadを消す
     execute in overworld run forceload remove 0 0 0 0
