@@ -277,6 +277,7 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 
 ### チーム
 team add FriendlyTeam
+team modify FriendlyTeam color red
 team modify FriendlyTeam friendlyFire false
 team modify FriendlyTeam seeFriendlyInvisibles true
 team modify FriendlyTeam collisionRule never
