@@ -17,7 +17,7 @@ tag @s remove ReRaise
 
 ## 転送メッセージ
 tellraw @s {"text":"[エージェント] それじゃあ送ろウ。達者でナ。"}
-give @s minecraft:white_wool 32
+give @s minecraft:white_wool 16
 
 ## 職業島にTP
 execute in minecraft:overworld run tp @s -1786 113 -137 -90 0
