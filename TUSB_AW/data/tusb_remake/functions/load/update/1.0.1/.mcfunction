@@ -15,6 +15,9 @@ execute in the_nether run forceload add -1935 -29 -1935 -29
 execute in the_nether run forceload add 3500 3500 3500 3500
 execute in the_end run forceload add 3500 3500 3500 3500
 
+# init_table
+function tusb_remake:skill/init_table/
+
 # forceloadが適応された状態で実行
 schedule function tusb_remake:load/update/1.0.1/schedule 1t
 
