@@ -3,7 +3,7 @@
 
 # コマンドを実行したい範囲をforceload
 execute in overworld run forceload add 0 0 0 0
-execute in overworld run forceload add -2727 -374 -2721 -372
+execute in overworld run forceload add -2721 -400 -2752 -353
 execute in the_nether run forceload add 0 -29 0 -29
 execute in overworld run forceload add -25 12 -25 12
 execute in overworld run forceload add 154 -136 154 -136
