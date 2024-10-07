@@ -53,7 +53,7 @@
 
 # forceloadを消す
     execute in overworld run forceload remove 0 0 0 0
-    execute in overworld run forceload remove -2727 -374 -2721 -372
+    execute in overworld run forceload remove -2721 -400 -2752 -353
     execute in the_nether run forceload remove 0 -29 0 -29
     execute in overworld run forceload remove -25 12 -25 12
     execute in overworld run forceload remove 154 -136 154 -136
