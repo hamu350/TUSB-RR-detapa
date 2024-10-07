@@ -3,7 +3,8 @@ fill -1905 3 -97 -1921 19 -109 iron_block hollow
 fill -1906 4 -98 -1920 18 -108 light[level=15]
 
 # 入口ゲート
-fill -2740 90 -382 -2740 90 -383 minecraft:end_gateway
+fill -2740 90 -382 -2740 90 -383 air
+fill -2740 90 -382 -2740 90 -383 minecraft:end_gateway{ExactTeleport:1b,ExitPortal:{X:-1906,Y:4,Z:-106}}
 # 文字
 summon text_display -2740.0 91.30 -382.0 {text:'[{"text":"Sys","color":"white","obfuscated":true},{"text":" Update Room ","color":"gold","obfuscated":false},{"text":"Sys","color":"white","obfuscated":true}]',Rotation:[-90f,0f]}
 # 帰還ゲート

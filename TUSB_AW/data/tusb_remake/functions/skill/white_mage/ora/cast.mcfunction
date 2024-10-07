@@ -12,6 +12,6 @@ execute if score @s ActivatedSkill matches 4260..4269 run data modify storage sc
 
 execute as @e[distance=..30,sort=nearest,limit=5,type=#tusb_remake:mob,tag=Enemy] at @s run function score_damage:api/attack
 execute as @s at @s run effect give @a[distance=..30] haste 30 3
-execute as @s at @s run effect give @a[distance=..30] regeneration 30 4
+execute as @s at @s run effect give @a[distance=..30] regeneration 30 3
 execute as @a[distance=..30] at @s run function tusb_remake:player/clear_bad_effect
 execute as @a[distance=..30] at @s run scoreboard players add @s HealCount 30
