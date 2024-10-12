@@ -7,7 +7,6 @@
 execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true} 0
 execute unless data storage tusb_remake: {_:0} at @s run function tusb_remake:job/change/
 execute unless data storage tusb_remake: {_:0} at @s run clear @s white_wool 16
-execute unless data storage tusb_remake: {_:0} at @s run clear @s
 
 ### 釣りチケットを入手した時
 execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{FishingGame:true} 0
