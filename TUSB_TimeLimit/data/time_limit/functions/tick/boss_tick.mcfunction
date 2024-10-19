@@ -54,3 +54,7 @@ execute in the_end as @e[type=zombie,tag=NewStar_King,nbt={Invulnerable:true}] i
 
 # 深淵ノ王 killされたら
 execute if score Flag FightingBoss matches 1 in the_end if entity @e[type=item,nbt={Item:{id:"minecraft:debug_stick",tag:{Shinen:1b}}}] run function time_limit:boss/newstar_king/all_killed
+
+# ルクスリアで回復しないようにkill
+execute at @e[tag=Abyss_King] run kill @e[type=area_effect_cloud,name="Luxuria",distance=..5]
+execute at @e[tag=NewStar_King] run kill @e[type=area_effect_cloud,name="Luxuria",distance=..5]
