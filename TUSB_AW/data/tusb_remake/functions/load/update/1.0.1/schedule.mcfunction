@@ -63,4 +63,4 @@
     execute in the_nether run forceload remove -1935 -29 -1935 -29
 
 # 通知
-    tellraw @a {"translate": "§4§l[Update-Program]ver1.0.1へのアップデートが完了しました"}
+    tellraw @a {"translate": "§f§l[Update-Program]ver1.0.1へのアップデートが完了しました"}
