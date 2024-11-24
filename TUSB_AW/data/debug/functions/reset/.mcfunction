@@ -251,3 +251,7 @@ scoreboard players reset * RadarVision
 # scoreboard players reset * TargetCheck 
 scoreboard players reset * ProjectileSkill 
 scoreboard players reset * PotentialSkill 
+
+### ハードコアモード
+scoreboard players reset * hcmode
+data remove storage tusb_remake: settings.hardcore

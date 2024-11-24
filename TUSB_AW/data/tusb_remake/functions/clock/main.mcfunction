@@ -105,3 +105,9 @@ execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 
 ### 個人ロッカー(印板)
 execute as @e[tag=PersonalLockerSign] at @s run function tusb_remake:clock/personal_locker_sign
+
+### ハードコアモード拒否
+execute as @a at @s run function tusb_remake:tick/player_tick
+
+### ハードコアモード
+execute if data storage tusb_remake: settings{hardcore:true}
