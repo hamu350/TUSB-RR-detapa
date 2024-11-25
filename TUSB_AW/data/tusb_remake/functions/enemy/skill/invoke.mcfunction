@@ -40,7 +40,7 @@ execute if score @s[tag=akuu] MobCastTime matches 0..4 run function tusb_remake:
     execute if entity @s[tag=PaleRiderR] run function tusb_remake:enemy/skill/remix_rider/pale_rider_remix/
 
 ### infinity_boss
-execute if entity @s[tag=infinity_boss] run function tusb_remake:enemy/skill/infinity_boss/
+execute if entity @s[tag=InfinityBoss] run function tusb_remake:enemy/skill/infinity_boss/
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得

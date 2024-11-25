@@ -6,11 +6,11 @@
     data remove storage asset: mob
 
 ### idを設定
-    data modify storage asset: mob.id set value "skeleton"
+    data modify storage asset: mob.id set value "wither_skeleton"
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 20
+        data modify storage asset: mob.Health set value 1000
     # 緩衝体力
         # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っているか(trueで持たない
@@ -31,19 +31,21 @@
         # data modify storage asset: mob.DeathLootTable set value "empty"
     # Tags
         data modify storage asset: mob.Tags set value [SkillMob,InfinityBoss]
+    # Team
+        data modify storage asset: mob.Team set value Boss
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:100}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:1000}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:40}
     # 移動速度
-        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.2}
+        data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.3}
     # 防具値
-        data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:20}
+        data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:-6}
     # 防具強度
         # data modify storage asset: mob.Attributes append value {Name:generic.armor_toughness, Base:12}
     # ノックバック耐性(0~1)
@@ -65,18 +67,18 @@
         data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
     # 武器
         # メインハンド
-            # data modify storage asset: mob.HandItems[0] set value 
+            data modify storage asset: mob.HandItems[0] set value {id:"reinforced_deepslate",Count:1b}
         # オフハンド
-            # data modify storage asset: mob.HandItems[1] set value 
+            data modify storage asset: mob.HandItems[1] set value {id:"reinforced_deepslate",Count:1b}
     # 防具
         # 頭
-            # data modify storage asset: mob.ArmorItems[3] set value 
+            data modify storage asset: mob.ArmorItems[3] set value {id:"crying_obsidian",Count:1b}
         # 胴
-            # data modify storage asset: mob.ArmorItems[2] set value 
+            data modify storage asset: mob.ArmorItems[2] set value {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:1968686}}}
         # 脚
-            # data modify storage asset: mob.ArmorItems[1] set value 
+            data modify storage asset: mob.ArmorItems[1] set value {id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:3018831}}}
         # 足
-            # data modify storage asset: mob.ArmorItems[0] set value 
+            data modify storage asset: mob.ArmorItems[0] set value {id:"minecraft:leather_boots",Count:1b,tag:{display:{color:5446525}}}
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胸,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
@@ -119,12 +121,15 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    # data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
+    data modify storage asset: mob.ActiveEffects append value {Id:14,Amplifier:127,Duration:2147483647,ShowParticles:0b}
     # data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
     # 或いは...
     # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
     # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+
+# AEC
+    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,Duration:28,Effects:[{Id:11,Amplifier:3b,Duration:10,ShowParticles:0b}]}]
 
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
