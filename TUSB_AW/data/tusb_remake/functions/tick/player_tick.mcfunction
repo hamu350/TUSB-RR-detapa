@@ -3,3 +3,7 @@
 execute if score @s hcmode matches 1 run function tusb_remake:hcmode/no
 
 execute if score @s hcmode matches 1 run scoreboard players reset @s hcmode
+
+execute if score @s tlmode matches 1 run function tusb_remake:tlmode/no
+
+execute if score @s tlmode matches 1 run scoreboard players reset @s tlmode

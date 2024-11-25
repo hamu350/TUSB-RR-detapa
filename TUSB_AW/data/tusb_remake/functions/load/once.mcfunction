@@ -278,6 +278,10 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 ### ハードコアモード
 scoreboard objectives add hcmode trigger
 
+### タイムリミットモード
+scoreboard objectives add tlmode trigger
+
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam color red
