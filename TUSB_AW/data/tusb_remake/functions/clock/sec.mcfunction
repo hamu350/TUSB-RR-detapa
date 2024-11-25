@@ -44,9 +44,9 @@ execute as @e[tag=SkillMob] at @s run function tusb_remake:enemy/skill/
 execute as @a[predicate=tusb_remake:area/skyland,tag=CauseEvent] at @s if score #SecCount Global matches 0.. run function tusb_remake:event/rank/
 
 ## トカルトの処理
-execute as @a[predicate=tusb_remake:area/tocult_colde,gamemode=!spectator] at @s run function tusb_remake:tocult_process/
-execute as @a[predicate=!tusb_remake:area/tocult_colde,gamemode=!spectator] at @s if entity @e[tag=TocultArea,distance=..32] run function tusb_remake:tocult_process/
-execute if data storage tusb_remake: settings{toculting:true} as @a[predicate=!tusb_remake:area/tocult_colde,gamemode=!spectator] at @s unless entity @e[tag=TocultArea,distance=..32] run function tusb_remake:tocult_process/
+execute unless data storage tusb_remake: settings{toculting:true} as @a[predicate=tusb_remake:area/tocult_colde,gamemode=!spectator] at @s run function tusb_remake:tocult_process/
+execute unless data storage tusb_remake: settings{toculting:true} as @a[predicate=!tusb_remake:area/tocult_colde,gamemode=!spectator] at @s if entity @e[tag=TocultArea,distance=..32] run function tusb_remake:tocult_process/
+execute if data storage tusb_remake: settings{toculting:true} as @a[predicate=!tusb_remake:area/table_mountain,predicate=!tusb_remake:area/nether_trail,gamemode=!spectator] at @s run function tusb_remake:tocult_process/
 
 ## TLEエンカウント処理
 execute as @a[predicate=time_limit:encountarea,predicate=time_limit:player] at @s run function time_limit:encount/
