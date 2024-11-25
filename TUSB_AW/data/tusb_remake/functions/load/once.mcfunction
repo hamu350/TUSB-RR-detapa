@@ -281,6 +281,8 @@ scoreboard objectives add hcmode trigger
 ### タイムリミットモード
 scoreboard objectives add tlmode trigger
 
+### トカルトモード
+scoreboard objectives add isfmode trigger
 
 ### チーム
 team add FriendlyTeam
