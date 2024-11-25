@@ -93,6 +93,7 @@
         "asset:mob/3600.black_rider_remix/summon/1.trigger",
         "asset:mob/3601.white_rider_remix/summon/1.trigger",
         "asset:mob/3602.red_rider_remix/data/1.trigger",
-        "asset:mob/3603.pale_rider_remix/summon/1.trigger"
+        "asset:mob/3603.pale_rider_remix/summon/1.trigger",
+        "asset:mob/3604.infinity_boss/summon/1.trigger"
     ]
 }
