@@ -77,7 +77,25 @@
         {
             "//": "攻略率によって変わらない部分",
             "rolls": 5,
-            "entries": []
+            "entries": [
+                {
+                    "//": "weightは合計10000",
+                    "type": "empty",
+                    "weight": 9960
+                },
+                {
+                    "rarity": "SSR:0.2%",
+                    "type": "loot_table",
+                    "name": "asset:item/helditem/offhand/ib",
+                    "weight": 20
+                },
+                {
+                    "rarity": "SSR:0.2%",
+                    "type": "loot_table",
+                    "name": "asset:item/potion/drink/i_ll_be_unhuman",
+                    "weight": 20
+                }
+            ]
         }
     ]
 }
