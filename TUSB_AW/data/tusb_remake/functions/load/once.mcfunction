@@ -290,9 +290,6 @@ scoreboard objectives add isfmode trigger
 ### インフィニティボスメイクアップ
 scoreboard objectives add MakeupTickB dummy
 
-### インフィニティボス対プレイヤー人数
-scoreboard objectives add infinity_boss.headcount dummy
-
 ### インフィニティボス報酬の数
 scoreboard objectives add infinity_boss.reward dummy
 

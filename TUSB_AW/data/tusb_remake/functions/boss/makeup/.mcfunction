@@ -10,7 +10,21 @@ scoreboard players add Count MakeupTickB 1
 data modify storage tusb_remake: infinity_boss.battle set value true
 
 # ボスボタン除去
-fill -2769 224 -280 -2769 225 -280 air
+setblock -2769 225 -280 air
+setblock -2769 224 -280 air
+
+# 帰還看板除去
+setblock -2764 224 -280 air
+
+# 報酬量設定
+scoreboard players reset _ infinity_boss.reward
+function tusb_remake:random/update
+scoreboard players set _ TUSB 6
+scoreboard players operation @s Random %= _ TUSB
+scoreboard players operation _ infinity_boss.reward *= _ Random
+execute store result score _ TUSB if entity @a
+scoreboard players operation _ infinity_boss.reward *= _ TUSB
+scoreboard players add _ infinity_boss.reward 5
 
 # これasは全dim探索するけどatはどうなのかわからないから検証する必要あり
 
@@ -58,5 +72,5 @@ execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTick
 execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s positioned ~ ~1 ~ if score Count MakeupTickB matches 302..342 run function tusb_remake:boss/makeup/particle1
 
 #> summon
-execute positioned ~ ~1 ~ as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 343.. run function tusb_remake:boss/makeup/summon
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s positioned ~ ~1 ~ if score Count MakeupTickB matches 343.. run function tusb_remake:boss/makeup/summon
 execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches ..343 run schedule function tusb_remake:boss/makeup/ 1t

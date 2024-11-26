@@ -5,5 +5,5 @@
 #
 
 #> メッセージとカウント設定
-execute as @a[distance=..15] run tellraw @s [{"translate":"最終決戦を前に、%1$sはきたるべき戦いに備えた。","color":"#ff0000","bold":true,"obfuscated":false,"with":[{"selector":"@a[distance=..32]"}]}]
+execute as @a[distance=..15] run tellraw @s [{"translate":"%1$sはきたるべき戦いに備えた。","color":"#ff0000","bold":true,"obfuscated":false,"with":[{"selector":"@a[distance=..32]"}]}]
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CountDown set value 10
