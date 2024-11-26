@@ -6,7 +6,7 @@
 
 #> 20Tick毎に表示するカウントダウンを作成
     title @a[distance=..15] times 0 20 0
-    title @a[distance=..15] title [{"storage":"oh_my_dat:","nbt":"_[-4][-4][-4][-4][-4][-4][-4][-4].CountDown","color":"#8c01fe","bold":true}]
+    title @a[distance=..15] title [{"storage":"oh_my_dat:","nbt":"_[-4][-4][-4][-4][-4][-4][-4][-4].CountDown","color":"#ff0000","bold":true}]
     execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CountDown int 0.99999 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CountDown
 #> 演出
     playsound minecraft:block.conduit.deactivate hostile @a[distance=..16] ~ ~ ~ 0.5 0.15

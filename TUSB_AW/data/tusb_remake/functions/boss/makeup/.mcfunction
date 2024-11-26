@@ -1,4 +1,4 @@
-#> time_limit:boss/newstar_king/makeup/
+#> tusb_remake:boss/makeup/
 #
 #> 羊を倒すとここが実行される感じ
 #>
@@ -10,49 +10,47 @@ scoreboard players add Count MakeupTickB 1
 
 # schedule loopしてるからexecute as atが消えてて指定した座標で実行できていない
 
-execute if score Count MakeupTickB matches 1 run function time_limit:boss/newstar_king/makeup/kill
-
 #> 最初の演出
-execute if score Count MakeupTickB matches 2 run function time_limit:boss/newstar_king/makeup/sound1
-execute if score Count MakeupTickB matches 2 run function time_limit:boss/newstar_king/makeup/message1
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 2 run function tusb_remake:boss/makeup/sound1
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 2 run function tusb_remake:boss/makeup/message1
 
 #> メッセージ2
-execute if score Count MakeupTickB matches 82 run function time_limit:boss/newstar_king/makeup/message2
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 82 run function tusb_remake:boss/makeup/message2
 
 #> 10
-execute if score Count MakeupTickB matches 102 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 102 run function tusb_remake:boss/makeup/countdown
 
 #> 9
-execute if score Count MakeupTickB matches 122 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 122 run function tusb_remake:boss/makeup/countdown
 
 #> 8
-execute if score Count MakeupTickB matches 142 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 142 run function tusb_remake:boss/makeup/countdown
 
 #> 7
-execute if score Count MakeupTickB matches 162 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 162 run function tusb_remake:boss/makeup/countdown
 
 #> 6
-execute if score Count MakeupTickB matches 182 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 182 run function tusb_remake:boss/makeup/countdown
 
 #> 5
-execute if score Count MakeupTickB matches 202 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 202 run function tusb_remake:boss/makeup/countdown
 
 #> 4
-execute if score Count MakeupTickB matches 222 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 222 run function tusb_remake:boss/makeup/countdown
 
 #> 3
-execute if score Count MakeupTickB matches 242 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 242 run function tusb_remake:boss/makeup/countdown
 
 #> 2
-execute if score Count MakeupTickB matches 262 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 262 run function tusb_remake:boss/makeup/countdown
 
 #> 1
-execute if score Count MakeupTickB matches 282 run function time_limit:boss/newstar_king/makeup/countdown
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 282 run function tusb_remake:boss/makeup/countdown
 
 #> 魔法陣出現
-execute if score Count MakeupTickB matches 302 run function time_limit:boss/newstar_king/makeup/sound2
-execute positioned ~ ~1 ~ if score Count MakeupTickB matches 302..342 run function time_limit:boss/newstar_king/makeup/particle1
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 302 run function tusb_remake:boss/makeup/sound2
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s positioned ~ ~1 ~ if score Count MakeupTickB matches 302..342 run function tusb_remake:boss/makeup/particle1
 
 #> summon
-execute positioned ~ ~1 ~ if score Count MakeupTickB matches 343.. run function time_limit:boss/newstar_king/makeup/summon
-execute if score Count MakeupTickB matches ..343 run schedule function time_limit:boss/newstar_king/makeup/ 1t
+execute positioned ~ ~1 ~ as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches 343.. run function tusb_remake:boss/makeup/summon
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s if score Count MakeupTickB matches ..343 run schedule function tusb_remake:boss/makeup/ 1t

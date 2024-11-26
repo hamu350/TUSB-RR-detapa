@@ -84,6 +84,6 @@ data modify storage tusb_remake: infinity_boss.chastB.Items[12].tag.UUID set fro
 
 
 #チェストにぶちこみ
-data modify block -1911 113 -131 Items set from storage tusb_remake: infinity_boss.chast.Items
+data modify block -2712 74 -378 Items set from storage tusb_remake: infinity_boss.chast.Items
 
-data modify block -1912 113 -131 Items set from storage tusb_remake: infinity_boss.chastB.Items
+data modify block -2712 74 -379 Items set from storage tusb_remake: infinity_boss.chastB.Items

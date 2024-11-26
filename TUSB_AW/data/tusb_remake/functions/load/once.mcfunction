@@ -284,6 +284,9 @@ scoreboard objectives add tlmode trigger
 ### トカルトモード
 scoreboard objectives add isfmode trigger
 
+### インフィニティボスメイクアップ
+scoreboard objectives add MakeupTickB dummy
+
 
 ### チーム
 team add FriendlyTeam

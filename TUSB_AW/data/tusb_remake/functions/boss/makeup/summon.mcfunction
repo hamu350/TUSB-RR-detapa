@@ -58,4 +58,4 @@ title @a subtitle {"text":"§0- §5§k|||§r§5混沌ヲ§4制シ者§5§k|||§r
     execute summon lightning_bolt run tp @s ~-4 3000 ~
     execute summon lightning_bolt run tp @s ~ 3000 ~-4
 #> この下でspawn funciton実行すればいい感じになるんじゃないですか( ᐛ)
-execute positioned 0.0 0.0 0.0 run function tusb_remake:boss/spawn
+execute run function tusb_remake:boss/spawn

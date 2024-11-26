@@ -1,0 +1,7 @@
+#> main:b
+#
+give @p poppy{Enchantments:[{lvl:1,id:"minecraft:protection"}],HideFlags:1,display:{Lore:['{"text":"§eまだ幼いので、難しい字が読めない。"}'],Name:'{"text":"§4§l「I b」"}'},AttributeModifiers:[{UUID:[I;0,2,0,1],Amount:5,Slot:"offhand",AttributeName:"generic.max_health",Operation:0,Name:"generic.max_Health"},{UUID:[I;0,2,0,2],Amount:0.5d,Slot:"offhand",AttributeName:"generic.knockback_resistance",Operation:0,Name:"generic.knockback_Resistance"},{UUID:[I;0,2,0,3],Amount:4,Slot:"offhand",AttributeName:"generic.attack_damage",Operation:1,Name:"generic.attack_Damage"}]}
+
+give @p blue_orchid{Enchantments:[{lvl:1,id:"minecraft:protection"}],HideFlags:1,display:{Lore:['{"text":"§e一緒にいると、イヴが読めない字を読んでくれる。"}'],Name:'{"text":"§1§l「Garry」"}'},AttributeModifiers:[{UUID:[I;0,2,0,1],Amount:10,Slot:"offhand",AttributeName:"generic.max_health",Operation:0,Name:"generic.max_Health"},{UUID:[I;0,2,0,2],Amount:0.1d,Slot:"offhand",AttributeName:"generic.knockback_resistance",Operation:0,Name:"generic.knockback_Resistance"},{UUID:[I;0,2,0,3],Amount:5,Slot:"offhand",AttributeName:"generic.attack_damage",Operation:1,Name:"generic.attack_Damage"}]}
+
+give @p dandelion{Enchantments:[{lvl:1,id:"minecraft:protection"}],HideFlags:1,display:{Lore:['{"text":"§4§lバ イ バ イ メ ア リ ー"}'],Name:'{"text":"§e§l「Mary」"}'},AttributeModifiers:[{UUID:[I;0,2,0,1],Amount:0.05d,Slot:"offhand",AttributeName:"generic.movement_speed",Operation:0,Name:"generic.movement_Speed"},{UUID:[I;0,2,0,2],Amount:6,Slot:"offhand",AttributeName:"generic.attack_damage",Operation:1,Name:"generic.attack_Damage"}]}
