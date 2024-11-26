@@ -1,3 +1,3 @@
 #> main:b
 #
-give @p potion{CustomPotionEffects:[{ShowParticles:0b,Duration:400,Id:5b,Amplifier:5b},{ShowParticles:0b,Duration:400,Id:1b,Amplifier:5b},{ShowParticles:0b,Duration:1,Id:6b,Amplifier:5b},{ShowParticles:0b,Duration:400,Id:11b,Amplifier:1b},{ShowParticles:0b,Duration:400,Id:4b,Amplifier:7b},{ShowParticles:0b,Duration:400,Id:22b,Amplifier:3b},{ShowParticles:0b,Duration:400,Id:24b,Amplifier:0b},{ShowParticles:0b,Duration:400,Id:23b,Amplifier:10b},{ShowParticles:0b,Duration:400,Id:10b,Amplifier:2b},{ShowParticles:0b,Duration:400,Id:8b,Amplifier:3b},{ShowParticles:1b,Duration:1,Id:25b,Amplifier:127b},{ShowParticles:1b,Duration:1,Id:16b,Amplifier:87b}],HideFlags:32,display:{Name:'{"text":"§b§l禁忌・§e§l俺は人間をやめるぞっ!"}'}}
+
