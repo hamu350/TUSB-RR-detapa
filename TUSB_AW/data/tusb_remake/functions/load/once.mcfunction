@@ -23,6 +23,9 @@ execute in the_nether run forceload add 3500 3500 3500 3500
 execute in the_end run forceload add 3500 3500 3500 3500
 schedule function tusb_remake:load/set_shulker_box 1t
 
+# インフィニティボス報酬
+forceload add -2721 105 -2721 105
+
 ### ライブラリ用
 scoreboard objectives add Temporary dummy
 scoreboard objectives add Const dummy
@@ -287,6 +290,11 @@ scoreboard objectives add isfmode trigger
 ### インフィニティボスメイクアップ
 scoreboard objectives add MakeupTickB dummy
 
+### インフィニティボス対プレイヤー人数
+scoreboard objectives add infinity_boss.headcount dummy
+
+### インフィニティボス報酬の数
+scoreboard objectives add infinity_boss.reward dummy
 
 ### チーム
 team add FriendlyTeam

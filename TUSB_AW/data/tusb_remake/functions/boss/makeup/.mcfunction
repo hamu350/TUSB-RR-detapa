@@ -6,6 +6,12 @@
 #> 実行順：sound1+message1⇒message2+CountDown⇒particle1+sound2⇒summon
 scoreboard players add Count MakeupTickB 1
 
+# ボス部屋封鎖
+data modify storage tusb_remake: infinity_boss.battle set value true
+
+# ボスボタン除去
+fill -2769 224 -280 -2769 225 -280 air
+
 # これasは全dim探索するけどatはどうなのかわからないから検証する必要あり
 
 # schedule loopしてるからexecute as atが消えてて指定した座標で実行できていない

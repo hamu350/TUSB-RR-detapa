@@ -138,7 +138,7 @@
                 {
                     "rarity": "SR:0.5%",
                     "type": "loot_table",
-                    "name": "原初釣り竿",
+                    "name": "asset:item/tool/fishing_rod/primordial_fishing_rod",
                     "weight": 5
                 },
                 {
