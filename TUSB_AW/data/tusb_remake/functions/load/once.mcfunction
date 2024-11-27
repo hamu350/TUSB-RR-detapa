@@ -113,6 +113,8 @@ scoreboard objectives add PickupPaper minecraft.picked_up:minecraft.paper
 ### 経験値
 scoreboard objectives add NextExp dummy "必要経験値"
 scoreboard objectives add ExpToLevel dummy "次のレベルアップまでの経験値"
+### RR追加 合計経験値量
+scoreboard objectives add TotalXp dummy "合計経験値量"
 
 ### 各ジョブのレベルと残り経験値
 scoreboard objectives add Level dummy "レベル"

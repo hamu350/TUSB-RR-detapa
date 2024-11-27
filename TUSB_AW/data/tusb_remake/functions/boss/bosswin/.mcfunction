@@ -4,9 +4,6 @@
 # プレイヤーを勝利させない
 schedule clear tusb_remake:boss/schedule
 
-### InfinityBossBattle解除
-tag @a remove InfinityBossBattle
-
 # ボスは消える
 kill @e[tag=InfinityBoss]
 
