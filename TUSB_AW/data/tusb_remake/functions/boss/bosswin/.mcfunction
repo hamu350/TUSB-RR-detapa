@@ -4,6 +4,14 @@
 # プレイヤーを勝利させない
 schedule clear tusb_remake:boss/schedule
 
+# 敵、アイテム削除
+execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[tag=Enemy,distance=..25]
+execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[type=item,distance=..25]
+
+# タグ外し
+tag @a remove InfinityBossBattle
+
+
 # ボスは消える
 kill @e[tag=InfinityBoss]
 
@@ -15,4 +23,4 @@ setblock -2769 223 -280 command_block[facing=up]{auto: 0b, powered: 0b, LastExec
 setblock -2769 225 -280 minecraft:lever[face=floor,facing=west]
 
 # 帰還看板配置
-setblock -2764 224 -280 minecraft:warped_sign[rotation=4]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"/function tusb_remake:area/conquer/infinity_boss/boss_area"}}',Text2:'{"text":"\\u5e30\\u9084","bold":true,"color":"#FFFFFF"}',Text3:'{"text":"\\u203b\\u30a2\\u30a4\\u30c6\\u30e0\\u306f","bold":true,"color":"red"}',Text4:'{"text":"\\u6301\\u3061\\u5e30\\u308c\\u307e\\u305b\\u3093","bold":true,"color":"red"}'}
+setblock -2764 224 -280 minecraft:warped_sign[rotation=4]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"/function tusb_remake:sign_event/infinity_boss/boss_area"}}',Text2:'{"text":"\\u5e30\\u9084","bold":true,"color":"#FFFFFF"}',Text3:'{"text":"\\u203b\\u30a2\\u30a4\\u30c6\\u30e0\\u306f","bold":true,"color":"red"}',Text4:'{"text":"\\u6301\\u3061\\u5e30\\u308c\\u307e\\u305b\\u3093","bold":true,"color":"red"}'}

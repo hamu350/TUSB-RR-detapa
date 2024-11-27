@@ -1,8 +1,9 @@
 #> tusb_remake:boss/tagremove
 # ボス戦中に離脱してボス戦が終わったころに入った人に実行
 
-# InfinityBossBattle解除
+# タグ消し
 tag @s remove InfinityBossBattle
+tag @s remove InfinityBossArea
 
 # 待機部屋に転送
 tp @s -2709 74 -379

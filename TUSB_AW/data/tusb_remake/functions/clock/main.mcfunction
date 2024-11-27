@@ -109,3 +109,4 @@ execute as @e[tag=PersonalLockerSign] at @s run function tusb_remake:clock/perso
 ### オプションモード拒否
 execute as @a at @s run function tusb_remake:tick/player_tick
 
+execute as @a[tag=!InfinityBossArea,tag=!InfinityBossBattle] at @e[type=armor_stand,tag=Boss_MarkerB] if entity @s[distance=..30] run function tusb_remake:boss/barrier

@@ -9,6 +9,9 @@ scoreboard players add Count MakeupTickB 1
 # ボス部屋封鎖
 data modify storage tusb_remake: infinity_boss.battle set value 1b
 
+# タグ付け
+execute as @e[type=armor_stand,tag=Boss_MarkerB] at @s run tag @a[distance=..20] add InfinityBossBattle
+
 # ボスボタン除去
 setblock -2769 225 -280 air
 setblock -2769 223 -280 air
