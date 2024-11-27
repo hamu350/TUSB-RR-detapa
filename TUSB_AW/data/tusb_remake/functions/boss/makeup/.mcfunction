@@ -18,13 +18,9 @@ setblock -2764 224 -280 air
 
 # 報酬量設定
 scoreboard players reset _ infinity_boss.reward
-function tusb_remake:random/update
-scoreboard players set _ TUSB 6
-scoreboard players operation @s Random %= _ TUSB
-scoreboard players operation _ infinity_boss.reward *= _ Random
 execute store result score _ TUSB if entity @a
 scoreboard players operation _ infinity_boss.reward *= _ TUSB
-scoreboard players add _ infinity_boss.reward 5
+
 
 # これasは全dim探索するけどatはどうなのかわからないから検証する必要あり
 
