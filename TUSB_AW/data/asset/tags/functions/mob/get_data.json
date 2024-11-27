@@ -97,6 +97,13 @@
         "asset:mob/3601.white_rider_remix/data/1.trigger",
         "asset:mob/3602.red_rider_remix/data/1.trigger",
         "asset:mob/3603.pale_rider_remix/data/1.trigger",
-        "asset:mob/3604.infinity_boss/data/1.trigger"
+        "asset:mob/3604.infinity_boss/data/1.trigger",
+        "asset:mob/4001.angel_shielder/data/1.trigger",
+        "asset:mob/4106.heaven_slayer/data/1.trigger",
+        "asset:mob/4107.heaven_archer/data/1.trigger",
+        "asset:mob/4108.angel_summoner/data/1.trigger",
+        "asset:mob/4109.angel_soldier/data/1.trigger",
+        "asset:mob/4203.heaven_mage/data/1.trigger",
+        "asset:mob/4302.angel_eye/data/1.trigger"
     ]
 }
