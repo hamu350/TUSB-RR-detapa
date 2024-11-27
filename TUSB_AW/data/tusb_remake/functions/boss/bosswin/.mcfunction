@@ -1,5 +1,2 @@
 #> tusb_remake:boss/bosswin/
-#
-# 
-#
-# @within function tusb_remake:boss/schedule
+# ボスが勝利した時実行

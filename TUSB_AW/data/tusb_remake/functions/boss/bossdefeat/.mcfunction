@@ -1,4 +1,5 @@
 #> tusb_remake:boss/bossdefeat/
+# ボスが敗北した時実行
 
 # ボス部屋解放
 data modify storage tusb_remake: infinity_boss.battle set value false
