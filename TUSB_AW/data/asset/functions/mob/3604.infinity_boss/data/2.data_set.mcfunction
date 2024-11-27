@@ -72,7 +72,7 @@
             data modify storage asset: mob.HandItems[1] set value {id:"reinforced_deepslate",Count:1b}
     # 防具
         # 頭
-            data modify storage asset: mob.ArmorItems[3] set value {id:"crying_obsidian",Count:1b}
+            data modify storage asset: mob.ArmorItems[3] set value {id:"crying_obsidian",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:20}]}}
         # 胴
             data modify storage asset: mob.ArmorItems[2] set value {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:1968686}}}
         # 脚
