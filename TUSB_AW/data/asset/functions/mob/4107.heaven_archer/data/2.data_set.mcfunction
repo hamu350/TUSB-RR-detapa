@@ -131,3 +131,6 @@
         # 詳しくはwiki見てね！
         # 効果時間を-1に設定すると無限になる
     # data modify storage asset: mob.Active_effects append value {id: "minecraft:speed", amplifier: 1b, duration: -1, show_icon: 1b,show_particles: 1b}
+
+# スポナーから湧かせるための設定をします
+    data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

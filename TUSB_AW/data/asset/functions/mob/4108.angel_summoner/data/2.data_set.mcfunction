@@ -131,3 +131,19 @@
 
 # スポナー
     data modify storage asset: mob.Passengers set value [{id:"spawner_minecart",SpawnCount:1,SpawnRange:16,RequiredPlayerRange:32,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:800,MaxSpawnDelay:1600,SpawnPotentials:[{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4302}}]}}}],Invulnerable:true},{id:"spawner_minecart",SpawnCount:1,SpawnRange:4,RequiredPlayerRange:16,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:200,MaxSpawnDelay:800,SpawnPotentials:[{weight:4,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4107}}]}}},{weight:3,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4203}}]}}},{weight:2,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4106}}]}}},{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4001}}]}}}],Invulnerable:true}]
+    data modify storage asset:mob cache set from storage asset: mob
+    function asset:mob/4107.heaven_archer/data/2.data_set
+    data modify storage asset:mob cache.Passengers[0].SpawnPotentials[0].data.entity set from storage asset: mob
+    function asset:mob/4203.heaven_mage/data/2.data_set
+    data modify storage asset:mob cache.Passengers[0].SpawnPotentials[1].data.entity set from storage asset: mob
+    function asset:mob/4106.heaven_slayer/data/2.data_set
+    data modify storage asset:mob cache.Passengers[0].SpawnPotentials[2].data.entity set from storage asset: mob
+    function asset:mob/4001.angel_shielder/data/2.data_set
+    data modify storage asset:mob cache.Passengers[1].SpawnPotentials[3].data.entity set from storage asset: mob
+    data modify storage asset: mob set from storage asset:mob cache
+
+# スポナーから湧かせるための設定をします
+    data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
+
+
+    
