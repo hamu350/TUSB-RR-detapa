@@ -7,18 +7,18 @@
 scoreboard players add Count MakeupTickB 1
 
 # ボス部屋封鎖
-data modify storage tusb_remake: infinity_boss.battle set value true
+data modify storage tusb_remake: infinity_boss.battle set value 1b
 
 # ボスボタン除去
 setblock -2769 225 -280 air
-setblock -2769 224 -280 air
+setblock -2769 223 -280 air
 
 # 帰還看板除去
 setblock -2764 224 -280 air
 
 # 報酬量設定
 scoreboard players reset _ infinity_boss.reward
-execute store result score _ TUSB if entity @a
+execute store result score _ TUSB if entity @a[tag=InfinityBossBattle]
 scoreboard players operation _ infinity_boss.reward *= _ TUSB
 
 

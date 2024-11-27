@@ -2,7 +2,10 @@
 # ボスが敗北した時実行
 
 # ボス部屋解放
-data modify storage tusb_remake: infinity_boss.battle set value false
+data modify storage tusb_remake: infinity_boss.battle set value 0b
+
+### InfinityBossBattle解除
+tag @a remove InfinityBossBattle
 
 # ボスボタン配置
 setblock -2769 223 -280 command_block[facing=up]{auto: 0b, powered: 0b, LastExecution: 2217789L, SuccessCount: 3, UpdateLastExecution: 1b, conditionMet: 1b, CustomName: '{"text":"@"}', Command: "function tusb_remake:boss/makeup/",LastOutput: '{"extra":[{"translate":"commands.function.success.single","with":["18","tusb_remake:boss/makeup/"]}]}', TrackOutput: 0b}
