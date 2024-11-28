@@ -46,6 +46,31 @@
                 },
                 {
                     "type": "loot_table",
+                    "name": "asset:item/material/compressed_diamond_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/weapon/other/mu",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
                     "name": "asset:item/currency/cloudia/angel_akumu",
                     "weight": 2,
                     "functions": [
@@ -97,17 +122,6 @@
                                 "min": 1,
                                 "max": 3
                             }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "name": "asset:item/material/compressed_diamond_block",
-                    "weight": 2,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 4
                         }
                     ]
                 },
