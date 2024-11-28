@@ -75,135 +75,59 @@
             ]
         },
         {
-            "//": "攻略率によって変わらない部分",
+            "rolls": 1,
+            "entries": [
+                {
+                    "rarity": "SSR:0.5%",
+                    "type": "loot_table",
+                    "name": "usb:signs/infinity_boss_reward/ssr",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.005
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "rarity": "SR:5%",
+                    "type": "loot_table",
+                    "name": "usb:signs/infinity_boss_reward/ssr",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.05
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "//": "RareとNormal",
             "rolls": 10,
             "entries": [
                 {
-                    "//": "weightは合計10000(weight10=排出率1%(高レア向け))",
+                    "//": "weightは合計1000",
                     "type": "empty",
-                    "weight": 9930
+                    "weight": 0
                 },
                 {
-                    "rarity": "SSR:0.1%",
-                    "type": "alternatives",
-                    "name": "新世界武器",
-                    "weight": 1,
-                    "children": [
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/weapon/sword/holy_sword",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/weapon/bow/holy_bow",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/tool/carrot_on_a_stick/holy_rod",
-                            "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "rarity": "SSR:0.2%",
-                    "type": "alternatives",
-                    "name": "デビルガリバー花3種",
-                    "weight": 2,
-                    "children": [
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/helditem/offhand/ib",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/helditem/offhand/mary",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/helditem/offhand/garry",
-                            "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "rarity": "SSR:0.2%",
+                    "rarity": "R:10%",
                     "type": "loot_table",
-                    "name": "asset:item/potion/drink/i_wanna_be_the_unhuman",
-                    "weight": 2
+                    "name": "usb:signs/infinity_boss_reward/r",
+                    "weight": 100
                 },
                 {
-                    "rarity": "SR:0.5%",
+                    "rarity": "N:90%",
                     "type": "loot_table",
-                    "name": "asset:item/tool/fishing_rod/primordial_fishing_rod",
-                    "weight": 5
-                },
-                {
-                    "rarity": "SR:0.5%",
-                    "type": "alternatives",
-                    "name": "アウターレジェンド1部位",
-                    "weight": 5,
-                    "children": [
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/armor/head/outerlegend",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/armor/chestplate/outerlegend",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/armor/leggings/outerlegend",
-                            "weight": 1
-                        },
-                        {
-                            "type": "loot_table",
-                            "name": "asset:item/armor/boots/outerlegend",
-                            "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "rarity": "SR:0.5%",
-                    "type": "loot_table",
-                    "name": "asset:item/helditem/shield/shield_of_the_abyss",
-                    "weight": 5
-                },
-                {
-                    "rarity": "SR:0.5%",
-                    "type": "loot_table",
-                    "name": "asset:item/material/unbreaking_diamond",
-                    "weight": 5
-                },
-                {
-                    "rarity": "SR:0.5%",
-                    "type": "loot_table",
-                    "name": "asset:item/helditem/offhand/hope_of_dream",
-                    "weight": 5
-                },
-                {
-                    "rarity": "R:2%",
-                    "type": "loot_table",
-                    "name": "asset:item/material/estrella",
-                    "weight": 20
-                },
-                {
-                    "rarity": "R:2%",
-                    "type": "loot_table",
-                    "name": "asset:item/material/compressed_diamond_block",
-                    "weight": 20,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 8
-                        }
-                    ]
+                    "name": "usb:signs/infinity_boss_reward/n",
+                    "weight": 900
                 }
             ]
         }
