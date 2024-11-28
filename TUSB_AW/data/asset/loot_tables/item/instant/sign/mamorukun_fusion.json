@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{NoGravity: 1b, RepairCost: 1000000000, display: {Lore: ['{\"text\":\"§r§e設置して使用すると、\"}','{\"text\":\"§r§e設置みんな大好きまもるくんに成り切ることができる\"}'], Name: '{\"text\":\"§aまもるくん憑依の印板\"}'}, Enchantments: [{}], EntityTag: {Tags: [\"SignStand\", \"MamorukunFusion\", \"TypeChecked\"], id: \"minecraft:armor_stand\"}, Invulnerable: 1b, Invisible: 1b}"
+                        "tag": "{NoGravity: 1b, RepairCost: 1000000000, display: {Lore: ['{\"text\":\"§r§e設置して使用すると、\"}','{\"text\":\"§r§e設置みんな大好きまもるくんに§aなりきる§eことができる\"}'], Name: '{\"text\":\"§a守君憑依の印板\"}'}, Enchantments: [{}], EntityTag: {Tags: [\"SignStand\", \"MamorukunFusion\", \"TypeChecked\"], id: \"minecraft:armor_stand\"}, Invulnerable: 1b, Invisible: 1b}"
                     }
                 ]
             }
