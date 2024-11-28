@@ -21,6 +21,7 @@ execute unless score _ TUSB matches 11.. run scoreboard players set _ TUSB 10
 scoreboard players operation _ TUSB *= _ ItemCount
 scoreboard players operation _ TUSB += @s TotalXp
 scoreboard players operation _ TUSB < $Global TotalXp
+scoreboard players operation _ TUSB -= @s TotalXp
 scoreboard players operation @s ExpToLevel -= _ TUSB
 scoreboard players operation @s TotalXp += _ TUSB
 
