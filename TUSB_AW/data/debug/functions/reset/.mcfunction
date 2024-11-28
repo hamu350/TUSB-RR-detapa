@@ -255,3 +255,9 @@ scoreboard players reset * PotentialSkill
 ### ハードコアモード
 scoreboard players reset * hcmode
 data remove storage tusb_remake: settings.hardcore
+
+### インフィニティボスメイクアップ
+scoreboard players reset * MakeupTickB
+
+### インフィニティボス報酬の数
+scoreboard players reset * infinity_boss.reward
