@@ -1,10 +1,11 @@
 #> tusb_remake:boss/admission
 
-# アイテム除去
-execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[type=item,distance=..25]
-
 # エフェクト除去
 effect clear @p
+
+#トカルトモード時
+execute if data storage tusb_remake: settings{toculting:1b} run clear @p torch
+execute if data storage tusb_remake: settings{toculting:1b} run clear @p lever{display: {Lore: ['"§r火が消えてしまった松明。"', '"§r篝火で火を付け直せる。"'], Name: '{"text":"§7消えた松明"}'}}
 
 # インベントリの数確認
 execute store result score _ TUSB if data entity @p Inventory[]
@@ -14,6 +15,12 @@ execute if data storage tusb_remake: infinity_boss{battle:1b} unless entity @p[t
 
 # アイテム多いと拒否
 execute if score _ TUSB matches 21.. run tellraw @p {"text":"アイテムを持ち込めるのは20スロットまでです。","color":"dark_red","bold":true}
+
+# 戦闘外なので誰でもウェルカム
+execute if data storage tusb_remake: settings{toculting:1b} unless data storage tusb_remake: infinity_boss{battle:1b} if score _ TUSB matches ..20 run give @p torch 64
+
+# 関係者なので入場可能
+execute if data storage tusb_remake: settings{toculting:1b} if data storage tusb_remake: infinity_boss{battle:1b} if score _ TUSB matches ..20 if entity @p[tag=InfinityBossBattle] run give @p torch 64
 
 # 戦闘外なので誰でもウェルカム
 execute unless data storage tusb_remake: infinity_boss{battle:1b} if score _ TUSB matches ..20 run tp @p -2774 225 -280
