@@ -83,7 +83,7 @@
                 {
                     "rarity": "SR:5%",
                     "type": "loot_table",
-                    "name": "usb:signs/infinity_boss_reward/ssr",
+                    "name": "usb:signs/infinity_boss_reward/sr",
                     "weight": 50
                 }
             ]
