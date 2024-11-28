@@ -269,3 +269,6 @@ scoreboard players reset * MakeupTickB
 
 ### インフィニティボス報酬の数
 scoreboard players reset * infinity_boss.reward
+
+### トータルEXP
+scoreboard players reset * TotalXp
