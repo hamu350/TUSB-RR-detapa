@@ -6,9 +6,6 @@ execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[type=item,distance=
 # エフェクト除去
 effect clear @p
 
-# 戦闘中入場可能パス
-execute unless data storage tusb_remake: infinity_boss{battle:1b} run tag @p add InfinityBossArea
-
 # インベントリの数確認
 execute store result score _ TUSB if data entity @p Inventory[]
 

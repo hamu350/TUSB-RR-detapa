@@ -28,7 +28,7 @@ execute store result score @s MPIncrement run data get storage tusb_remake: _
 playsound minecraft:entity.player.levelup master @a[distance=..16] ~ ~ ~ 2 0.7 0
 particle minecraft:happy_villager ~ ~ ~ 1 2 1 0.001 100 normal
 summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16752934],FadeColors:[I;16777215]},{Type:0b,Flicker:false,Trail:false,Colors:[I;16715021,16777215],FadeColors:[I;16777215]}]}}},Tags:[LevelUpFirework]}
-execute positioned ~ ~1 ~ as @e[distance=..0.2,type=minecraft:firework_rocket,tag=LevelUpFirework] run tp @s 0.0 0.0 0.0
+execute positioned ~ ~1 ~ as @e[distance=..0.2,type=minecraft:firework_rocket,tag=LevelUpFirework] run tp @s -10000 0 -10000
 
 ### レベルアップ表示
 title @s times 5 100 20
