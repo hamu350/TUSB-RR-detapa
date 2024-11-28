@@ -21,7 +21,6 @@ setblock -2764 224 -280 air
 
 # 報酬量設定
 scoreboard players reset _ infinity_boss.reward
-execute store result score _ TUSB if entity @a[tag=InfinityBossBattle]
 scoreboard players operation _ infinity_boss.reward *= _ TUSB
 
 
