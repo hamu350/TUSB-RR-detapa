@@ -46,7 +46,7 @@
     # 最大体力
         data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:300}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:15}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:40}
     # 移動速度
         data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.5}
     # 防具値

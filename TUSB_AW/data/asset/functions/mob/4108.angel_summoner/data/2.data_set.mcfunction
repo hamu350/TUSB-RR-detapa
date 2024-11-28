@@ -13,7 +13,7 @@
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 200
+        data modify storage asset: mob.Health set value 400
     # 緩衝体力
         # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -46,7 +46,7 @@
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:200}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:400}
     # (近接)攻撃力
         data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:10}
     # 移動速度
@@ -130,7 +130,7 @@
     # data modify storage asset: mob.Active_effects append value {id: "minecraft:speed", amplifier: 1b, duration: -1, show_icon: 1b,show_particles: 1b}
 
 # スポナー
-    data modify storage asset: mob.Passengers set value [{id:"spawner_minecart",SpawnCount:1,SpawnRange:16,RequiredPlayerRange:32,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:800,MaxSpawnDelay:1600,SpawnPotentials:[{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4302}}]}}}],Invulnerable:true},{id:"spawner_minecart",SpawnCount:1,SpawnRange:4,RequiredPlayerRange:16,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:200,MaxSpawnDelay:800,SpawnPotentials:[{weight:4,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4107}}]}}},{weight:3,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4203}}]}}},{weight:2,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4106}}]}}},{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4001}}]}}}],Invulnerable:true}]
+    data modify storage asset: mob.Passengers set value [{id:"spawner_minecart",SpawnCount:1,SpawnRange:16,RequiredPlayerRange:32,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:200,MaxSpawnDelay:600,SpawnPotentials:[{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4302}}]}}}],Invulnerable:true},{id:"spawner_minecart",SpawnCount:1,SpawnRange:4,RequiredPlayerRange:16,MaxNearbyEntities:99,Delay:-1,MinSpawnDelay:200,MaxSpawnDelay:800,SpawnPotentials:[{weight:4,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4107}}]}}},{weight:3,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4203}}]}}},{weight:2,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4106}}]}}},{weight:1,data:{entity:{id:"villager",Passengers:[{id:"marker",Tags:[Spawn],data:{AssetId:4001}}]}}}],Invulnerable:true}]
     data modify storage asset:mob cache set from storage asset: mob
     function asset:mob/4107.heaven_archer/data/2.data_set
     data modify storage asset:mob cache.Passengers[0].SpawnPotentials[0].data.entity set from storage asset: mob
