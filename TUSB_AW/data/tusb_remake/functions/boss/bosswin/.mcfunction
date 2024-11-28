@@ -4,6 +4,9 @@
 # プレイヤーを勝利させない
 schedule clear tusb_remake:boss/schedule
 
+# ボスバー消し
+bossbar set infinity_boss visible false
+
 # 敵、アイテム削除
 execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[tag=Enemy,distance=..25]
 execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[type=item,distance=..25]

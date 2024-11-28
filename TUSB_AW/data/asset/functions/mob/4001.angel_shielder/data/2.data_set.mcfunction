@@ -13,7 +13,7 @@
 
 ### 体力等nbtを設定
     # 体力
-        data modify storage asset: mob.Health set value 650
+        data modify storage asset: mob.Health set value 1000
     # 緩衝体力
         # data modify storage asset: mob.AbsorptionAmount set value 20
     # AIを持っていないか
@@ -44,9 +44,9 @@
 
 ### Attributes
     # 最大体力
-        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:650}
+        data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:800}
     # (近接)攻撃力
-        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:3}
+        data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:20}
     # 移動速度
         data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0.3}
     # 防具値
