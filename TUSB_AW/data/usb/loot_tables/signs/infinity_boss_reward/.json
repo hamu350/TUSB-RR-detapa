@@ -1,74 +1,58 @@
 {
     "pools": [
         {
-            "//": "攻略率によって変わる部分。経験値とかEBとかね",
             "rolls": 1,
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "usb:signs/infinity_boss_reward/0_19",
-                    "weight": 1,
-                    "conditions": [
+                    "name": "usb:xp/128",
+                    "weight": 80
+                },
+                {
+                    "type": "loot_table",
+                    "name": "usb:xp/256",
+                    "weight": 16
+                },
+                {
+                    "type": "loot_table",
+                    "name": "usb:xp/512",
+                    "weight": 4
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/instant/egg/emerald_block",
+                    "weight": 4,
+                    "functions": [
                         {
-                            "condition": "value_check",
-                            "value": {
-                                "type": "score",
-                                "target": {
-                                    "type": "fixed",
-                                    "name": "_"
-                                },
-                                "score": "ConquerIsland",
-                                "scale": 1
-                            },
-                            "range": {
-                                "min": 0,
-                                "max": 19
-                            }
+                            "function": "set_count",
+                            "count": 1
                         }
                     ]
                 },
                 {
                     "type": "loot_table",
-                    "name": "usb:signs/infinity_boss_reward/20_39",
-                    "weight": 1,
-                    "conditions": [
+                    "name": "asset:item/instant/egg/emerald_block",
+                    "weight": 4,
+                    "functions": [
                         {
-                            "condition": "value_check",
-                            "value": {
-                                "type": "score",
-                                "target": {
-                                    "type": "fixed",
-                                    "name": "_"
-                                },
-                                "score": "ConquerIsland",
-                                "scale": 1
-                            },
-                            "range": {
-                                "min": 39,
-                                "max": 20
-                            }
+                            "function": "set_count",
+                            "count": 2
                         }
                     ]
                 },
                 {
                     "type": "loot_table",
-                    "name": "usb:signs/infinity_boss_reward/40_50",
-                    "weight": 1,
-                    "conditions": [
+                    "name": "asset:item/instant/egg/emerald_block",
+                    "weight": 4,
+                    "functions": [
                         {
-                            "condition": "value_check",
-                            "value": {
-                                "type": "score",
-                                "target": {
-                                    "type": "fixed",
-                                    "name": "_"
-                                },
-                                "score": "ConquerIsland",
-                                "scale": 1
-                            },
-                            "range": {
-                                "min": 40 
-                            }
+                            "function": "set_count",
+                            "count": 4
                         }
                     ]
                 }
