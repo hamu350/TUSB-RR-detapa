@@ -57,5 +57,11 @@ title @a subtitle {"text":"§0- §5§k|||§r§5混沌ヲ§4制シ者§5§k|||§r
     execute summon lightning_bolt run tp @s ~ 3000 ~4
     execute summon lightning_bolt run tp @s ~-4 3000 ~
     execute summon lightning_bolt run tp @s ~ 3000 ~-4
+
+# ボスバー
+    bossbar add infinity_boss {"text":"§0§k?§b§k?§0§k?§6§k?§0§k?§c§k?§0§k?§5§k?§0§k?§f§k?§0§k?§4§k?§0§k?"}
+    bossbar set infinity_boss color red
+    bossbar set infinity_boss style notched_6
+
 #> この下でspawn funciton実行すればいい感じになるんじゃないですか( ᐛ)
 function tusb_remake:boss/spawn
