@@ -1,4 +1,6 @@
 #> time_limit:start
+
+
 # 職業島から通常世界に誰か行ったらタイマースタート
 execute if data storage tusb_remake: settings{time_limit:true} if score Start Game matches 0 run scoreboard players set Start Game 1
 # startが1ならタイマーが動くようになってる
@@ -18,3 +20,6 @@ execute if data storage tusb_remake: settings{time_limit:true} run playsound ent
 
 # forceload削除
 # タイミングずらさないと多分生成されん
+
+### オプション追加できないように
+fill -1903 113 -138 -1903 113 -133 minecraft:obsidian replace minecraft:command_block

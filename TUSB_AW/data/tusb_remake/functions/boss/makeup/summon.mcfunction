@@ -7,14 +7,14 @@
 scoreboard players reset Count MakeupTickB
 
 #> タイトル表示
-title @a times 10 60 20
-title @a title {"text":"§0§k?§b§k?§0§k?§6§k?§0§k?§c§k?§0§k?§5§k?§0§k?§f§k?§0§k?§4§k?§0§k?"}
-title @a subtitle {"text":"§0- §5§k|||§r§5混沌ヲ§4制シ者§5§k|||§r§0 -","bold":true}
+title @a[distance=..20] times 10 60 20
+title @a[distance=..20] title {"text":"§0§k?§b§k?§0§k?§6§k?§0§k?§c§k?§0§k?§5§k?§0§k?§f§k?§0§k?§4§k?§0§k?"}
+title @a[distance=..20] subtitle {"text":"§0- §5§k|||§r§5混沌ヲ§4制シ者§5§k|||§r§0 -","bold":true}
 
 #> 音
-    playsound entity.wither.spawn hostile @a ~ ~ ~ 1.25 0.8
-    playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 2
-    playsound entity.warden.sonic_boom hostile @a ~ ~ ~ 1 1.25
+    playsound entity.wither.spawn hostile @a[distance=..20] ~ ~ ~ 1.25 0.8
+    playsound entity.lightning_bolt.thunder hostile @a[distance=..20] ~ ~ ~ 1 2
+    playsound entity.warden.sonic_boom hostile @a[distance=..20] ~ ~ ~ 1 1.25
 
 #> 円
     particle end_rod ~-0.0 ~0.1 ~1.0 ~-12.107 ~0.1 ~1000000000.0 0.00000000050 0 force @a[distance=..32]

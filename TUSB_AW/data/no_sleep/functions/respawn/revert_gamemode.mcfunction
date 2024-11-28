@@ -12,6 +12,10 @@ execute if data storage no_sleep: {gamemode:"creative"} run gamemode creative @s
 execute if data storage no_sleep: {gamemode:"adventure"} run gamemode adventure @s
 execute if data storage no_sleep: {gamemode:"spectator"} run gamemode spectator @s
 
+
+### RR追加
 # ハードコア死亡時
 execute if data storage tusb_remake: settings{hardcore:true} run tag @s add death
 execute if data storage tusb_remake: settings{hardcore:true} run gamemode spectator @s
+# ボス部屋パス剝奪
+tag @s remove InfinityBossArea

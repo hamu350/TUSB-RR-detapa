@@ -20,12 +20,8 @@ execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear
 
 
 # RR追加部分
-
 # 共鳴アイテム回収
 execute if entity @s[tag=Kyoumei] in overworld run function tusb_remake:player/death/kyoumei/
-
-# ボス部屋パス剝奪
-tag @s remove InfinityBossArea
 
 
 ### ネザーアスレチック

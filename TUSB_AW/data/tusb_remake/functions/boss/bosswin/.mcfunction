@@ -11,9 +11,8 @@ execute at @e[type=armor_stand,tag=Boss_MarkerB] run kill @e[type=item,distance=
 # タグ外し
 tag @a remove InfinityBossBattle
 
-
 # ボスは消える
-kill @e[tag=InfinityBoss]
+tag @e[tag=InfinityBoss] add Garbage
 
 # ボス部屋解放
 data modify storage tusb_remake: infinity_boss.battle set value 0b
