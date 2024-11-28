@@ -20,4 +20,4 @@ execute if data storage tusb_remake: settings{hardcore:true} run gamemode specta
 # ボス部屋パス剝奪
 tag @s remove InfinityBossArea
 # トカルトモード時松明付与
-give @s torch 32
+execute if data storage tusb_remake: settings{toculting:true} run give @s torch 32
