@@ -3,3 +3,4 @@
 scoreboard.datからteamの参加を消し、
 ohmydatをぶちけす
 Settingsも消し、MPも消す
+ohmydatのscore全消し
