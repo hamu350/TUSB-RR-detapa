@@ -24,5 +24,5 @@ scoreboard players operation _ TUSB -= @s TotalXp
 scoreboard players operation @s ExpToLevel -= _ TUSB
 scoreboard players operation @s TotalXp += _ TUSB
 
-execute if score _ TUSB matches 0 run title @s actionbar {"translate":"+ %1$sEXP","color":"yellow","with":[{"score":{"name":"@s","objective":"ItemCount"}}]}
-execute unless score _ TUSB matches 0 run title @s actionbar {"translate":"+ %1$sEXP (+Bonus %2$sEXP)","color":"yellow","with":[{"score":{"name":"@s","objective":"ItemCount"}},{"score":{"name":"_","objective":"TUSB"},"color":"white","bold":true}]}
+execute if score _ TUSB matches 0 run title @s actionbar {"translate":"+ %1$sEXP","color":"yellow","with":[{"score":{"name":"_","objective":"ItemCount"}}]}
+execute unless score _ TUSB matches 0 run title @s actionbar {"translate":"+ %1$sEXP (+Bonus %2$sEXP)","color":"yellow","with":[{"score":{"name":"_","objective":"ItemCount"}},{"score":{"name":"_","objective":"TUSB"},"color":"white","bold":true}]}
