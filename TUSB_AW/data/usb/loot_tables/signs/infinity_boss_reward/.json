@@ -26,7 +26,7 @@
                 {
                     "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
-                    "weight": 4,
+                    "weight": 80,
                     "functions": [
                         {
                             "function": "set_count",
@@ -37,7 +37,7 @@
                 {
                     "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
-                    "weight": 4,
+                    "weight": 16,
                     "functions": [
                         {
                             "function": "set_count",
@@ -62,16 +62,14 @@
             "rolls": 1,
             "entries": [
                 {
+                    "type": "empty",
+                    "weight": 995
+                },
+                {
                     "rarity": "SSR:0.5%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/ssr",
-                    "weight": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.005
-                        }
-                    ]
+                    "weight": 5
                 }
             ]
         },
@@ -79,16 +77,14 @@
             "rolls": 1,
             "entries": [
                 {
+                    "type": "empty",
+                    "weight": 950
+                },
+                {
                     "rarity": "SR:5%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/ssr",
-                    "weight": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.05
-                        }
-                    ]
+                    "weight": 50
                 }
             ]
         },
