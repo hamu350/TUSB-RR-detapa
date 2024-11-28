@@ -14,10 +14,9 @@ scoreboard players operation @s ExpToLevel -= _ ItemCount
 # @sTotal += BonusXp
 scoreboard players operation _ TUSB = $Global TotalXp
 scoreboard players operation _ TUSB += _ TUSB
-execute if score _ TUSB matches ..-1 run scoreboard players set _ TUSB 0
 scoreboard players operation _ TUSB /= @s TotalXp
 scoreboard players remove _ TUSB 1
-execute unless score _ TUSB matches 11.. run scoreboard players set _ TUSB 10
+execute if score _ TUSB matches 11.. run scoreboard players set _ TUSB 10
 scoreboard players operation _ TUSB *= _ ItemCount
 scoreboard players operation _ TUSB += @s TotalXp
 scoreboard players operation _ TUSB < $Global TotalXp
