@@ -2,25 +2,24 @@
 # 初回ロード時にやりたい処理
 
 # scoreboard作成
-function time_limit:load/scoreboard_make
+
 
 # スキル説明変更
 # TLEは一部スキルに調節がはいっているため
-function time_limit:load/change_description
+
 
 # forceload
 # same tickだとforceload無視されてそうなのでonoff関わらず先に
 # 王スポナー
 # ここは消すと不都合が起こるのであとで
-execute in the_end run forceload add -1388 9 -1388 9
+
 # ボス特設
-execute in the_end run forceload add 454 454 545 545
+
 # 超作業台
-execute in overworld run forceload add -2727 -374 -2721 -372
+
 # 職業島
-execute in overworld run forceload add -52 17 -52 17
+
 # 初期スポーン(通常世界)
-execute in overworld run forceload add 2 2 2 2
 
 # わこからさんの場所をforceload
 
@@ -32,10 +31,6 @@ execute in overworld run forceload add 2 2 2 2
 # チュートリアル建築書き換え
 # これすでにあるもの書き換えてるから看板とか花/種などのアイテムもkillしないといけないだろうねぇー今までと違って
 
-
-
-
-
 # 通常世界スポーン位置の真下にアイテムを置く
 
 # ゲームスタート検知値を初期値に
@@ -43,15 +38,21 @@ scoreboard players set Start Game 0
 
 # 初期設定では追加設定がすべてonになってるのでonにしたときの設定を反映させる
 # 時計島仕様変更による月島night固定無効化
-
+data modify storage tusb_remake: settings.force_night set value false
+time set day
+gamerule doDaylightCycle true
 # 時送りの盾give村人spawn
 # debug時とかバグったりするんでkill
-
+kill @e[type=villager,tag=Shield]
+summon villager -52 40.5 16 {Tags:["Shield"],Silent:1b,Invulnerable:1b,CustomNameVisible:1b,NoAI:1b,Rotation:[-180F,0F],CustomName:'{"text":"時をかける村人","color":"aqua","bold":true}',VillagerData:{level:99,profession:"minecraft:none"},Offers:{}}
 
 # タイマー用ボスバーどーん
+bossbar add time_limit:timer ""
+bossbar set time_limit:timer visible true
+bossbar set time_limit:timer style notched_10
 
 # 発光用team(デフォルトで使ってるチームの色を変える)
-team modify FriendlyTeam color red
+
 
 # 時送りの盾初期データset
 # player_item_tunner使うんで必要な量だけでいいです

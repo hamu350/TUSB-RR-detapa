@@ -18,7 +18,7 @@ execute as @e[type=armor_stand,tag=rollback_trap] if entity @s at @s run functio
 # スコアのHPが0なら新星キル処理(深淵王はキルされてないなら)
 execute if score Health Boss_Health matches ..0 if score Flag FightingBoss matches 1 if entity @e[type=zombie,tag=Abyss_King,nbt={Invulnerable:1b}] run function time_limit:boss/newstar_king/boss_kill
 # スコア上の体力は1以上あって且つ戦ってるプレイヤーがいてnewstarkingがいないなら実行(ワンパンされた時の対処みたいなもん)
-
+execute if score Health Boss_Health matches 1.. if score Flag FightingBoss matches 1 if entity @e[type=zombie,tag=Abyss_King,nbt={Invulnerable:1b}] unless entity @e[type=zombie,tag=NewStar_King] run function time_limit:boss/newstar_king/boss_kill
 
 # これ深淵がロストで死んだときに取り返せなくね
 # まあ一旦アイテムを消すからいいか
@@ -54,7 +54,3 @@ execute in the_end as @e[type=zombie,tag=NewStar_King,nbt={Invulnerable:true}] i
 
 # 深淵ノ王 killされたら
 execute if score Flag FightingBoss matches 1 in the_end if entity @e[type=item,nbt={Item:{id:"minecraft:debug_stick",tag:{Shinen:1b}}}] run function time_limit:boss/newstar_king/all_killed
-
-# ルクスリアで回復しないようにkill
-execute at @e[tag=Abyss_King] run kill @e[type=area_effect_cloud,name="Luxuria",distance=..5]
-execute at @e[tag=NewStar_King] run kill @e[type=area_effect_cloud,name="Luxuria",distance=..5]
