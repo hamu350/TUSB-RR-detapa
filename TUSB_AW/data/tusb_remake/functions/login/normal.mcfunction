@@ -14,4 +14,4 @@ tag @s add LoginMessage
 schedule function tusb_remake:login/schedule 5s append
 
 ### RR追加部分:タグ削除
-execute unless data storage tusb_remake: infinity_boss{battle:1b} run function tusb_remake:boss/tagremove
+execute unless data storage tusb_remake: infinity_boss{battle:1b} if entity @s[tag=InfinityBossArea] run function tusb_remake:boss/tagremove
