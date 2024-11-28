@@ -272,3 +272,7 @@ scoreboard players reset * infinity_boss.reward
 
 ### トータルEXP
 scoreboard players reset * TotalXp
+
+### OhMyDatぶちけし
+scoreboard players reset * OhMyDat
+scoreboard players reset * OhMyDatID
