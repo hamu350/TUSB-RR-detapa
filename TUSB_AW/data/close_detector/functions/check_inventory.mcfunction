@@ -3,7 +3,7 @@
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
 ### This software is released under the MIT License, see LICENSE.
-
+say close_detector:check_inventory
 # 個別ストレージ呼び出し
 function #oh_my_dat:please
 
@@ -19,9 +19,9 @@ execute store result storage close_detector: changed byte 1 run data modify stor
 execute store result storage close_detector: closed byte 1 unless data storage close_detector: {changed:true}
 
 ### スキップする回数をカウントダウン
-execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip int 0.999999999 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip
+# execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip int 0.999999999 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip
 ### まだスキップ回数が残っていたら閉じたことを無視します。
-execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector{skip:0} run data modify storage close_detector: closed set value false
+# execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector{skip:0} run data modify storage close_detector: closed set value false
 
 ### 変化があったら連続して無視しないといけない可能性があるので確認
 execute if data storage close_detector: {changed:true,skip:0} run function close_detector:check_inventory/
