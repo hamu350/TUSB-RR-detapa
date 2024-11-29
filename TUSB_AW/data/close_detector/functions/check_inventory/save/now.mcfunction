@@ -5,5 +5,5 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### スキップ数をカウントアップ
-execute store result storage close_detector: skip int -1 run data get storage close_detector: skip -1.0000000001
+execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].skip int -1 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].skip -1.0000000001
 

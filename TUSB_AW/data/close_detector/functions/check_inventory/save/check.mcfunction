@@ -8,4 +8,4 @@ data modify storage close_detector: _ set from storage close_detector: inventory
 execute store result storage close_detector: _ byte 1 run data modify storage close_detector: _ set from storage close_detector: inventory.now[-1]
 
 ### スキップ数をカウントアップ
-execute if data storage close_detector: {_:true} store result storage close_detector: skip int -1 run data get storage close_detector: skip -1.0000000001
+execute if data storage close_detector: {_:true} store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].skip int -1 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].skip -1.0000000001
