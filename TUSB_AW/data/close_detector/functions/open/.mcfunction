@@ -17,7 +17,7 @@ execute unless data storage close_detector: open run function close_detector:ope
 execute if data storage close_detector: open run function close_detector:open/on_opened
 
 ### スキップ回数リセット
-data modify storage close_detector: skip set value 0
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip set value 0
 
 ### ロック検知用ストレージ削除
 data remove storage close_detector: open
