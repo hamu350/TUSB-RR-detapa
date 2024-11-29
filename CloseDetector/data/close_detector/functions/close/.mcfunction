@@ -3,6 +3,7 @@
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
 ### This software is released under the MIT License, see LICENSE.
+function #oh_my_dat:please
 
 ### インベントリ変化チェック
 function close_detector:check_inventory
