@@ -78,13 +78,13 @@
             "entries": [
                 {
                     "type": "empty",
-                    "weight": 950
+                    "weight": 900
                 },
                 {
-                    "rarity": "SR:5%",
+                    "rarity": "SR:10%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/sr",
-                    "weight": 50
+                    "weight": 100
                 }
             ]
         },
@@ -98,16 +98,16 @@
                     "weight": 0
                 },
                 {
-                    "rarity": "R:10%",
+                    "rarity": "R:20%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/r",
-                    "weight": 100
+                    "weight": 200
                 },
                 {
-                    "rarity": "N:90%",
+                    "rarity": "N:80%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/n",
-                    "weight": 900
+                    "weight": 800
                 }
             ]
         }
