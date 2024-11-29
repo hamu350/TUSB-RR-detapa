@@ -1,4 +1,4 @@
-say #> close_detector:close/tear_down
+#> close_detector:close/tear_down
 # 検知用アイテムを消す
 # Remove the detective item in the inventory.
 ### Copyright © 2020 赤石愛

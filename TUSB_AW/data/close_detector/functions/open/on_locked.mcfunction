@@ -1,4 +1,4 @@
-say #> close_detector:open/on_locked
+#> close_detector:open/on_locked
 # Lock時の処理
 # Remove the detective item in the inventory if the container is locked.
 ### Copyright © 2020 赤石愛

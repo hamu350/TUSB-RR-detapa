@@ -1,4 +1,4 @@
-say #> close_detector:check_inventory
+#> close_detector:check_inventory
 # コンテナGUIを閉じた時の処理
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
@@ -9,8 +9,8 @@ function #oh_my_dat:please
 
 ### パフォーマンス向上のため先にインベントリを保存しておく
 data modify storage close_detector: new_inventory set from entity @s Inventory
-tellraw @a {"nbt":"new_inventory","storage": "close_detector:"}
-tellraw @a {"nbt":"_[-4][-4][-4][-4][-4][-4][-4][-4].CloseDetector.Inventory","storage": "oh_my_dat:"}
+# tellraw @a {"nbt":"new_inventory","storage": "close_detector:"}
+# tellraw @a {"nbt":"_[-4][-4][-4][-4][-4][-4][-4][-4].CloseDetector.Inventory","storage": "oh_my_dat:"}
 
 ### 変化がないか、占有数に差がないかをチェック
 ## last

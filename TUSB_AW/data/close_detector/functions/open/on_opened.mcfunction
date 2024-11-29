@@ -1,4 +1,4 @@
-say #> close_detector:open/on_opened
+#> close_detector:open/on_opened
 # Open時の処理
 # Give a detective item to the inventory.
 ### Copyright © 2020 赤石愛

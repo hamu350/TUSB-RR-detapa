@@ -1,4 +1,4 @@
-say #> close_detector:open/
+#> close_detector:open/
 # インベントリに検知用アイテムを渡す
 # Give a detective item to the inventory.
 ### Copyright © 2020 赤石愛

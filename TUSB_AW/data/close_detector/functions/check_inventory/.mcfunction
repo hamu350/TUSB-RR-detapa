@@ -1,4 +1,4 @@
-say #> close_detector:check_inventory/
+#> close_detector:check_inventory/
 # コンテナGUIを閉じた時の処理
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
