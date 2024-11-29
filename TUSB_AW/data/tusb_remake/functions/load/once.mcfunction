@@ -373,3 +373,6 @@ data modify storage tusb_remake: skill_slot_titles set value {instant:{a:'[{"tex
 function tusb_remake:load/define_const
 
 # execute in minecraft:overworld positioned -1896.000000 118.000000 -136.000000 run summon minecraft:marker ~ ~ ~ {CustomName:'"システムマーカー"',UUID:[I;0,1,0,1]}
+
+# インフィニティボスチェストデータセット
+function tusb_remake:boss/chest/dataset
