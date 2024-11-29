@@ -9,7 +9,6 @@ tag @s[tag=SaveTorch] remove SaveTorch
 
 ### トカルトに初めてきたプレイヤーに松明を渡す処理
 execute unless data storage tusb_remake: settings{toculting:1b} run tellraw @s[tag=ISFUnreached] [{"text":"[辺境調査員] おや？ 他の島からかい？ 珍しいねぇ。\n これを持ってお行き。\n ここは寒さが厳しいからね。凍え死んじまうよ。\n"},{"translate":"* %1$s を64個受け取った。","with":[{"text":"松明","color":"aqua"}]},{"translate":"\n[辺境調査員] %2$sは%1$sで付け直せるからね。\n %3$sが減ったら%1$sのあるところまで戻るんだよ。","with":[{"text":"篝火","color":"gold"},{"text":"消えた松明","color":"aqua"},{"text":"松明","color":"aqua"}]}]
-execute if data storage tusb_remake: settings{toculting:1b} run tellraw @s[tag=ISFUnreached] [{"text":"[篝溶岩] 何者かによってこの世界に寒気が訪れた...\n これを持っていくがいい...\n 松明がないと凍え死んでしまうだろう...\n"},{"translate":"* %1$s を64個受け取った。","with":[{"text":"松明","color":"aqua"}]},{"translate":"\n[篝溶岩] %2$sは%1$sで付け直せるだろう...\n %3$sが減ったら%1$sのあるところまで戻るがいい...","with":[{"text":"篝火","color":"gold"},{"text":"消えた松明","color":"aqua"},{"text":"松明","color":"aqua"}]}]
 give @s[tag=ISFUnreached] minecraft:torch 64
 tag @s[tag=ISFUnreached] remove ISFUnreached
 
