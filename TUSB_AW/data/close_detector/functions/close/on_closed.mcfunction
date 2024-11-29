@@ -1,4 +1,4 @@
-#> close_detector:close/on_closed
+say #> close_detector:close/on_closed
 # Close時の処理
 # Remove the detective item in the inventory.
 ### Copyright © 2020 赤石愛

@@ -1,9 +1,9 @@
-#> close_detector:open/
+say #> close_detector:open/
 # インベントリに検知用アイテムを渡す
 # Give a detective item to the inventory.
 ### Copyright © 2020 赤石愛
 ### This software is released under the MIT License, see LICENSE.
-say #> close_detector:open/
+
 function #oh_my_dat:please
 
 ### Lock時は先にclosed処理が走るので区別できるようにしておく

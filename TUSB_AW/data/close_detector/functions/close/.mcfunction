@@ -1,9 +1,9 @@
-#> close_detector:close/
+say #> close_detector:close/
 # コンテナGUIを閉じた時の処理
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
 ### This software is released under the MIT License, see LICENSE.
-say #> close_detector:close
+
 ### インベントリ変化チェック
 function close_detector:check_inventory
 

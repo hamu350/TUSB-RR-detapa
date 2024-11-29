@@ -1,9 +1,9 @@
-#> close_detector:check_inventory/
+say #> close_detector:check_inventory/
 # コンテナGUIを閉じた時の処理
 # Process on closed Container GUI.
 ### Copyright © 2020 赤石愛
 ### This software is released under the MIT License, see LICENSE.
-say #> close_detector:check_inventory/
+
 # 個別ストレージ呼び出し
 function #oh_my_dat:please
 
