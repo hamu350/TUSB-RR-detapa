@@ -5,7 +5,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### ロックされていた時の処理を呼び出し
-function #close_detector:on_locked
+# function #close_detector:on_locked
 
 # openトリガー有効化
 advancement revoke @s only close_detector:open

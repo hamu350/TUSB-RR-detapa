@@ -9,6 +9,8 @@ function #oh_my_dat:please
 
 ### パフォーマンス向上のため先にインベントリを保存しておく
 data modify storage close_detector: new_inventory set from entity @s Inventory
+# tellraw @a {"nbt":"new_inventory","storage": "close_detector:"}
+# tellraw @a {"nbt":"_[-4][-4][-4][-4][-4][-4][-4][-4].CloseDetector.Inventory","storage": "oh_my_dat:"}
 
 ### 変化がないか、占有数に差がないかをチェック
 ## last
@@ -19,11 +21,10 @@ execute store result storage close_detector: changed byte 1 run data modify stor
 execute store result storage close_detector: closed byte 1 unless data storage close_detector: {changed:true}
 
 ### スキップする回数をカウントダウン
-execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip int 0.999999999 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip
+# execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip int 0.999999999 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip
 ### まだスキップ回数が残っていたら閉じたことを無視します。
-execute unless data storage close_detector: {skip:0} run data modify storage close_detector: closed set value false
+# execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector{skip:0} run data modify storage close_detector: closed set value false
 
-tag @s remove CloseDetectorIgnoreNext
 ### 変化があったら連続して無視しないといけない可能性があるので確認
 execute if data storage close_detector: {changed:true,skip:0} run function close_detector:check_inventory/
 
