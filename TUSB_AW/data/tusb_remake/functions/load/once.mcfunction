@@ -295,6 +295,11 @@ scoreboard objectives add MakeupTickB dummy
 ### インフィニティボス報酬の数
 scoreboard objectives add infinity_boss.reward dummy
 
+# IDを振るためのスコアボード
+scoreboard objectives add OhMyDatID dummy
+# 計算に使うスコアボード
+scoreboard objectives add OhMyDat dummy
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam color red
