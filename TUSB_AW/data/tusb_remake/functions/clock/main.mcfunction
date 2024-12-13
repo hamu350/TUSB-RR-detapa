@@ -105,3 +105,19 @@ execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 
 ### 個人ロッカー(印板)
 execute as @e[tag=PersonalLockerSign] at @s run function tusb_remake:clock/personal_locker_sign
+
+### オプションモード拒否
+execute as @a at @s run function tusb_remake:tick/player_tick
+
+execute as @a[tag=!InfinityBossArea,tag=!InfinityBossBattle,gamemode=!spectator,gamemode=!creative] at @e[type=armor_stand,tag=Boss_MarkerB] if entity @s[distance=..30] run function tusb_remake:boss/barrier
+execute as @a[tag=!InfinityBossArea,tag=!InfinityBossBattle,gamemode=!spectator,gamemode=!creative] at @e[type=armor_stand,tag=barrier] if entity @s[distance=..8] run function tusb_remake:boss/barrier
+
+# CantTp
+tag @a[tag=CantTp] remove CantTp
+execute at @e[tag=CantTpSmall] run tag @a[distance=..8] add CantTp
+execute at @e[tag=CantTpMedium] run tag @a[distance=..16] add CantTp
+execute at @e[tag=CantTpLarge] run tag @a[distance=..32] add CantTp
+
+# ItemClear
+execute at @e[tag=ItemClear] run kill @e[type=item,distance=..8]
+execute at @e[tag=Boss_MarkerB] run kill @e[type=item,distance=..20]

@@ -43,7 +43,3 @@ scoreboard players reset @s UseEnderEye
 execute in minecraft:overworld if block 3 77 87 minecraft:end_portal_frame[eye=true] run function tusb_remake:area/conquer/luna
 ### 交易島だった場合、祈りを解禁
 execute in minecraft:overworld if block -70 15 32 minecraft:end_portal_frame[eye=true] run function tusb_remake:area/conquer/traders_island
-### テーブルの場合村人追加
-execute in minecraft:overworld if block -3 243 -2222 minecraft:end_portal_frame[eye=true] run function tusb_remake:area/conquer/murabito
-### 旧深淵だった場合岩盤を黒曜石に置き換え
-execute in minecraft:overworld if block -95 159 -151 minecraft:end_portal_frame[eye=true] run fill -95 174 -151 -95 174 -151 minecraft:obsidian replace bedrock

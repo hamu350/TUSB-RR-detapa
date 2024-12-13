@@ -20,12 +20,18 @@ execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear
 
 
 # RR追加部分
-
 # 共鳴アイテム回収
 execute if entity @s[tag=Kyoumei] in overworld run function tusb_remake:player/death/kyoumei/
 
+# 周回ボスなら消す
+execute if data storage tusb_remake: settings{is_sightseeing:true} if entity @s[tag=InfinityBossArea] run clear @s
+
 ### ネザーアスレチック
 execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
+
+### コンテナを開いていたら閉じたことにする
+execute if entity @s[advancements={close_detector:open=true}] run function #close_detector:on_closed
+advancement revoke @s[advancements={close_detector:open=true}] only close_detector:open
 
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom

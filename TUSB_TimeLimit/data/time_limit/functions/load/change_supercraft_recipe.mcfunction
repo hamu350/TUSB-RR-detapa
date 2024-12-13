@@ -4,9 +4,14 @@
 
 # 既存レシピ書き換え
 # アウターレシピ
-
+# まくら 4から2、サンムーン 3から2、エストレーヤ4から2
+data modify block -2735 70 -358 Items[0].Count set value 2
+data modify block -2735 70 -358 Items[3].Count set value 2
+data modify block -2735 70 -358 Items[4].Count set value 2
+data modify block -2735 70 -358 Items[5].Count set value 2
 
 # エリトラの耐久値+その他諸々のデータを消す(耐久値を消したいけど結果的にバニラエリトラになればいい)
+data modify block -2722 71 -358 Items[].tag set value {}
 
 # 新規レシピ追加
 # 71(上)に完成品、70(下)に素材、素材表示ブロックは73

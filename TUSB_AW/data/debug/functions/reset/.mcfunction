@@ -251,3 +251,28 @@ scoreboard players reset * RadarVision
 # scoreboard players reset * TargetCheck 
 scoreboard players reset * ProjectileSkill 
 scoreboard players reset * PotentialSkill 
+
+### ハードコアモード
+scoreboard players reset * hcmode
+data remove storage tusb_remake: settings.hardcore
+
+### トカルトモード
+scoreboard players reset * isfmode
+data remove storage tusb_remake: settings.toculting
+
+### タイムリミットモード
+scoreboard players reset * tlmode
+data remove storage tusb_remake: settings.time_limit
+
+### インフィニティボスメイクアップ
+scoreboard players reset * MakeupTickB
+
+### インフィニティボス報酬の数
+scoreboard players reset * infinity_boss.reward
+
+### トータルEXP
+scoreboard players reset * TotalXp
+
+### OhMyDatぶちけし
+scoreboard players reset * OhMyDat
+scoreboard players reset * OhMyDatID

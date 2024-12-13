@@ -40,3 +40,6 @@ execute if data storage tusb_remake: {_:false} in minecraft:overworld as @e[x=-1
 
 # 追加部分
 # 難易度に応じて秒数を増やすよ
+execute if score Difficulty Option matches 1 run function time_limit:time_add/easy
+execute if score Difficulty Option matches 2 run function time_limit:time_add/normal
+execute if score Difficulty Option matches 3.. run function time_limit:time_add/hard

@@ -23,6 +23,9 @@ execute in the_nether run forceload add 3500 3500 3500 3500
 execute in the_end run forceload add 3500 3500 3500 3500
 schedule function tusb_remake:load/set_shulker_box 1t
 
+# インフィニティボス報酬
+forceload add -2721 105 -2721 105
+
 ### ライブラリ用
 scoreboard objectives add Temporary dummy
 scoreboard objectives add Const dummy
@@ -110,6 +113,8 @@ scoreboard objectives add PickupPaper minecraft.picked_up:minecraft.paper
 ### 経験値
 scoreboard objectives add NextExp dummy "必要経験値"
 scoreboard objectives add ExpToLevel dummy "次のレベルアップまでの経験値"
+### RR追加 合計経験値量
+scoreboard objectives add TotalXp dummy "合計経験値量"
 
 ### 各ジョブのレベルと残り経験値
 scoreboard objectives add Level dummy "レベル"
@@ -275,6 +280,21 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
 
+### ハードコアモード
+scoreboard objectives add hcmode trigger
+
+### タイムリミットモード
+scoreboard objectives add tlmode trigger
+
+### トカルトモード
+scoreboard objectives add isfmode trigger
+
+### インフィニティボスメイクアップ
+scoreboard objectives add MakeupTickB dummy
+
+### インフィニティボス報酬の数
+scoreboard objectives add infinity_boss.reward dummy
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam color red
@@ -353,3 +373,6 @@ data modify storage tusb_remake: skill_slot_titles set value {instant:{a:'[{"tex
 function tusb_remake:load/define_const
 
 # execute in minecraft:overworld positioned -1896.000000 118.000000 -136.000000 run summon minecraft:marker ~ ~ ~ {CustomName:'"システムマーカー"',UUID:[I;0,1,0,1]}
+
+# インフィニティボスチェストデータセット
+function tusb_remake:boss/chest/dataset

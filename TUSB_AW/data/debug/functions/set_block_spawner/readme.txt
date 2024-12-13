@@ -18,8 +18,8 @@ data:スポナーのデータ
     Count:mobが湧く数
     Range:mobが湧く範囲
     ReqRange:プレイヤーが何m以内に入るとスポナーが動くか
-    Once:trueの場合一回湧きになる
-    Aura:trueの場合新世代のスポナーオーラを纏う(10m以内に採掘速度低下Ⅱ(×0.09))
+Once:trueの場合一回湧きになる
+Aura:trueの場合新世代のスポナーオーラを纏う(10m以内に採掘速度低下Ⅱ(×0.09))
 
 スポナーのCopy方法
 /function debug:copy_spawner/

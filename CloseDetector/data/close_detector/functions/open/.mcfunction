@@ -21,7 +21,7 @@ function #oh_my_dat:please
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CloseDetector.Inventory set from entity @s Inventory
 
 ### ラグ等の不具合回避のためにスキップ回数をリセットしておく
-data modify storage close_detector: skip set value 0
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].close_detector.skip set value 0
 
 ### 開いたとき処理呼び出し
 function #close_detector:on_opened
