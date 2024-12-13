@@ -1,4 +1,4 @@
-#tusb_remake:display/skillset
+#> tusb_remake:display/skillset
 #
 #> スキルメニューを表示する
 #
