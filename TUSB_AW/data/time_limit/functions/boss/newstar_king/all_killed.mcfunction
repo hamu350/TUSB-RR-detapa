@@ -20,5 +20,10 @@ execute in the_end run kill @e[type=item,nbt={Item:{id:"minecraft:debug_stick",t
 
 
 # 混沌を示し者
-give @a firework_star{display:{Name:'{"text":"混沌を制し者","color":"dark_purple","bold":true,"italic":false,"underlined":true}',Lore:['{"text":"ありとあらゆる混沌を制したものの証","color":"dark_blue","italic":false}']},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}],Explosion:{Type:0,Colors:[I;6321814],FadeColors:[I;11908533]}} 1
+give @a purple_dye{display:{Name:'{"text":"混沌を制し者","color":"dark_purple","bold":true,"italic":false,"underlined":true}',Lore:['{"text":"ありとあらゆる混沌を制したものの証","color":"dark_blue","italic":false}']},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}],Explosion:{Type:0,Colors:[I;6321814],FadeColors:[I;11908533]}} 1
+execute if data storage tusb_remake: settings{hardcore:1b} run give @a red_dye{display:{Name:'[{"text":"混沌を制し者","color":"dark_purple","bold":true,"underlined":true},{"text":"[有限ノ命]","color":"dark_red"}]'},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}]} 1
+execute if data storage tusb_remake: settings{toculting:1b} run give @a light_blue_dye{display:{Name:'[{"text":"混沌を制し者","color":"dark_purple","bold":true,"underlined":true},{"text":"[凍結世界]","color":"aqua"}]'},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}]} 1
+execute if data storage tusb_remake: settings{time_limit:1b} run give @a cyan_dye{display:{Name:'[{"text":"混沌を制し者","color":"dark_purple","bold":true,"underlined":true},{"text":"[時限世界]","color":"dark_aqua"}]'},HideFlags:126,CustomModelData:1,Enchantments:[{id:"minecraft:infinity",lvl:99s}]} 1
+execute if data storage tusb_remake: settings{toculting:1b} if data storage tusb_remake: settings{hardcore:1b} if data storage tusb_remake: settings{time_limit:1b} run give @a firework_star{display:{Name:'[{"text":"混沌を制し者","color":"dark_purple","bold":true,"underlined":true},{"text":"[真]","color":"black"}]',Lore:['{"text":"ここまでプレイしていただきありがとうございました！！！"}','{"text":"TUSB CrisisWorldをお待ちください...","obfuscated":true}']}} 64
+
 # playsoundの遅延とか
