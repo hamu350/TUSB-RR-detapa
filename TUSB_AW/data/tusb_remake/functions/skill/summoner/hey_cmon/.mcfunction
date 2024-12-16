@@ -12,5 +12,5 @@ tag @s add This
 execute unless predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6020 as @e[distance=..15,type=!player,team=FriendlyTeam,sort=furthest,limit=10] run function tusb_remake:skill/summoner/hey_cmon/tp/pet
 execute if predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6020 at @s as @a[distance=1..15,tag=!CantTp,sort=furthest,limit=1] run function tusb_remake:skill/summoner/hey_cmon/tp/player
 ### レベル２
-execute unless predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6020 as @e[distance=..15,type=!player,team=FriendlyTeam,sort=furthest,limit=20] run function tusb_remake:skill/summoner/hey_cmon/tp/pet
-execute if predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6020 at @s as @a[distance=1..15,tag=!CantTp,sort=furthest,limit=2] run function tusb_remake:skill/summoner/hey_cmon/tp/player
+execute unless predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6021 as @e[distance=..15,type=!player,team=FriendlyTeam,sort=furthest,limit=20] run function tusb_remake:skill/summoner/hey_cmon/tp/pet
+execute if predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6021 at @s as @a[distance=1..15,tag=!CantTp,sort=furthest,limit=2] run function tusb_remake:skill/summoner/hey_cmon/tp/player

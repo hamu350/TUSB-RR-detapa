@@ -1,7 +1,7 @@
 {
     "pools": [
         {
-            "total_weight": 20,
+            "total_weight": 21,
             "rolls": 1,
             "entries": [
                 {
@@ -85,7 +85,7 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "asset:item/currency/nether/hell_cube",
+                    "name": "asset:item/material/hellcube",
                     "weight": 2,
                     "functions": [
                         {
@@ -133,6 +133,17 @@
                         {
                             "function": "set_count",
                             "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/helditem/shield/enderman_shield",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
                         }
                     ]
                 },
