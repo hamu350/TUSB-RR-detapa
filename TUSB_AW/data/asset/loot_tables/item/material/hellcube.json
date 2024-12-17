@@ -4,8 +4,8 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:loot_table",
-            "name": "minecraft:blocks/red_wool",
+            "type": "minecraft:item",
+            "name": "minecraft:red_wool",
             "weight": 1,
             "functions": [
               {

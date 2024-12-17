@@ -4,8 +4,8 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:loot_table",
-            "name": "minecraft:blocks/carrots",
+            "type": "minecraft:item",
+            "name": "minecraft:carrot",
             "weight": 1,
             "functions": [
               {
