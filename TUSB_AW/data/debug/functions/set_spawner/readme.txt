@@ -5,9 +5,7 @@ debug:set_spawnerというstorageに要素を代用してどうこうします
 
 自分にDebugIdというscoreを設定しておいてください。他の人と被らないように
 
-テンプレ：/data modify storage debug:set_spawner _ set value {DebugId:,merge:false,set:true,data:{SpawnMob:[{AssetId:,weight:1}],Delay:{Delay:1,Min:100,Max:700},Count:1,Range:4,ReqRange:32,Display:""}}
-例：/data modify storage debug:set_spawner _ set value {DebugId:350,merge:false,set:true,data:{SpawnMob:[{AssetId:820,weight:1}],Delay:{Delay:1,Min:200,Max:800},Count:1,Range:4,ReqRange:16,Display:""}}
-(魔弾のスポナーをDebugId:1のプレイヤーの位置に設置する)
+テンプレ：/data modify storage debug:set_spawner _ set value {DebugId:,merge:false,set:true,data:{SpawnMob:[{AssetId:,weight:1}],Delay:{Delay:1,Min:100,Max:700},Count:1,Range:4,ReqRange:16,Display:""}}
 
 よくある間違い：AssetId:0800のようにしてしまう。正しくはAssetId:800。0800の場合数値と認識されない
 
