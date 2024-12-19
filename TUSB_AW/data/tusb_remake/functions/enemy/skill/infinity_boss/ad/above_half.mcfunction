@@ -1,4 +1,6 @@
 #> tusb_remake:enemy/skill/infinity_boss/devil/above_half
 
-effect give @s strength 100 4 true
-effect give @s speed 100 9 true
+# atk+42(63dmg)
+    effect give @s strength 100 13 true
+# speedx3
+    effect give @s speed 100 9 true
