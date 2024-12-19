@@ -64,11 +64,6 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "asset:item/tool/carrot_on_a_stick/sage_rod",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
                     "name": "asset:item/weapon/other/blue_sky_carrot",
                     "weight": 1
                 }
