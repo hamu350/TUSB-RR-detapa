@@ -4,3 +4,5 @@
 # タグ消し
 tag @s remove InfinityBossBattle
 
+# 待機部屋に転送
+execute at @s if entity @e[type=armor_stand,distance=..20,tag=Boss_MarkerB] run tp @s -2709 74 -379
