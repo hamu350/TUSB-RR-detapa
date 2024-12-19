@@ -11,6 +11,11 @@
                 },
                 {
                     "type": "loot_table",
+                    "name": "asset:item/tool/carrot_on_a_stick/sage_rod",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
                     "name": "asset:item/arrow/shining_prism",
                     "weight": 1,
                     "functions": [
@@ -37,10 +42,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 5
-                            }
+                            "count": 2
                         }
                     ]
                 },
@@ -51,7 +53,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 8
+                            "count": 4
                         }
                     ]
                 },
@@ -77,22 +79,22 @@
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 4,
-                                "max": 8
+                                "min": 2,
+                                "max": 4
                             }
                         }
                     ]
                 },
                 {
                     "type": "loot_table",
-                    "name": "asset:item/material/hellcube",
+                    "name": "asset:item/currency/nether/hell_cube",
                     "weight": 2,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 4,
-                                "max": 8
+                                "min": 2,
+                                "max": 4
                             }
                         }
                     ]
@@ -104,10 +106,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 3
-                            }
+                            "count": 1
                         }
                     ]
                 },
@@ -118,10 +117,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 3
-                            }
+                            "count": 1
                         }
                     ]
                 },
@@ -132,7 +128,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 8
+                            "count": 4
                         }
                     ]
                 },
@@ -154,7 +150,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 8
+                            "count": 2
                         }
                     ]
                 }
