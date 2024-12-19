@@ -5,6 +5,10 @@
             "entries": [
                 {
                     "type": "loot_table",
+                    "name": "asset:item/weapon/other/final_vent"
+                },
+                {
+                    "type": "loot_table",
                     "name": "asset:item/tool/fishing_rod/primordial_fishing_rod",
                     "weight": 1
                 },
