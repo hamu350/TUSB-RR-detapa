@@ -85,7 +85,7 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "asset:item/material/hellcube",
+                    "name": "asset:item/currency/nether/hell_cube",
                     "weight": 2,
                     "functions": [
                         {
