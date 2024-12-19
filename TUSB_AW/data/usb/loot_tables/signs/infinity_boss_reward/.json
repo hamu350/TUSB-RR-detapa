@@ -5,18 +5,8 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "usb:xp/128",
-                    "weight": 80
-                },
-                {
-                    "type": "loot_table",
-                    "name": "usb:xp/256",
-                    "weight": 16
-                },
-                {
-                    "type": "loot_table",
-                    "name": "usb:xp/512",
-                    "weight": 4
+                    "name": "asset:item/instant/egg",
+                    "weight": 1
                 }
             ]
         },
@@ -24,9 +14,13 @@
             "rolls": 1,
             "entries": [
                 {
+                    "type": "empty",
+                    "weight": 75
+                },
+                {
                     "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
-                    "weight": 80,
+                    "weight": 20,
                     "functions": [
                         {
                             "function": "set_count",
@@ -37,7 +31,7 @@
                 {
                     "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
-                    "weight": 16,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -48,7 +42,7 @@
                 {
                     "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
-                    "weight": 4,
+                    "weight": 1,
                     "functions": [
                         {
                             "function": "set_count",
@@ -90,24 +84,19 @@
         },
         {
             "//": "RareとNormal",
-            "rolls": 10,
+            "rolls": 5,
             "entries": [
-                {
-                    "//": "weightは合計1000",
-                    "type": "empty",
-                    "weight": 0
-                },
                 {
                     "rarity": "R:20%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/r",
-                    "weight": 200
+                    "weight": 20
                 },
                 {
                     "rarity": "N:80%",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/n",
-                    "weight": 800
+                    "weight": 80
                 }
             ]
         }
