@@ -3,7 +3,6 @@
 
 # タグ消し
 tag @s remove InfinityBossBattle
-tag @s remove InfinityBossArea
 
 # 待機部屋に転送
 tp @s -2709 74 -379
