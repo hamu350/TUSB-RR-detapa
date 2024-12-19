@@ -10,11 +10,6 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "usb:signs/infinity_boss_reward/sr_item/outerlegend_full",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/sr_item/twilight_full",
                     "weight": 1
                 },
