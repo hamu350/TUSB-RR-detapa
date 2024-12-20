@@ -7,6 +7,8 @@
 scoreboard players add @s[scores={Level=..99}] Level 1
 ### 最大MPはレベルに関わらずあがる
 scoreboard players add @s MPMax 1
+### 最大500
+scoreboard players set @s[scores={MPMax=500..}] MPMax 500
 
 ### MPを回復
 scoreboard players operation @s MP = @s MPMax
