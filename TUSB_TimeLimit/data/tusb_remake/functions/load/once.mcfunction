@@ -218,12 +218,9 @@ scoreboard objectives add IronWill dummy "ノックバック軽減機会ポイ�
 scoreboard objectives add NinjaTime dummy "連舞・跳躍効果時間"
 scoreboard objectives add Tsuremai dummy "連舞レベル"
 scoreboard objectives add Choyaku dummy "跳躍レベル"
-scoreboard objectives add seiyou dummy "靖妖レベル"
 scoreboard objectives add KasapLevel dummy "ルカナンレベル"
 scoreboard objectives add KasapTimer dummy "ルカナンタイマー"
 scoreboard objectives add Kazakiri dummy "風切効果時間"
-scoreboard objectives add petto dummy "ペットの数"
-scoreboard objectives add mazikaru dummy "敵の数"
 # scoreboard objectives add CookingState dummy "ワイルドクッキング成否状態"
 # scoreboard objectives add WildHealing dummy "ワイルドヒーリング満腹度変化量"
 # scoreboard objectives add EnChase dummy "エンチェイスレベル"
@@ -283,7 +280,7 @@ gamerule doTileDrops true
 gamerule doInsomnia true
 gamerule doWardenSpawning true
 gamerule doTraderSpawning true
-gamerule randomTickSpeed 10
+gamerule randomTickSpeed 3
 gamerule showDeathMessages true
 gamerule spawnRadius 0
 gamerule disableElytraMovementCheck true

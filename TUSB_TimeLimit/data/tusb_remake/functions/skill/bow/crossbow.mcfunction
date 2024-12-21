@@ -13,8 +13,6 @@ execute as @s[scores={CurrentMode=3230..3239}] run function tusb_remake:skill/ar
 execute as @s[scores={CurrentMode=3240..3249}] run function tusb_remake:skill/archer/bird_strike/shoot
 execute as @s[scores={CurrentMode=3250..3259}] run function tusb_remake:skill/archer/ghast_cannon/shoot
 execute as @s[scores={CurrentMode=3260..3269}] run function tusb_remake:skill/archer/fatal_shot/shoot
-execute as @s[scores={CurrentMode=3270..3279}] run function tusb_remake:skill/archer/madan/shoot
-execute as @s[scores={CurrentMode=3280..3289}] run function tusb_remake:skill/archer/e_su/shoot
 
 # 拡散エンチャントがついていたら更に処理する
 # マナはしっかりと3回分消費します

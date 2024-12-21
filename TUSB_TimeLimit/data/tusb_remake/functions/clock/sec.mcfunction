@@ -9,7 +9,6 @@ execute as @a[scores={ManaRefresh=0..}] run function tusb_remake:skill/black_mag
 # 連舞 跳躍
 execute as @a[scores={Tsuremai=0..}] at @s run function tusb_remake:skill/ninja/tsuremai/check
 execute as @a[scores={Choyaku=0..}] at @s run function tusb_remake:skill/ninja/choyaku/check
-execute as @a[scores={seiyou=0..}] at @s run function tusb_remake:skill/ninja/seiyou/check
 
 # 黙想継続
 execute as @a[tag=Mokuso] at @s run function tusb_remake:skill/ninja/mokuso/check
@@ -85,9 +84,4 @@ execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 ## エリア境界不正侵入(バリアめり込み)防止
 execute as @a[predicate=time_limit:player] at @s if block ~ ~ ~ #time_limit:unbreakable run function time_limit:player/barriarkill
 
-
-
-
-
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
-

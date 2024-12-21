@@ -7,7 +7,7 @@ execute in minecraft:overworld positioned -58 23 22 if block ~ ~ ~ minecraft:spa
 execute in minecraft:overworld positioned -58 23 22 if block ~ ~ ~ minecraft:spawner run data remove block ~ ~ ~ SpawnPotentials
 
 execute as @a at @s run playsound minecraft:block.anvil.land master @s ~ ~100 ~ 0.6 1.414 0.6
-
+tellraw @a {"text":"時の乱れが収まったようだ…","color":"#00ff00"}
 
 # 追加部分
 
@@ -15,7 +15,7 @@ execute as @a at @s run playsound minecraft:block.anvil.land master @s ~ ~100 ~ 
 scoreboard players set Cloak Changed_Form 0
 
 # ボスバーの色を戻す
-
+function time_limit:tick/bossbar/bossbar_color
 
 # 戻ってそうな音
 execute as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1

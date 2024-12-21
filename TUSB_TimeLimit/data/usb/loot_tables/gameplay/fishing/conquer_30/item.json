@@ -3,7 +3,7 @@
     "pools": [
         {
             "rolls": 1,
-            "total_weight": 97,
+            "total_weight": 75,
             "entries": [
                 {
                     "type": "item",
@@ -18,30 +18,12 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:end_crystal",
-                    "weight": 4,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                         "min": 1,
-                                         "max": 3
-                                     }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{AttributeModifiers:[{Name:\"wax100\",Amount:2d,Operation:0,UUID:[I;0,1,0,1],Slot:\"mainhand\",AttributeName:\"generic.max_health\"},{Name:\"wax100\",Amount:2d,Operation:0,UUID:[I;0,2,0,1],Slot:\"offhand\",AttributeName:\"generic.movement_speed\"}],HideFlags:60,display:{Name:'{\"text\":\"§e§lエストレーヤ\"}'}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:nether_star",
-                    "weight": 21,
+                    "weight": 1,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
-                            "count": 32
+                            "count": 64
                         }
                     ]
                 },
@@ -149,8 +131,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 20,
-                                "max": 40
+                                "min": 4,
+                                "max": 8
                             }
                         }
                     ]

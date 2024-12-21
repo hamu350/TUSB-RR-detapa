@@ -10,7 +10,7 @@ execute in minecraft:overworld run tp 0-0-1-0-1 -1919.5 6.5 -191.5
 # scoreboard objectives setdisplay sidebar.team.dark_purple
 
 ### Const 今回は使いたくない！！
-data modify storage tusb_remake: Const.ExpMul set value 5
+data modify storage tusb_remake: Const.ExpMul set value 7
 
 ### Settingsが存在していなかったら初期化する
 scoreboard objectives setdisplay sidebar.team.dark_purple

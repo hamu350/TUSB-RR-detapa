@@ -28,9 +28,6 @@ scoreboard players set @s EventRank -1
 
 # 追加部分
 
-# トカルトモードなら松明付与
-execute if data storage tusb_remake: settings{toculting:true} run give @s torch 64
-
 # 予感分岐用変数初期化
 data modify storage math: in set value [1,2]
 function #math:dice

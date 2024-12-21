@@ -19,20 +19,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:emerald_block",
-                    "weight": 10,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 32,
-                                "max": 96
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:jukebox",
                     "weight": 1,
                     "functions": [
@@ -582,7 +568,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{RepairCost: 1000000000, HideFlags: 32, AttributeModifiers: [{Amount: 6.0d, Slot: \"mainhand\", AttributeName: \"minecraft:generic.max_health\", Operation: 0, UUID: [I; 0, 1, 0, 1], Name: \"wax\"}, {Amount: 0.03d, Slot: \"mainhand\", AttributeName: \"minecraft:generic.knockback_resistance\", Operation: 0, UUID: [I; 0, 1, 0, 2], Name: \"wax\"}, {Amount: 0.04d, Slot: \"mainhand\", AttributeName: \"minecraft:generic.movement_speed\", Operation: 0, UUID: [I; 0, 1, 0, 3], Name: \"wax\"}, {Amount: 0.04d, Slot: \"mainhand\", AttributeName: \"minecraft:generic.movement_speed\", Operation: 0, UUID: [I; 0, 1, 0, 4], Name: \"wax\"}, {Amount: 4.0d, Slot: \"mainhand\", AttributeName: \"minecraft:generic.attack_damage\", Operation: 0, UUID: [I; 0, 1, 0, 5], Name: \"wax\"}], Enchantments: [{lvl: 3s, id: \"minecraft:fire_aspect\"}, {lvl: 3s, id: \"minecraft:knockback\"}, {lvl: 5s, id: \"minecraft:sharpness\"}], display: {Name: '{\"extra\":[{\"bold\":true,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"red\",\"text\":\"サン\"}],\"text\":\"\"}'}}"
+                            "tag": "{RepairCost: 1000000000, HideFlags: 32, AttributeModifiers: [{Amount: 6.0d, Slot: \"mainhand\", AttributeName: \"generic.max_health\", Operation: 0, UUID: [I; 0, 1, 0, 1], Name: \"wax\"}, {Amount: 0.03d, Slot: \"mainhand\", AttributeName: \"generic.knockback_resistance\", Operation: 0, UUID: [I; 0, 1, 0, 2], Name: \"wax\"}, {Amount: 0.04d, Slot: \"mainhand\", AttributeName: \"generic.movement_speed\", Operation: 0, UUID: [I; 0, 1, 0, 3], Name: \"wax\"}, {Amount: 0.04d, Slot: \"mainhand\", AttributeName: \"generic.movement_speed\", Operation: 0, UUID: [I; 0, 1, 0, 4], Name: \"wax\"}, {Amount: 4.0d, Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Operation: 0, UUID: [I; 0, 1, 0, 5], Name: \"wax\"}], display: {Name: '{\"text\":\"§c§lサン\"}'}, Enchantments: [{lvl: 3s, id: \"minecraft:fire_aspect\"}, {lvl: 5s, id: \"minecraft:sharpness\"}, {lvl: 3s, id: \"minecraft:knockback\"}]}"
                         }
                     ]
                 },

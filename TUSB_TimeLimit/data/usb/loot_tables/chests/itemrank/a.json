@@ -23,34 +23,6 @@
                         },
                         {
                             "type": "item",
-                            "name": "minecraft:emerald_block",
-                            "weight": 8,
-                            "functions": [
-                                {
-                                    "function": "set_count",
-                                    "count": {
-                                        "min": 64,
-                                        "max": 128
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "minecraft:nether_star",
-                            "weight": 10,
-                            "functions": [
-                                {
-                                    "function": "set_count",
-                                    "count": {
-                                        "min": 64,
-                                        "max": 128
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "item",
                             "name": "minecraft:spruce_log",
                             "weight": 1,
                             "functions": [
@@ -131,6 +103,20 @@
                             "count": {
                                 "min": 192,
                                 "max": 256
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:emerald_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 22,
+                                "max": 28
                             }
                         }
                     ]
