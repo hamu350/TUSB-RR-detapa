@@ -2,4 +2,4 @@
 #
 # 
 #
-tellraw @s {"nbt": "SlectedItem","entity": "@s"}
+tellraw @s {"nbt": "SelectedItem","entity": "@s"}
