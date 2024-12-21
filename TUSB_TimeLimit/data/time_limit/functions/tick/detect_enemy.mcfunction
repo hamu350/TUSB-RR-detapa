@@ -7,7 +7,6 @@ tag @s add ShieldTried
 
 # 時送りの盾を検知するために敵を判定する
 # ラスボスはつけさせない
-# ボスチームにもつけさせない
-execute if entity @s[tag=Enemy,tag=!NewStar_King,team=!Boss] run function time_limit:tick/replace_mob_data
+execute if entity @s[tag=Enemy,tag=!NewStar_King] run function time_limit:tick/replace_mob_data
 
 # タグないなら盾付与のfunctionには入らせない

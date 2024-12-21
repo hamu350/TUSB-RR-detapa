@@ -21,7 +21,7 @@ data modify entity @e[limit=1] DeathLootTable set value "time_limit:noloot/no_lo
 kill @e[tag=BossEnemy,type=!player]
 
 # HPスコアを再度戻す
-scoreboard players set $30720 Boss_x 100000
+scoreboard players set $30720 Boss_x 30720
 
 # itemもクリア
 # 1tick後か?

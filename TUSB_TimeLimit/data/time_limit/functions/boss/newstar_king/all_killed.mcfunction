@@ -17,4 +17,5 @@ execute in the_end run playsound minecraft:block.portal.trigger block @s ~ ~ ~ 1
 execute in the_end run kill @e[type=item,nbt={Item:{id:"minecraft:debug_stick",tag:{Shinen:1b}}}]
 
 # particleとかいるならあとで追加しようそうしよう
+
 # playsoundの遅延とか

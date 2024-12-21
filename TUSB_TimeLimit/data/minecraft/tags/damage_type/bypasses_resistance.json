@@ -3,6 +3,8 @@
         "minecraft:lightning_bolt",
         "minecraft:out_of_world",
         "minecraft:sonic_boom",
-        "minecraft:stalagmite"
+        "minecraft:stalagmite",
+        "minecraft:magic",
+        "minecraft:indirect_magic"
     ]
 }

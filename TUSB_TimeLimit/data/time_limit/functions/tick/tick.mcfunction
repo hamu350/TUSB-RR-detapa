@@ -15,9 +15,7 @@ function time_limit:tick/timer
 # まず盾判定してないmobを探索し、その後にenemyタグがあったら盾を確立で付与
 # enemyタグonlyのほうがいい説はある(1tick後じゃないとうまく実行されない可能性がある)
 # 取引村人は除外、るなちーみたいな騎乗モブもやりたいけどpassengersだと特殊モブ以外も乗ってたら盾つけれないしなぁ、、
-# AWではこのシステムを止めます
-# 一旦RRなので復活(リポジトリ別けろ)
-execute as @e[type=#tusb_remake:mob,tag=!ShieldTried,limit=1] run function time_limit:tick/detect_enemy
+execute as @e[type=#tusb_remake:mob,tag=!ShieldTried,limit=1] if score Time_Shield Option matches 1 run function time_limit:tick/detect_enemy
 
 # ボスバー色チェン
 function time_limit:tick/bossbar/bossbar_colorcalc
@@ -47,4 +45,3 @@ function time_limit:tick/boss_tick
 
 # 本来ならrejoinedしてtimer表示させたいけど現状はボスのHPをボスバーで出さないから毎秒表示でええや
 bossbar set time_limit:timer players @a
-

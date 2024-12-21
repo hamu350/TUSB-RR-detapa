@@ -15,8 +15,7 @@ data modify storage tusb_remake: skill_table.archer.24.description set value [["
 data modify storage tusb_remake: skill_table.archer.25.description set value [["矢を放つ"]]
 # フェイタルショット
 data modify storage tusb_remake: skill_table.archer.26.description set value [["矢を放つ"]]
-data modify storage tusb_remake: skill_table.archer.27.description set value [["矢を放つ"]]
-data modify storage tusb_remake: skill_table.archer.28.description set value [["矢を放つ"]]
+
 # トラップ効果時間短縮
 
 # ルカナン

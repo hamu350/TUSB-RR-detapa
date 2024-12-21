@@ -14,4 +14,3 @@ function time_limit:login/re_show
 #> スコアリセット
 scoreboard players reset @s ChangeSkillSet
 scoreboard players enable @s ChangeSkillSet
-scoreboard players enable @s SkillSetting

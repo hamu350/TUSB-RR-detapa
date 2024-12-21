@@ -2,12 +2,6 @@
 
 # 島50攻略で報酬
 # せいしゃくしゃしゃんあたま
-give @s player_head{SkullOwner:"hamu350"} 1
-give @s player_head{SkullOwner:"bakemann"} 1
-give @s player_head{SkullOwner:"Cloud_Coffee24"} 1
-give @s player_head{SkullOwner:"mocope"} 1
-give @s player_head{SkullOwner:"SataYamiumi"} 1
-give @s player_head{SkullOwner:"soba_08222"} 1
-give @s player_head{SkullOwner:"TAKA090"} 1
-give @s player_head{SkullOwner:"mamorukun_neo"} 1
-tellraw @a "TUSB RRを攻略した！！！"
+give @s player_head{SkullOwner:"Syanenne_paa"} 1
+give @s player_head{SkullOwner:"Yohi_ya"} 1
+give @s player_head{SkullOwner:"FreyCielu"} 1
