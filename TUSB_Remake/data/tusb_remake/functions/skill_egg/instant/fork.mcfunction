@@ -43,9 +43,9 @@ execute if score @s ActivatedSkill matches 5030..5039 run function tusb_remake:s
 execute if score @s ActivatedSkill matches 5040..5049 run function tusb_remake:skill/black_mage/mana_refresh/
 execute if score @s ActivatedSkill matches 5050..5059 run function tusb_remake:skill/black_mage/enaspir/
 execute if score @s ActivatedSkill matches 5060..5069 run function tusb_remake:skill/black_mage/magic_shield/
-execute if score @s ActivatedSkill matches 5070..5079 run function tusb_remake:skill/black_mage/return/
-execute if score @s ActivatedSkill matches 5080..5089 run function tusb_remake:skill/black_mage/wind_wall/
-execute if score @s ActivatedSkill matches 5090..5099 run function tusb_remake:skill/black_mage/ranaruta/
+execute if score @s ActivatedSkill matches 5070..5079 at @s run function tusb_remake:skill/black_mage/return/
+execute if score @s ActivatedSkill matches 5080..5089 at @s run function tusb_remake:skill/black_mage/wind_wall/
+execute if score @s ActivatedSkill matches 5090..5099 at @s run function tusb_remake:skill/black_mage/ranaruta/
 
 execute if score @s ActivatedSkill matches 6000..6009 run function tusb_remake:skill/summoner/summon_snow/
 execute if score @s ActivatedSkill matches 6010..6019 run function tusb_remake:skill/summoner/summon_merchant/
@@ -56,4 +56,3 @@ execute if score @s ActivatedSkill matches 6050..6059 run function tusb_remake:s
 execute if score @s ActivatedSkill matches 6060..6069 run function tusb_remake:skill/summoner/summon_golem/
 execute if score @s ActivatedSkill matches 6070..6079 run function tusb_remake:skill/summoner/summon_balloon/
 execute if score @s ActivatedSkill matches 6080..6089 run function tusb_remake:skill/summoner/summon_glider/
-execute if score @s ActivatedSkill matches 6090..6099 run function tusb_remake:skill/summoner/zyunnkan/

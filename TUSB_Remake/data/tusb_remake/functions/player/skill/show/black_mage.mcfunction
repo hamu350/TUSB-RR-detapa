@@ -30,5 +30,3 @@ execute if score @s ShowSkill matches 5232 run data modify storage tusb_remake: 
 execute if score @s ShowSkill matches 5240 run data modify storage tusb_remake: skill_name set value "ドレイン"
 execute if score @s ShowSkill matches 5241 run data modify storage tusb_remake: skill_name set value "ドレインⅡ"
 execute if score @s ShowSkill matches 5250 run data modify storage tusb_remake: skill_name set value "パルプンテ"
-execute if score @s ShowSkill matches 5260 run data modify storage tusb_remake: skill_name set value "マジカルドレイン"
-execute if score @s ShowSkill matches 5270 run data modify storage tusb_remake: skill_name set value "ライトニングシャワー"

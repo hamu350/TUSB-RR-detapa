@@ -10,9 +10,7 @@ execute if score @s PotentialSkill matches 2200..2209 run function tusb_remake:s
 #居縮HIT処理
 execute if score @s PotentialSkill matches 2230..2239 run function tusb_remake:skill/ninja/isukumi/hit
 #チェインアローHIT処理
-execute if score @s PotentialSkill matches 10000..99999 run function tusb_remake:skill/archer/chain_arrow/hit/
-execute if score @s PotentialSkill matches 100000.. run function tusb_remake:skill/archer/madan/hit/
-execute if score @s PotentialSkill matches 3280..3289 run function tusb_remake:skill/archer/e_su/hit/
+execute if score @s PotentialSkill matches 10000.. run function tusb_remake:skill/archer/chain_arrow/hit/
 #ブラストショットHIT処理
 execute if score @s PotentialSkill matches 3230..3239 run function tusb_remake:skill/archer/blast_shot/hit/
 #ガストキャノンHIT処理

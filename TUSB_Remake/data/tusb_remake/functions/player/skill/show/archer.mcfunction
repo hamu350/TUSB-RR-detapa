@@ -30,5 +30,3 @@ execute if score @s ShowSkill matches 3240 run data modify storage tusb_remake: 
 execute if score @s ShowSkill matches 3250 run data modify storage tusb_remake: skill_name set value "ガストキャノン"
 execute if score @s ShowSkill matches 3251 run data modify storage tusb_remake: skill_name set value "ガストキャノンⅡ"
 execute if score @s ShowSkill matches 3260 run data modify storage tusb_remake: skill_name set value "フェイタルショット"
-execute if score @s ShowSkill matches 3270 run data modify storage tusb_remake: skill_name set value "魔弾一閃"
-execute if score @s ShowSkill matches 3280 run data modify storage tusb_remake: skill_name set value "エースインザホール"

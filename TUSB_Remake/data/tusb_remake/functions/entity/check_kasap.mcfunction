@@ -16,7 +16,7 @@ scoreboard players operation _ TUSB -= @s HP
 scoreboard players operation _ TUSB *= @s KasapLevel
 
 ### 受けたダメージを設定
-data modify storage score_damage: Argument set value {Damage:0.00d,EPF:0,DamageType:"None",BypassArmor:true,BypassResistance:true,DisableParticle:true}
+data modify storage score_damage: Argument set value {Damage:0.00d,DamageType:"None",BypassArmor:true,BypassResistance:true,DisableParticle:true}
 execute store result storage score_damage: Argument.Damage double 0.01 run scoreboard players get _ TUSB
 ### 受けたダメージが０以上なら、追加でダメージを与える
 execute if score _ TUSB matches 1.. run function score_damage:api/attack

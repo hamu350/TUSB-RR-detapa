@@ -5,17 +5,6 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:nether_star",
-                    "weight": 20,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 8
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "name": "minecraft:cobblestone",
                     "weight": 5
                 },

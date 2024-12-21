@@ -6,4 +6,4 @@
 ### ネザースターの所持数を取得
 execute store result score @s ItemCount run clear @s minecraft:nether_star
 
-function tusb_remake:player/pick_exp/default/get
+function #tusb_remake:give_exp

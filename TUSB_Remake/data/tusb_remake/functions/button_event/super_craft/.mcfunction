@@ -13,7 +13,6 @@ clone -2739 90 -362 -2739 90 -362 -2721 70 -355 filtered minecraft:dropper norma
 ### レシピのチェックを予約
 fill -2735 70 -390 -2721 70 -354 minecraft:reinforced_deepslate replace minecraft:command_block[facing=up]
 fill -2735 70 -390 -2721 70 -354 minecraft:command_block[facing=up]{Command:"/execute if blocks ~ ~ ~-1 ~ ~ ~-1 -2721 70 -355 all",SuccessCount:0,TrackOutput:false,UpdateLastExecution:true,auto:true,conditionMet:true,powered:false} replace minecraft:reinforced_deepslate
-
 ### 結果発表の予約
 setblock -2723 70 -352 minecraft:reinforced_deepslate
 setblock -2723 70 -352 minecraft:command_block[facing=up]{Command:"/function tusb_remake:button_event/super_craft/result/",SuccessCount:0,TrackOutput:false,UpdateLastExecution:true,auto:true,conditionMet:true,powered:false}

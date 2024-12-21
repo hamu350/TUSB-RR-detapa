@@ -30,5 +30,3 @@ execute if score @s ShowSkill matches 1232 run data modify storage tusb_remake: 
 execute if score @s ShowSkill matches 1240 run data modify storage tusb_remake: skill_name set value "魔神斬り"
 execute if score @s ShowSkill matches 1241 run data modify storage tusb_remake: skill_name set value "魔神斬りⅡ"
 execute if score @s ShowSkill matches 1250 run data modify storage tusb_remake: skill_name set value "斬鉄剣"
-execute if score @s ShowSkill matches 1260 run data modify storage tusb_remake: skill_name set value "ウォープレリュード"
-execute if score @s ShowSkill matches 1270 run data modify storage tusb_remake: skill_name set value "夢想真説"

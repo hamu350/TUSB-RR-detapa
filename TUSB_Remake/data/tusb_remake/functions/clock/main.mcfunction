@@ -46,9 +46,6 @@ execute as @a[scores={AgentFlag=1..}] at @s run function tusb_remake:talk_event/
 execute as @a[scores={PastorFlag=1..}] at @s run function tusb_remake:talk_event/pastor/trigger/
 execute as @a[scores={AugurFlag=1..}] at @s run function tusb_remake:talk_event/augur/trigger/
 
-### 村人更新
-execute at @a as @e[type=villager,scores={VillagerId=0..},distance=..10] run function tusb_remake:villager/
-
 ### テーブルマウンテンの不思議な力
 execute positioned -6 65 -2148 as @a[dx=64,dy=135,dz=48,gamemode=adventure] run function tusb_remake:clock/gimmic/table_mountain/fall_force
 execute as @a[predicate=tusb_remake:area/table_mountain,gamemode=!spectator] at @s if block ~ ~-0.5 ~ minecraft:redstone_block unless block ~ ~-1.5 ~ minecraft:command_block run function tusb_remake:clock/gimmic/table_mountain/red_zone

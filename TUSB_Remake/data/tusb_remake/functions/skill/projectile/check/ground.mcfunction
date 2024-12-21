@@ -7,6 +7,6 @@
 execute if score @s ProjectileSkill matches 3230..3239 run function tusb_remake:skill/archer/blast_shot/schedule/blast
 execute if score @s ProjectileSkill matches 3250..3259 run function tusb_remake:skill/archer/ghast_cannon/schedule/blast
 execute if score @s ProjectileSkill matches 3260..3269 run function tusb_remake:skill/archer/fatal_shot/schedule/blast
-execute if score @s ProjectileSkill matches 3280..3289 run function tusb_remake:skill/archer/e_su/schedule/blast
+
 # 接地矢無効化
 data merge entity @s {Tags:[TypeChecked]}

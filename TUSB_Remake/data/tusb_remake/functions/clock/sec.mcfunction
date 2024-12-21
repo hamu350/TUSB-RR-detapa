@@ -9,7 +9,7 @@ execute as @a[scores={ManaRefresh=0..}] run function tusb_remake:skill/black_mag
 # 連舞 跳躍
 execute as @a[scores={Tsuremai=0..}] at @s run function tusb_remake:skill/ninja/tsuremai/check
 execute as @a[scores={Choyaku=0..}] at @s run function tusb_remake:skill/ninja/choyaku/check
-execute as @a[scores={seiyou=0..}] at @s run function tusb_remake:skill/ninja/seiyou/check
+
 # 黙想継続
 execute as @a[tag=Mokuso] at @s run function tusb_remake:skill/ninja/mokuso/check
 
@@ -60,9 +60,6 @@ execute as @a[tag=Doom] run function tusb_remake:doom/
 ## サバイバルスポナー処理
 execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air align xyz run kill @e[dx=0,tag=Spawner]
 
-## スポナー更新
-execute as @e[tag=Spawner,type=armor_stand] at @s run function tusb_remake:spawner/
-
 ## CooldownRequired 誤差許容長期用
 tag @e[tag=CooldownRequiredLong,nbt={PortalCooldown:0}] add Garbage 
 
@@ -84,7 +81,4 @@ execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 ## エリア境界不正侵入(バリアめり込み)防止
 execute as @a[gamemode=!spectator] at @s if block ~ 0 ~ minecraft:barrier if blocks ~ 0 ~ ~ 254 ~ ~ ~1 ~ all run kill @s
 
-
-
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
-

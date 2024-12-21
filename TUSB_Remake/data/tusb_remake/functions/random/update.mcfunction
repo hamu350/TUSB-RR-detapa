@@ -3,8 +3,6 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-execute unless score @s RndMWC matches -2147483648..2147483647 run function tusb_remake:random/reset
-
 scoreboard players set _ RndMWC 31743
 scoreboard players operation @s RndMWC *= _ RndMWC
 scoreboard players operation @s RndMWC += @s RndMWCCarry

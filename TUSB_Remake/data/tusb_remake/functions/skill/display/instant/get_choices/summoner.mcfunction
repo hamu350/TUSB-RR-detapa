@@ -15,4 +15,3 @@ data modify storage tusb_remake: skill_choices append from storage tusb_remake: 
 data modify storage tusb_remake: skill_choices append from storage tusb_remake: skill_table.summoner.8
 data modify storage tusb_remake: skill_choices append from storage tusb_remake: skill_table.summoner.9
 data modify storage tusb_remake: skill_choices append from storage tusb_remake: skill_table.summoner.10
-data modify storage tusb_remake: skill_choices append from storage tusb_remake: skill_table.summoner.11

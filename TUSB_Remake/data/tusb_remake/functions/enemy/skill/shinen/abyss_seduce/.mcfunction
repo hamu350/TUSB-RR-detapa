@@ -4,4 +4,4 @@
 ### This software is released under the MIT License, see LICENSE.
 
 me はアビスセデュースを唱えた！
-effect give @a[distance=..32] minecraft:jump_boost 20 248 true
+scoreboard players set @a[distance=..32] AbyssSeduce 20

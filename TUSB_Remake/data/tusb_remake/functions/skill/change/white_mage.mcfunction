@@ -18,8 +18,6 @@ execute if score _ ChangeSkill matches 20 run data modify storage tusb_remake: c
 execute if score _ ChangeSkill matches 21 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.21
 execute if score _ ChangeSkill matches 22 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.22
 execute if score _ ChangeSkill matches 23 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.23
-execute if score _ ChangeSkill matches 24 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.24
-execute if score _ ChangeSkill matches 25 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.25
 
 ### _ ChangeSkill に設定したいスキル番号が入るようにしたい
 execute store result storage tusb_remake: _ int 10 run scoreboard players add _ ChangeSkill 400

@@ -37,8 +37,6 @@ data modify storage tusb_remake: _.23 set value {name:["ブラストショット
 data modify storage tusb_remake: _.24 set value {name:["バードストライク"],level:[26],cost:5,description:[["敵を墜落させる特殊な矢を放つ。"]],condition:"利き手で弓を構え矢を放つ"}
 data modify storage tusb_remake: _.25 set value {name:["ガストキャノン","ガストキャノンⅡ"],level:[39,49],cost:7,description:[["放った矢を火球に変える。"]],condition:"利き手で弓を構え矢を放つ"}
 data modify storage tusb_remake: _.26 set value {name:["フェイタルショット"],level:[50],cost:100,description:[["周囲の敵を弱体化する特殊な矢を放つ。"]],condition:"利き手で弓を構え矢を放つ",range:[10],duration:[20]}
-data modify storage tusb_remake: _.27 set value {name:["魔弾一閃"],level:[75],cost:30,description:[["命中すると広範囲に大ダメージを与える特殊な矢を放つ。"]],condition:"利き手で弓を構え矢を放つ",range:[45]}
-data modify storage tusb_remake: _.28 set value {name:["エースインザホール"],level:[100],cost:200,description:[["矢の周囲にいる味方の体力を持続回復し、敵にダメージを与える。着弾時、広範囲の味方の体力を回復し、敵にダメージを与える"]],condition:"利き手で弓を構え矢を放つ",range:[8]}
 
 
 data modify storage tusb_remake: skill_table.archer set from storage tusb_remake: _

@@ -1,4 +1,4 @@
-{
+﻿{
     "pools": [
         {
             "rolls": {
@@ -47,100 +47,6 @@
                     "name": "usb:chests/itemrank/s",
                     "weight": 1,
                     "quality": 5
-                }
-            ]
-        },
-        {
-            "rolls": {
-                "min": 1,
-                "max": 3
-            },
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:nether_star",
-                    "weight": 10,
-                    "quality": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:nether_star",
-                    "weight": 10,
-                    "quality": 2,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 20
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:nether_star",
-                    "weight": 10,
-                    "quality": 3,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 30
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries":[
-                {
-                    "type":"item",
-                    "name": "minecraft:emerald_block",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries":[
-                {
-                    "type":"item",
-                    "name": "minecraft:nether_star",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 128,
-                                "max": 256
-                            }
-                        }
-                    ]
-                },{
-                    "type":"empty",
-                    "weight": 49
                 }
             ]
         }

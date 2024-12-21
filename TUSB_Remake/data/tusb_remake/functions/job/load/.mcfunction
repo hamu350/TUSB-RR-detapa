@@ -25,7 +25,6 @@ scoreboard players operation @s NextExp *= _ NextExp
 scoreboard players set @s CoolTickSpan -100
 scoreboard players operation @s CoolTickSpan += @s Level
 scoreboard players operation @s CoolTickCounter = @s CoolTickSpan
-execute if score @s CoolTickSpan matches -49.. run scoreboard players set @s CoolTickSpan -50
 
 scoreboard players add @s MPMaxFlag 0
 scoreboard players set @s ModeSkillA 0

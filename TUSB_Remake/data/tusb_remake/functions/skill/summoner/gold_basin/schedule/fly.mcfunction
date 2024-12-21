@@ -13,4 +13,3 @@ execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#tusb_remake:mob,tag=Enemy,nbt=
 execute if data storage tusb_remake: {hit:true} run kill @s
 
 data modify storage tusb_remake: _ set value true
-

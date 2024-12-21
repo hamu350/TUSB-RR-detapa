@@ -217,11 +217,9 @@ scoreboard objectives add IronWill dummy "ノックバック軽減機会ポイ�
 scoreboard objectives add NinjaTime dummy "連舞・跳躍効果時間"
 scoreboard objectives add Tsuremai dummy "連舞レベル"
 scoreboard objectives add Choyaku dummy "跳躍レベル"
-scoreboard objectives add seiyou dummy "靖妖儺舞レベル"
 scoreboard objectives add KasapLevel dummy "ルカナンレベル"
 scoreboard objectives add KasapTimer dummy "ルカナンタイマー"
 scoreboard objectives add Kazakiri dummy "風切効果時間"
-scoreboard objectives add petto dummy "ペットの数"
 # scoreboard objectives add CookingState dummy "ワイルドクッキング成否状態"
 # scoreboard objectives add WildHealing dummy "ワイルドヒーリング満腹度変化量"
 # scoreboard objectives add EnChase dummy "エンチェイスレベル"
@@ -238,10 +236,6 @@ scoreboard objectives add DoomSecond dummy "死の宣告進行秒管理"
 
 scoreboard objectives add RemainTimer dummy "持続時間"
 
-scoreboard objectives add kyoumei dummy "持続時間"
-
-scoreboard objectives add tasi dummy
-
 ### スキル同期管理
 # scoreboard objectives add TacticalHealBase dummy "タクティカルヒール発動時BaseDamageTaken"
 # scoreboard objectives add AspirBase dummy "アスピル時BaseDamageDealt"
@@ -256,17 +250,6 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 # scoreboard objectives add TargetCheck dummy "ターゲットチェッカー"
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
-
-### スポナー用score
-scoreboard objectives add SpawnerId dummy "スポナーId"
-scoreboard objectives add SpawnerUpdate dummy "スポナーのアップデート"
-
-### mob用score
-scoreboard objectives add MobId dummy "Mobの識別子"
-
-### 村人用score
-scoreboard objectives add VillagerId dummy "村人の識別子"
-scoreboard objectives add VillagerUpdate dummy "村人のアップデート"
 
 ### チーム
 team add FriendlyTeam
@@ -293,15 +276,11 @@ gamerule doFireTick true
 gamerule doMobLoot true
 gamerule doMobSpawning true
 gamerule doTileDrops true
-gamerule doInsomnia true
-gamerule doWardenSpawning true
-gamerule doTraderSpawning true
-gamerule randomTickSpeed 10
+gamerule doInsomnia false
+gamerule randomTickSpeed 3
 gamerule showDeathMessages true
 gamerule spawnRadius 0
 gamerule disableElytraMovementCheck true
-gamerule doTraderSpawning true
-gamerule doImmediateRespawn true
 difficulty hard
 defaultgamemode adventure
 worldborder center 0 0

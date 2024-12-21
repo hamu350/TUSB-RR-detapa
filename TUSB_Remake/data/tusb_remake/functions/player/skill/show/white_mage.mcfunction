@@ -30,5 +30,3 @@ execute if score @s ShowSkill matches 4220 run data modify storage tusb_remake: 
 execute if score @s ShowSkill matches 4221 run data modify storage tusb_remake: skill_name set value "フラワーギフトⅡ"
 execute if score @s ShowSkill matches 4222 run data modify storage tusb_remake: skill_name set value "フラワーギフトⅢ"
 execute if score @s ShowSkill matches 4230 run data modify storage tusb_remake: skill_name set value "ホーリー"
-execute if score @s ShowSkill matches 4240 run data modify storage tusb_remake: skill_name set value "天気雨"
-execute if score @s ShowSkill matches 4250 run data modify storage tusb_remake: skill_name set value "ホーリーシャワー"

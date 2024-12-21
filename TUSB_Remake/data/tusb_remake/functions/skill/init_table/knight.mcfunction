@@ -29,7 +29,6 @@ data modify storage tusb_remake: _.22 set value {name:["真空斬り","真空斬
 data modify storage tusb_remake: _.23 set value {name:["リアクティブヒール","リアクティブヒールⅡ","リアクティブヒールⅢ"],level:[17,33,49],cost:10,description:[["被ダメージ時、HPが回復する。"]],condition:"被ダメージ"}
 data modify storage tusb_remake: _.24 set value {name:["魔神斬り","魔神斬りⅡ"],level:[23,46],cost:20,description:[["敵単体に大ダメージ。敵の武器を破壊することがある。","発動の反動で少しの間攻撃できなくなる。"]],condition:"剣で攻撃"}
 data modify storage tusb_remake: _.25 set value {name:["斬鉄剣"],level:[50],cost:100,description:[["周囲の敵に大ダメージ。"]],condition:"剣で攻撃",range:[10]}
-data modify storage tusb_remake: _.26 set value {name:["ウォープレリュード"],level:[75],cost:20,description:[["HPを回復しデバフを解除する。"]],condition:"被ダメージ"}
-data modify storage tusb_remake: _.27 set value {name:["夢想真説"],level:[100],cost:200,description:[["周囲の敵に大ダメージ。"]],condition:"剣で攻撃",range:[30]}
+
 data modify storage tusb_remake: skill_table.knight set from storage tusb_remake: _
 data remove storage tusb_remake: _

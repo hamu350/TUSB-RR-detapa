@@ -6,12 +6,12 @@
                 {
                     "type": "item",
                     "name": "minecraft:nether_star",
-                    "weight": 5,
+                    "weight": 1,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 64,
+                                "min": 1,
                                 "max": 127
                             }
                         }

@@ -30,7 +30,3 @@ scoreboard players set @s[scores={Level=46}] ShowSkill 6070
 scoreboard players set @s[scores={Level=48}] ShowSkill 6222
 scoreboard players set @s[scores={Level=49}] ShowSkill 6080
 scoreboard players set @s[scores={Level=50}] ShowSkill 6300
-scoreboard players set @s[scores={Level=51}] ShowSkill 6310
-scoreboard players set @s[scores={Level=51}] ShowSkill 6090
-scoreboard players set @s[scores={Level=100}] ShowSkill 6320
-scoreboard players set @s[scores={Level=100}] ShowSkill 6330
