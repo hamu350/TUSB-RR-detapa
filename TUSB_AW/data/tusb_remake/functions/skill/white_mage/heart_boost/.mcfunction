@@ -11,5 +11,4 @@ execute if score @s ActivatedSkill matches 4012 run effect give @a[distance=..15
 execute if score @s ActivatedSkill matches 4013 run effect give @a[distance=..15] minecraft:absorption 180 7
 execute if score @s ActivatedSkill matches 4014..4019 run effect give @a[distance=..15] minecraft:absorption 180 9
 
-
 execute as @a[distance=..15] at @s run particle end_rod ~ ~1 ~ 0.5 0.5 0.5 0.1 30 force
