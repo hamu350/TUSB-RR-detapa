@@ -24,8 +24,8 @@ execute in the_end run forceload add 3500 3500 3500 3500
 schedule function tusb_remake:load/set_shulker_box 1t
 
 ### 超作業台置き換え
-execute in overworld run forceload add -2737 -392 -2721 -353
-schedule function tusb_remake:load/sagyou 1t
+# execute in overworld run forceload add -2737 -392 -2721 -353
+# schedule function tusb_remake:load/sagyou 1t
 
 # インフィニティボス報酬
 forceload add -2721 105 -2721 105
