@@ -5,26 +5,6 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "usb:xp/128",
-                    "weight": 80
-                },
-                {
-                    "type": "loot_table",
-                    "name": "usb:xp/256",
-                    "weight": 16
-                },
-                {
-                    "type": "loot_table",
-                    "name": "usb:xp/512",
-                    "weight": 4
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
                     "name": "asset:item/instant/egg/emerald_block",
                     "weight": 80,
                     "functions": [
@@ -63,13 +43,13 @@
             "entries": [
                 {
                     "type": "empty",
-                    "weight": 995
+                    "weight": 8191
                 },
                 {
-                    "rarity": "SSR:0.5%",
+                    "rarity": "SSR:1/8192",
                     "type": "loot_table",
                     "name": "usb:signs/infinity_boss_reward/ssr",
-                    "weight": 5
+                    "weight": 1
                 }
             ]
         },
