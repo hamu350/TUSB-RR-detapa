@@ -17,9 +17,10 @@ execute if data storage tusb_remake: settings{time_limit:true} run playsound ent
 
 # ボス強化onならここでエンドの構造を変えておく
 # どうするかだけ決めておかないと
-
 # forceload削除
 # タイミングずらさないと多分生成されん
+forceload add -2740 -361 -2740 -361
+schedule function tusb_remake:area/conquer/itemmurabito 1t
 
 ### オプション追加できないように
 fill -1903 113 -138 -1903 113 -133 minecraft:obsidian replace minecraft:command_block
