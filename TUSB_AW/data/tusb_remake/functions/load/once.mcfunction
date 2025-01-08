@@ -27,6 +27,10 @@ schedule function tusb_remake:load/set_shulker_box 1t
 execute in overworld run forceload add -2737 -392 -2721 -353
 schedule function tusb_remake:load/sagyou 1t
 
+### アイテム修正
+execute in minecraft:overworld run forceload add 3 2 3 2
+schedule function tusb_remake:load/start_item 1t
+
 ### アイテム修正屋さん追加
 forceload add -2740 -361 -2740 -361
 schedule function tusb_remake:area/conquer/itemmurabito 1t
