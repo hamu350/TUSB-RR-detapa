@@ -10,6 +10,7 @@ tag @s[tag=IgnoreEnderChest] remove IgnoreEnderChest
 ### テーブルマウンテンに移動した時
 tag @s[scores={AreaChangeFlag=11},nbt={Inventory:[{}]},gamemode=!creative,gamemode=!spectator] add BringItemError
 tag @s[scores={AreaChangeFlag=11,EnderChestOpened=1..},nbt={EnderItems:[{}]},gamemode=!creative] add BringItemError
+execute store result score _ TUSB run data get storage tusb_remake: conquer.count.total
 execute if score _ TUSB matches ..29 run tag @s[scores={AreaChangeFlag=11}] add NotCaptureIsland
 execute if score _ TUSB matches ..29 run tellraw @s[scores={AreaChangeFlag=11},tag=NotCaptureIsland] {"text": "３０島の攻略が必要です！"}
 tellraw @s[scores={AreaChangeFlag=11},tag=BringItemError] [{"text":"エンダーチェスト内を含む","color":"red","bold":true},"\n",{"text":"アイテム持ち込み禁止エリアです！","color":"red","bold":true}]

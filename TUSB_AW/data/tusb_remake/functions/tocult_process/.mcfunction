@@ -2,7 +2,7 @@
 # トカルトコルデのいろんな処理
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
-
+say paa
 ## トカルトの松明処理
 tag @s[tag=!SaveTorch] add RemoveTorch
 tag @s[tag=SaveTorch] remove SaveTorch
