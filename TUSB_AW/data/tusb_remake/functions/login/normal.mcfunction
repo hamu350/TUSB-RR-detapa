@@ -12,6 +12,4 @@ tag @s add ShowVote
 tag @s add LoginMessage
 # function tusb_remake:login/schedule
 schedule function tusb_remake:login/schedule 5s append
-
-### RR追加部分:タグ削除
-execute unless data storage tusb_remake: infinity_boss{battle:1b} if entity @s[tag=InfinityBossBattle] run function tusb_remake:boss/tagremove
+schedule function tusb_remake:load/itemmurabito 5s

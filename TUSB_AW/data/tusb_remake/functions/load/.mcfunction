@@ -23,7 +23,6 @@ execute in minecraft:overworld run schedule function tusb_remake:load/block_sett
 ### １秒タイマーをスケジュール
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
 
-schedule function tusb_remake:load/itemmurabito 1t
 
 ### アップデートを確認
 # デバッグモードなら実行しない
