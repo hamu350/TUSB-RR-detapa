@@ -48,6 +48,6 @@
         }
     },
     "rewards": {
-        "function": "tusb_remake:item_data_change/end_of_end"
+        "function": "tusb_remake:item_data_change/no_god"
     }
 }
