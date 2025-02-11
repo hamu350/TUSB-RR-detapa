@@ -12,4 +12,5 @@ tag @s add ShowVote
 tag @s add LoginMessage
 # function tusb_remake:login/schedule
 schedule function tusb_remake:login/schedule 5s append
+forceload add -2740 -361 -2740 -361
 schedule function tusb_remake:load/itemmurabito 5s
