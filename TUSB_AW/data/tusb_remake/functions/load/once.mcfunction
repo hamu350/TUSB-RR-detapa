@@ -308,6 +308,12 @@ scoreboard objectives add MakeupTickB dummy
 ### インフィニティボス報酬の数
 scoreboard objectives add infinity_boss.reward dummy
 
+### gamemasterメイクアップ
+scoreboard objectives add MakeupTickC dummy
+
+### gamemaster報酬の数
+scoreboard objectives add game_master.reward dummy
+
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam color red

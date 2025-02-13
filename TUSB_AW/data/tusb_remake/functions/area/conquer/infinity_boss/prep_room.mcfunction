@@ -1,6 +1,5 @@
 #> tusb_remake:area/conquer/infinity_boss/prep_room
 # ボス部屋に移動
-# 戦闘中入場可能パス
 execute as @p if entity @s[tag=ISFUnreached] run tellraw @s {"text": "トカルト入場後のプレイヤーのみ入場可能です！","color": "dark_red"}
 execute as @p unless data storage tusb_remake: infinity_boss{battle:1b} unless entity @s[tag=ISFUnreached] run tag @s add InfinityBossArea
 execute as @p if data storage tusb_remake: infinity_boss{battle:1b} if entity @s[tag=InfinityBossBattle] unless entity @s[tag=ISFUnreached] run tag @s add InfinityBossArea
