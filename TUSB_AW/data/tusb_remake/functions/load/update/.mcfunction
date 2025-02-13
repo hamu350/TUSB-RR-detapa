@@ -1,9 +1,6 @@
 #> tusb_remake:load/update/
 # アップデートが確認された際に実行
 
-# versionが設定されていなければ1.1.0に設定する
-execute unless data storage tusb_remake: settings.version run data modify storage tusb_remake: settings.version set value "1.1.0"
-
 # 通知
 # tellraw @a {"translate": "§f§l[Update-Program]アップデートを確認\n現在のバージョン:%1$s\nアップデートプログラムを起動します","with": [{"storage": "tusb_remake:","nbt": "settings.version"}]}
 

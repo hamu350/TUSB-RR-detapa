@@ -3,49 +3,24 @@
 
 # 乱数を生成
 function tusb_remake:random/update
-scoreboard players set _ TUSB 6
+scoreboard players set _ TUSB 9
 scoreboard players operation @s Random %= _ TUSB
 
-
-
-# 二周目
-
-# 乱数を生成
-function tusb_remake:random/update
-scoreboard players set _ TUSB 6
-scoreboard players operation @s Random %= _ TUSB
-
-# ad
-execute if score @s Random matches 0 run function tusb_remake:enemy/skill/infinity_boss/ad/
-# devil
-execute if score @s Random matches 1 run function tusb_remake:enemy/skill/infinity_boss/devil/
-# isf
-execute if score @s Random matches 2 run function tusb_remake:enemy/skill/infinity_boss/isf/
-# neo
-execute if score @s Random matches 3 run function tusb_remake:enemy/skill/infinity_boss/neo/
-# sp
-execute if score @s Random matches 4 run function tusb_remake:enemy/skill/infinity_boss/sp/
-# tle
-execute if score @s Random matches 5 run function tusb_remake:enemy/skill/infinity_boss/tle/
-
-# 三周目
-
-# 二周目
-
-# 乱数を生成
-function tusb_remake:random/update
-scoreboard players set _ TUSB 6
-scoreboard players operation @s Random %= _ TUSB
-
-# ad
-execute if score @s Random matches 0 run function tusb_remake:enemy/skill/infinity_boss/ad/
-# devil
-execute if score @s Random matches 1 run function tusb_remake:enemy/skill/infinity_boss/devil/
-# isf
-execute if score @s Random matches 2 run function tusb_remake:enemy/skill/infinity_boss/isf/
-# neo
-execute if score @s Random matches 3 run function tusb_remake:enemy/skill/infinity_boss/neo/
-# sp
-execute if score @s Random matches 4 run function tusb_remake:enemy/skill/infinity_boss/sp/
-# tle
-execute if score @s Random matches 5 run function tusb_remake:enemy/skill/infinity_boss/tle/
+# UNO
+execute if score @s Random matches 0 run function tusb_remake:enemy/skill/game_master/1
+# CoinToss
+execute if score @s Random matches 1 run function tusb_remake:enemy/skill/game_master/2
+# ハート＜３
+execute if score @s Random matches 2 run function tusb_remake:enemy/skill/game_master/3
+# Four Of a Kind
+execute if score @s Random matches 3 run function tusb_remake:enemy/skill/game_master/4
+# Five Bomber
+execute if score @s Random matches 4 run function tusb_remake:enemy/skill/game_master/5
+# Dead or die
+execute if score @s Random matches 5 run function tusb_remake:enemy/skill/game_master/6
+# Jackpot
+execute if score @s Random matches 6 run function tusb_remake:enemy/skill/game_master/7
+# ⑧
+execute if score @s Random matches 7 run function tusb_remake:enemy/skill/game_master/8
+# 断么九
+execute if score @s Random matches 8 run function tusb_remake:enemy/skill/game_master/9
