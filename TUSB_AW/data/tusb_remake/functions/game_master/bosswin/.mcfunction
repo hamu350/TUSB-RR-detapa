@@ -8,20 +8,23 @@ schedule clear tusb_remake:game_master/schedule
 bossbar set game_master visible false
 
 # 敵、アイテム削除
-execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @e[tag=Enemy,distance=..60] add Garbage
-execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run kill @e[type=item,distance=..60]
+
+forceload add -2950 -71 -3000 -11
+
+function tusb_remake:game_master/allkill
 
 # タグ外し
 tag @a remove GameMasterBattle
 
-# ボスは消える
-execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @e[tag=GM] add Garbage
+schedule clear tusb_remake:game_master/bosswin/end
 
 # ボス部屋解放
 data modify storage tusb_remake: game_master.battle set value 0b
 
+data modify storage tusb_remake: game_master.live set value 0b
+
 # ボスボタン配置
-setblock -2990 71 -41 light_blue_stained_glass_pane
+setblock -2990 71 -41 light_weighted_pressure_plate
 
 # 帰還看板配置
-setblock -2983 70 -41 minecraft:warped_sign[rotation=4]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"/function tusb_remake:sign_event/infinity_boss/boss_area"}}',Text2:'{"text":"\\u5e30\\u9084","bold":true,"color":"#FFFFFF"}',Text3:'{"text":"\\u203b\\u30a2\\u30a4\\u30c6\\u30e0\\u306f","bold":true,"color":"red"}',Text4:'{"text":"\\u6301\\u3061\\u5e30\\u308c\\u307e\\u305b\\u3093","bold":true,"color":"red"}'}
+setblock -2983 70 -41 minecraft:warped_sign[rotation=4]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"/function tusb_remake:sign_event/game_master/boss_area"}}',Text2:'{"text":"\\u5e30\\u9084","bold":true,"color":"#FFFFFF"}',Text3:'{"text":"\\u203b\\u30a2\\u30a4\\u30c6\\u30e0\\u306f","bold":true,"color":"red"}',Text4:'{"text":"\\u6301\\u3061\\u5e30\\u308c\\u307e\\u305b\\u3093","bold":true,"color":"red"}'}

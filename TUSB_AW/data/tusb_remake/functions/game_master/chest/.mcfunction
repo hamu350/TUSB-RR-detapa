@@ -9,6 +9,6 @@ data modify storage tusb_remake: game_master.chast.Items[].tag.UUID set from sto
 data modify storage tusb_remake: game_master.chastB.Items[].tag.UUID set from storage tusb_remake: game_master.item_uuid
 
 #チェストにぶちこみ
-data modify block -2963 89 -48 Items set from storage tusb_remake: game_master.chast.Items
+data modify block -2954 212 -40 Items set from storage tusb_remake: game_master.chast.Items
 
-data modify block -2962 89 -48 Items set from storage tusb_remake: game_master.chastB.Items
+data modify block -2953 212 -40 Items set from storage tusb_remake: game_master.chastB.Items

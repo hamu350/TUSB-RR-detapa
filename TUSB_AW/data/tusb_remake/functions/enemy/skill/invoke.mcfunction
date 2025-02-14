@@ -36,7 +36,7 @@ execute if score @s[tag=akuu] MobCastTime matches 0..4 run function tusb_remake:
 execute if entity @s[tag=InfinityBoss] run function tusb_remake:enemy/skill/infinity_boss/
 
 ### game_master
-execute if entity @s[tag=GM] run function tusb_remake:enemy/skill/game_master/
+execute if entity @s[tag=GM] unless entity @s[tag=GMend] run function tusb_remake:enemy/skill/game_master/
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得

@@ -1,1 +1,0 @@
-tellraw @s {"translate":"%1$s","with":[{"nbt":"SpawnData","entity":"@e[type=spawner_minecart,limit=1,sort=nearest]","interpret": true}]}

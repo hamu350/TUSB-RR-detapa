@@ -6,9 +6,9 @@
 
 execute as @e[limit=1,tag=GM] at @s run title @a[distance=..60] times 10 30 10
 execute as @e[limit=1,tag=GM] at @s run title @a[distance=..60] title {"translate": "§l§4２２２"}
-execute as @e[limit=1,tag=GM] at @s run tellraw @a[distance=..60] ["",{"text":"*§0kk§r§4GameMaster§0§kk§r "},{"text":"コイントスで君の運命を占おう","bold":true}]
+execute as @e[limit=1,tag=GM] at @s run me §lコイントスで君の運命を占おう
 # 乱数を生成
-function tusb_remake:random/update
+execute as @e[limit=1,tag=GM] run function tusb_remake:random/update
 scoreboard players set _ TUSB 2
 execute as @e[limit=1,tag=GM] run scoreboard players operation @s Random %= _ TUSB
 # 裏

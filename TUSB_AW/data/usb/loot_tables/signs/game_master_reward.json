@@ -6,18 +6,18 @@
                 {
                     "type": "item",
                     "name": "minecraft:nether_star",
-                    "weight": 1,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 32
+                            "count": 64
                         }
                     ]
                 }
             ]
         },
         {
-            "rolls": 1,
+            "rolls": 10,
             "entries": [
                 {
                     "type": "loot_table",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "rolls": 1,
+            "rolls": 10,
             "entries": [
                 {
                     "type": "empty",
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "rolls": 1,
+            "rolls": 10,
             "entries": [
                 {
                     "type": "empty",
@@ -86,7 +86,7 @@
         },
         {
             "//": "RareとNormal",
-            "rolls": 10,
+            "rolls": 100,
             "entries": [
                 {
                     "//": "weightは合計1000",

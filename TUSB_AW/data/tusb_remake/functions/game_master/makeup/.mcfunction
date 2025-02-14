@@ -10,7 +10,7 @@ scoreboard players add Count MakeupTickC 1
 data modify storage tusb_remake: game_master.battle set value 1b
 
 # タグ付け
-execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @a[distance=..20] add GameMasterBattle
+execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @a[distance=..60,gamemode=!spectator] add GameMasterBattle
 
 # ボスボタン除去
 setblock -2990 71 -41 air

@@ -3,6 +3,7 @@
 
 ### リメイク：威力を倍に
 
+effect give @s saturation 10 0 false 
 execute if score @s PotentialSkill matches 4210 run effect give @s minecraft:instant_health 1 2 false
 execute if score @s PotentialSkill matches 4211 run effect give @s minecraft:instant_health 1 3 false
 execute if score @s PotentialSkill matches 4212 run effect give @s minecraft:instant_health 1 4 false

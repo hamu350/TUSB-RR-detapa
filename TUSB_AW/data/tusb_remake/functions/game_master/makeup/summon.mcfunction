@@ -59,9 +59,9 @@ title @a[distance=..20] subtitle {"text":"§4§k|||§r §o§0終わりなき遊�
     execute summon lightning_bolt run tp @s ~ 3000 ~-4
 
 # ボスバー
-    bossbar add game_master {"text":"§0§k?§b§k?§0§k?§6§k?§0§k?§c§k?§0§k?§5§k?§0§k?§f§k?§0§k?§4§k?§0§k?"}
-    bossbar set game_master color red
-    bossbar set game_master style notched_6
+    bossbar add minecraft:game_master {"text":"§0§k?§b§k?§0§k?§6§k?§0§k?§c§k?§0§k?§5§k?§0§k?§f§k?§0§k?§4§k?§0§k?"}
+    bossbar set minecraft:game_master color red
+    bossbar set minecraft:game_master style notched_10
 
 #> この下でspawn funciton実行すればいい感じになるんじゃないですか( ᐛ)
 execute at @e[type=armor_stand,tag=Boss_MarkerC] positioned ~ ~2 ~ run function tusb_remake:game_master/spawn

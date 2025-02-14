@@ -314,6 +314,13 @@ scoreboard objectives add MakeupTickC dummy
 ### gamemaster報酬の数
 scoreboard objectives add game_master.reward dummy
 
+### gamemaster緩衝体力
+scoreboard objectives add GMA dummy
+
+### gamemaster_end
+scoreboard objectives add CountDown dummy
+
+
 ### UNO
 scoreboard objectives add UNO trigger
 
@@ -401,5 +408,6 @@ function tusb_remake:load/define_const
 
 # インフィニティボスチェストデータセット
 function tusb_remake:boss/chest/dataset
+function tusb_remake:game_master/chest/dataset
 datapack enable "TUSB_TimeLimit" first
 datapack enable "TUSB_AW" first

@@ -23,3 +23,7 @@ execute unless data storage tusb_remake: game_master{battle:1b} if score _ TUSB 
 
 # 関係者なので入場可能
 execute if data storage tusb_remake: game_master{battle:1b} if score _ TUSB matches ..20 if entity @p[tag=GameMasterBattle] run tp @p -2985 70 -41
+
+# 敵、アイテム削除
+execute unless data storage tusb_remake: game_master{battle:1b} as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @e[tag=Enemy,distance=..60] add Garbage
+execute unless data storage tusb_remake: game_master{battle:1b} as @e[type=armor_stand,tag=Boss_MarkerC] at @s run kill @e[type=item,distance=..60]
