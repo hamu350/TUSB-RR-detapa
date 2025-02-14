@@ -22,13 +22,6 @@ execute if entity @s[tag=BlackRider] run function tusb_remake:enemy/skill/black_
 ### ペイルライダー
 execute if entity @s[tag=PaleRider] run function tusb_remake:enemy/skill/pale_rider/
 
-# AWでの追加部分
-### 白銀の守護者
-execute if entity @s[tag=SilverGuardian] run function tusb_remake:enemy/skill/silver_guardian/
-### 白銀の支配者
-execute if entity @s[tag=SilverRuler] run function tusb_remake:enemy/skill/silver_ruler/
-### 開闢様
-execute if entity @s[tag=Genesis] run function tusb_remake:enemy/skill/genesis_sama/
 
 # RRスキル
 ### 亜空間転移
@@ -41,6 +34,9 @@ execute if score @s[tag=akuu] MobCastTime matches 0..4 run function tusb_remake:
 
 ### infinity_boss
 execute if entity @s[tag=InfinityBoss] run function tusb_remake:enemy/skill/infinity_boss/
+
+### game_master
+execute if entity @s[tag=GM] run function tusb_remake:enemy/skill/game_master/
 
 ### 次のスキルとタイミングを設定
 ### 0-99を取得

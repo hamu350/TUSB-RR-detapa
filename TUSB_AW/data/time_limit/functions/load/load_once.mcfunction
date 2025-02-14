@@ -63,5 +63,3 @@ data modify storage time_limit:storage shield_data set value {tag:{version:1,Enc
 # msg
 function time_limit:load/msg
 # ここでdisableするとmsgでひっかかってわろた
-datapack disable "TUSB_TimeLimit"
-datapack enable "TUSB_TimeLimit" first

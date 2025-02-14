@@ -121,3 +121,4 @@ execute at @e[tag=CantTpLarge] run tag @a[distance=..32] add CantTp
 # ItemClear
 execute at @e[tag=ItemClear] run kill @e[type=item,distance=..8]
 execute at @e[tag=Boss_MarkerB] run kill @e[type=item,distance=..20]
+execute at @e[tag=Boss_MarkerC] run kill @e[type=item,distance=..60]

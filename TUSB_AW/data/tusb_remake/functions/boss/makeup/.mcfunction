@@ -21,8 +21,6 @@ setblock -2764 224 -280 air
 
 # 報酬量設定
 scoreboard players reset _ infinity_boss.reward
-scoreboard players operation _ infinity_boss.reward *= _ TUSB
-
 
 # これasは全dim探索するけどatはどうなのかわからないから検証する必要あり
 

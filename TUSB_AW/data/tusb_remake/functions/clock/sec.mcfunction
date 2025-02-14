@@ -87,7 +87,8 @@ execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 ## エリア境界不正侵入(バリアめり込み)防止
 execute as @a[predicate=time_limit:player] at @s if block ~ ~ ~ #time_limit:unbreakable run function time_limit:player/barriarkill
 
-
+## gamemasterの音
+execute at @e[tag=GMSP,limit=1] run playsound minecraft:entity.warden.heartbeat master @a[distance=..60] ~ ~ ~ 0.6 1 0.0
 
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
 
