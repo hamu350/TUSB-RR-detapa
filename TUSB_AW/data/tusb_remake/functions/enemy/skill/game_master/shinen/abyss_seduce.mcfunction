@@ -2,6 +2,6 @@
 # 深淵様のスキル
 
 # me
-    me §1アビスセデュース！
+    me §bアビスセデュース！
 # 跳躍不可
     effect give @a[distance=..60,tag=GameMasterBattle] minecraft:jump_boost 10 248 true
