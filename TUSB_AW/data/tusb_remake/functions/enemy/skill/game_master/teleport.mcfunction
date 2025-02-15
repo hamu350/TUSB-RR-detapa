@@ -4,9 +4,9 @@
 # me
     me §4もっと楽しめないかい？
 # tp
-    execute at @p[distance=..60,gamemode=!spectator] run tp @s ^ ^1 ^2 facing entity @p
+    execute at @p[distance=..60,tag=GameMasterBattle,gamemode=!spectator] positioned ^ ^1 ^2 run tp @s ^ ^ ^ facing entity @p
 # 埋まったらプレイヤーにtp
-    execute unless block ~ ~ ~ air run execute as @p[distance=..60,gamemode=!spectator] at @s run tp @e[limit=1,tag=GM] ~ ~ ~
+    execute unless block ~ ~ ~ air as @p[distance=..60,gamemode=!spectator] at @s run tp @e[limit=1,tag=GM] ~ ~ ~
 # particle
     particle large_smoke ~ ~ ~ 1 1 1 1 60 force @a[distance=..60,tag=GameMasterBattle]
 # slashを予約

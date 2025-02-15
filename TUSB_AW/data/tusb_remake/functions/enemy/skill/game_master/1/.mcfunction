@@ -10,6 +10,8 @@
 # tellraw
     execute at @e[tag=GM,limit=1] run tellraw @a[distance=..60,tag=GameMasterBattle] {"translate": "*§0kk§r§4GameMaster§0§kk§r 後１枚だね","bold": true,"hoverEvent": {"action": "show_text","contents": "ココをクリック！"},"clickEvent": {"action": "run_command","value": "/trigger UNO set 1"}}
     execute at @e[tag=GM,limit=1] run tellraw @a[distance=..60,tag=GameMasterBattle] {"translate": "↑をクリックしろ！！！","bold": true}
+# sound
+    playsound entity.elder_guardian.curse master @a[distance=..60]
 # tag
     execute at @e[tag=GM,limit=1] run tag @a[distance=..60,tag=GameMasterBattle] add UNO
 # trigger enable

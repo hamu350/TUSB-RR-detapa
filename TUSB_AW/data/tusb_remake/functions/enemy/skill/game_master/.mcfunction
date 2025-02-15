@@ -62,10 +62,12 @@
         function tusb_remake:random/update
         scoreboard players set _ TUSB 3
         scoreboard players operation @s Random %= _ TUSB
-
-# サバイバルモード
-    execute if score @s Random matches 0 run function tusb_remake:enemy/skill/game_master/su
-# クリエイティブモード
-    execute if score @s Random matches 1 run function tusb_remake:enemy/skill/game_master/c
-# スペクテイターモード
-    execute if score @s Random matches 2 run function tusb_remake:enemy/skill/game_master/sp
+    # 今のモードと同じなら変える
+        execute if score @s Random matches 1 if entity @s[tag=GMC] run scoreboard players set @s Random 0
+        execute if score @s Random matches 2 if entity @s[tag=GMSP] run scoreboard players set @s Random 0
+    # サバイバルモード
+        execute if score @s Random matches 0 run function tusb_remake:enemy/skill/game_master/su
+    # クリエイティブモード
+        execute if score @s Random matches 1 run function tusb_remake:enemy/skill/game_master/c
+    # スペクテイターモード
+        execute if score @s Random matches 2 run function tusb_remake:enemy/skill/game_master/sp
