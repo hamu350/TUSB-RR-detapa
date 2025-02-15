@@ -2,7 +2,7 @@
 #
 # v1.0.2(1.0.1)からv1.0.3へのアップデート
 
-bossbar add minecraft:game_master "§0kk§r§4GameMaster§0§kk§r"
+bossbar add minecraft:game_master "§0§kk§r§4GameMaster§0§kk§r"
 bossbar set minecraft:game_master color red
 bossbar set minecraft:game_master style notched_10
 bossbar set minecraft:game_master visible false

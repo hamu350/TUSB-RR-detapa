@@ -1,8 +1,3 @@
 #> debug:test
 
-me は§4§k?§r§4悪魔世界ノ再演§k?§rを唱えた！
-me は§2§k?§r§2嘗テノ英雄再臨§k?§rを唱えた！
-me は§d§k?§r§d新世界ノ夜明ケ§k?§rを唱えた！
-me は§1§k?§r§1氷結世界の氷嵐§k?§rを唱えた！
-me は§6§k?§r§6十二迄ノ拷問術§k?§rを唱えた！
-me は§b§k?§r§b時限王者の黒魔術§k?§rを唱えた！
+bossbar set minecraft:game_master name "§0§kk§r§4GameMaster§0§kk§r"
