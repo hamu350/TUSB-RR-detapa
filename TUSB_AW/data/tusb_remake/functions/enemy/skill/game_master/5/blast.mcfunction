@@ -9,7 +9,7 @@
 # sound
     execute as @e[limit=1,tag=GM] at @s run playsound minecraft:entity.generic.explode player @a[distance=..60,tag=GameMasterBattle] ~ ~ ~ 2 1
 # damage
-    data modify storage score_damage: Argument set value {Damage:300.00,DamageType:"Projectile"}
+    data modify storage score_damage: Argument set value {Damage:600.00,DamageType:"Projectile"}
     execute as @a at @e[limit=1,tag=GM] if entity @s[distance=..10] run function score_damage:api/attack
 # loop
     scoreboard players remove _ blast 1
