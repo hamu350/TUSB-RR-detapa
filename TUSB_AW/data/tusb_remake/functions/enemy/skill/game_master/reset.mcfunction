@@ -20,4 +20,4 @@
     tag @e[tag=GM7] add Garbage
 
 # ⑧のノクバ耐性消去を解除
-    execute at @e[tag=GM] as @a[distance=..60,tag=GameMasterBattle] run attribute @s minecraft:generic.knockback_resistance modifier remove 3-1-4-6-2
+    execute at @e[tag=GM,limit=1] as @a[distance=..60,tag=GameMasterBattle] run attribute @s minecraft:generic.knockback_resistance modifier remove 3-1-4-6-2
