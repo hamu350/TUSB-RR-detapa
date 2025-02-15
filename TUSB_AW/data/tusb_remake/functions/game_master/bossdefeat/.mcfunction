@@ -7,6 +7,8 @@ data modify storage tusb_remake: game_master.battle set value 0b
 # タグ外し
 tag @a remove GameMasterBattle
 
+execute at @e[limit=1,tag=GMend] run playsound minecraft:entity.ender_dragon.death hostile @a[distance=..60] ~ ~ ~ 0.5 1 0.5
+
 execute as @e[limit=1,tag=GMend] at @s run me こんなものが出てくるなんて...チートとしか思えないな...
 
 # 勝利宣言
