@@ -14,6 +14,6 @@
     scoreboard players set _ TUSB 2
     execute as @e[tag=GM,limit=1] run scoreboard players operation @s Random %= _ TUSB
 # 裏(1s後)
-    execute if score @s Random matches 0 run schedule function tusb_remake:enemy/skill/game_master/2/0 1s
+    execute as @e[tag=GM,limit=1] run execute if score @s Random matches 0 run schedule function tusb_remake:enemy/skill/game_master/2/0 1s
 # 表
-    execute if score @s Random matches 1 run schedule function tusb_remake:enemy/skill/game_master/2/1 1s
+    execute as @e[tag=GM,limit=1] run execute if score @s Random matches 1 run schedule function tusb_remake:enemy/skill/game_master/2/1 1s

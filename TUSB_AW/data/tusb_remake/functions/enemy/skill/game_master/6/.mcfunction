@@ -13,6 +13,6 @@
     scoreboard players set _ TUSB 6
     execute as @e[limit=1,tag=GM] run scoreboard players operation @s Random %= _ TUSB
 # 1-5
-    execute if score @s Random matches 0..4 run schedule function tusb_remake:enemy/skill/game_master/6/1_5 3s
+    execute as @e[limit=1,tag=GM] run execute if score @s Random matches 0..4 run schedule function tusb_remake:enemy/skill/game_master/6/1_5 3s
 # 6
-    execute if score @s Random matches 5 run schedule function tusb_remake:enemy/skill/game_master/6/6 3s
+    execute as @e[limit=1,tag=GM] run execute if score @s Random matches 5 run schedule function tusb_remake:enemy/skill/game_master/6/6 3s
