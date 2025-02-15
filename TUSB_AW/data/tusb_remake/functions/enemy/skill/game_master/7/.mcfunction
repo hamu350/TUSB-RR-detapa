@@ -13,6 +13,6 @@
 # sound
     execute at @e[tag=GM,limit=1] run playsound minecraft:ui.toast.challenge_complete player @a[distance=..60,tag=GameMasterBattle] ~ ~ ~ 2 1
 # tellraw
-    execute at @e[tag=GM,limit=1] run tellraw @a[distance=..60,tag=GameMasterBattle] "§l§4逃げろ!!!!"
+    execute at @e[tag=GM,limit=1] run tellraw @a "§l§4逃げろ!!!!"
 # summon
     execute at @e[tag=GM,limit=1] run summon armor_stand ~ ~ ~ {Glowing:1b,CustomNameVisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["GM7"],ArmorItems:[{},{},{},{id:"minecraft:obsidian",Count:1b}],CustomName:'{"text":"！","color":"dark_red","bold":true}'}
