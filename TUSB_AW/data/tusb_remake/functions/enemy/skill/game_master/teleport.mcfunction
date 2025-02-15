@@ -8,6 +8,6 @@
 # 埋まったらプレイヤーにtp
     execute unless block ~ ~ ~ air run execute as @p[distance=..60,gamemode=!spectator] at @s run tp @e[limit=1,tag=GM] ~ ~ ~
 # particle
-    particle large_smoke ~ ~ ~ 1 1 1 1 60 force @a[distance=..60]
+    particle large_smoke ~ ~ ~ 1 1 1 1 60 force @a[distance=..60,tag=GameMasterBattle]
 # slashを予約
     schedule function tusb_remake:enemy/skill/game_master/slash 40t replace

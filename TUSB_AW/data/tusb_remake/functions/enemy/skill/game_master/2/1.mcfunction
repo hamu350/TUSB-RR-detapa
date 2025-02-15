@@ -7,4 +7,4 @@
 # me
     execute as @e[limit=1,tag=GM] run me §l表だ、回復してあげよう。
 # heal
-    execute at @e[limit=1,tag=GM] as @a[distance=..60] run scoreboard players set @s HealCount 40
+    execute at @e[limit=1,tag=GM] as @a[distance=..60,tag=GameMasterBattle] run scoreboard players set @s HealCount 40

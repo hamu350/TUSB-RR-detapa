@@ -4,4 +4,4 @@
 # me
     me §1アビスセデュース！
 # 跳躍不可
-    effect give @a[distance=..60] minecraft:jump_boost 30 248 true
+    effect give @a[distance=..60,tag=GameMasterBattle] minecraft:jump_boost 30 248 true

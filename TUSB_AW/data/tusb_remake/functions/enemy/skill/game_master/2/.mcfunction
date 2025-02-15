@@ -7,8 +7,8 @@
 # me
     me §lコイントスで君の運命を占おう
 # title
-    title @a[distance=..60] times 10 30 10
-    title @a[distance=..60] title {"translate": "§l§4２２２"}
+    title @a[distance=..60,tag=GameMasterBattle] times 10 30 10
+    title @a[distance=..60,tag=GameMasterBattle] title {"translate": "§l§4２２２"}
 # 0-1の乱数を生成
     function tusb_remake:random/update
     scoreboard players set _ TUSB 2
