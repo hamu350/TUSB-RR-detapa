@@ -13,9 +13,9 @@
     tag @e[tag=GMD] add Garbage
     
 # GM7の位置にparticle
-    execute at @e[tag=GM7] run particle minecraft:explosion ~ ~ ~ 10 10 10 0.1 500 force
+    execute at @e[tag=GM7] run particle minecraft:explosion ~ ~ ~ 15 15 15 0.1 500 force
 # 周囲のプレイヤーに攻撃
-    execute at @e[tag=GM7] as @a[distance=..60,tag=GameMasterBattle] run function tusb_remake:enemy/skill/game_master/attack77.7
+    execute at @e[tag=GM7] as @a[distance=..30,tag=GameMasterBattle] run function tusb_remake:enemy/skill/game_master/attack77.7
 # GM7を削除
     tag @e[tag=GM7] add Garbage
 
