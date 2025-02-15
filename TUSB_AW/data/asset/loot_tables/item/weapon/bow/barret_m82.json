@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "bow",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{id:\"minecraft:bow\",Count:1b,tag:{display:{Name:'{\"text\":\"Barrett M82\",\"color\":\"dark_red\",\"bold\":true}'},Enchantments:[{id:\"minecraft:power\",lvl:30s},{id:\"minecraft:punch\",lvl:5s}],Unbreaking:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
