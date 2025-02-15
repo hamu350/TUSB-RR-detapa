@@ -4,4 +4,4 @@
 # me
     me §2アシッドスプレッド！
 # 即時Ⅱ24s(24hit=576dmg)
-    effect give @a[distance=..60,tag=GameMasterBattle] minecraft:instant_damage 240 3
+    effect give @a[distance=..60,tag=GameMasterBattle] minecraft:instant_damage 120 3
