@@ -12,4 +12,4 @@ execute as @e[type=skeleton,tag=GM] at @s unless score _ GMA matches 1.. unless 
 execute as @e[type=skeleton,tag=GM] at @s run bossbar set minecraft:game_master players @a[distance=..60]
 execute store result bossbar minecraft:game_master value run data get entity @e[limit=1,sort=nearest,type=skeleton,tag=GM] AbsorptionAmount 1
 
-execute as @e[type=skeleton,tag=GM] at @s unless entity @a[distance=..60,tag=GameMasterBattle,gamemode=!spectator] run function tusb_remake:game_master/bosswin/
+execute as @e[type=skeleton,tag=GM] at @s unless entity @a[distance=..60,tag=GameMasterBattle] run function tusb_remake:game_master/bosswin/
