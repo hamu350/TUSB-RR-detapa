@@ -33,3 +33,6 @@ execute as @e[type=armor_stand,tag=Boss_MarkerC] at @s run tag @e[distance=..60,
 
 # 報酬配置
 function tusb_remake:game_master/bossdefeat/reward
+
+# 討伐回数を加算
+scoreboard players add GameMasterDefeated _ 1
