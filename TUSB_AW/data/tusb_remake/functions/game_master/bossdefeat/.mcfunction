@@ -11,6 +11,8 @@ execute at @e[limit=1,tag=GMend] run playsound minecraft:entity.ender_dragon.dea
 
 execute as @e[limit=1,tag=GMend] at @s run me こんなものが出てくるなんて...チートとしか思えないな...
 
+execute as @a run attribute @s minecraft:generic.knockback_resistance modifier remove 3-1-4-6-2
+
 # 勝利宣言
 tellraw @a {"text":"*§0kk§r§4GameMaster§0§kk§rは討伐された！"}
 

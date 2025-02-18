@@ -16,6 +16,8 @@ function tusb_remake:game_master/allkill
 # タグ外し
 tag @a remove GameMasterBattle
 
+execute as @a run attribute @s minecraft:generic.knockback_resistance modifier remove 3-1-4-6-2
+
 schedule clear tusb_remake:game_master/bosswin/end
 
 # ボス部屋解放

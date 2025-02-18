@@ -6,6 +6,7 @@ bossbar add minecraft:game_master "§0§kk§r§4GameMaster§0§kk§r"
 bossbar set minecraft:game_master color red
 bossbar set minecraft:game_master style notched_10
 bossbar set minecraft:game_master visible false
+function tusb_remake:game_master/chest/dataset
 
 ### gamemasterメイクアップ
 scoreboard objectives add MakeupTickC dummy
@@ -32,5 +33,4 @@ summon minecraft:armor_stand -2986 69 -41 {NoGravity:1b,Invulnerable:1b,Invisibl
     forceload remove -2986 -41
     forceload remove -2712 -382
 # 通知
-    tellraw @a {"translate": "§f§l[Update-Program]ver1.1.3へのアップデートが完了しました"}
-    tellraw @a {"translate": "§f§l[Update-Program]混沌戦闘準備場にて新要素を確認しました。"}
+    schedule function tusb_remake:load/update/1.1.3/schedule.5s 5s
