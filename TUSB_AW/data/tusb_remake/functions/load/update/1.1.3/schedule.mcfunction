@@ -28,7 +28,7 @@ scoreboard objectives add UNO trigger
 scoreboard objectives add blast dummy
 
 setblock -2712 78 -382 minecraft:crimson_sign{GlowingText: 0b, Color: "black", Text4: '{"text":""}', Text3: '{"text":""}', Text2: '{"bold":true,"color":"red","text":"？？？戦の準備部屋へ行く"}', Text1: '{"clickEvent":{"action":"run_command","value":"/function tusb_remake:area/conquer/game_master/prep_room"},"text":""}', id: "minecraft:sign"} replace
-summon minecraft:armor_stand -2986 69 -41 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Boss_MarkerC"]}
+execute unless entity @e[tag=Boss_MarkerC] run summon minecraft:armor_stand -2986 69 -41 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Boss_MarkerC","CantUseEnderChestAreaLarge"]}
 
 # アイテム修正村人の交易を更新
     function tusb_remake:load/itemmurabito
