@@ -5,6 +5,7 @@
 execute as @e[tag=Boss_MarkerC] run tag @s add Garbage
 execute unless entity @e[tag=Boss_MarkerC] run summon minecraft:armor_stand -2986 69 -41 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Boss_MarkerC","CantUseEnderChestAreaLarge"]}
 summon minecraft:armor_stand -2951 212 -33 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["CantUseEnderChestAreaLarge"]}
+fill -1921 19 -109 -1905 3 -97 minecraft:smooth_quartz replace minecraft:iron_block
 
 # アイテム修正村人の交易を更新
     function tusb_remake:load/itemmurabito
