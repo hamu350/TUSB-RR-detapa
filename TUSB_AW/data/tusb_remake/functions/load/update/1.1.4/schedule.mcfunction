@@ -13,5 +13,7 @@ fill -1921 19 -109 -1905 3 -97 minecraft:smooth_quartz replace minecraft:iron_bl
 # forceloadを消す
     forceload remove -2986 -41
     forceload remove -2951 -33
+    forceload remove -1921 -109 -1905 -97
 # 通知
     schedule function tusb_remake:load/update/1.1.4/schedule.5s 5s
+    
