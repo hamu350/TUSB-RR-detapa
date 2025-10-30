@@ -4,7 +4,7 @@
 # コマンドを実行したい範囲をforceload
     forceload add -2986 -41
     forceload add -2951 -33
-    forceload add -1921 -109 -1905 -97
+    forceload add -1877 -91 -1878 -90
 
 # forceloadが適応された状態で実行
     schedule function tusb_remake:load/update/1.1.4/schedule 1t

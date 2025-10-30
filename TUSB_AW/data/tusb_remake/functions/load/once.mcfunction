@@ -409,7 +409,5 @@ function tusb_remake:load/define_const
 # インフィニティボスチェストデータセット
 function tusb_remake:boss/chest/dataset
 function tusb_remake:game_master/chest/dataset
-datapack enable "TUSB_TimeLimit" first
-datapack enable "TUSB_AW" first
 
 function tusb_remake:load/update/1.1.4/
