@@ -11,8 +11,8 @@ fill -1877 4 -91 -1878 5 -90 minecraft:barrier replace
     function tusb_remake:load/itemmurabito
 
 # forceloadを消す
-    forceload remove -2986 -41
-    forceload remove -2951 -33
+    forceload remove -2986 -41 -2986 -41
+    forceload remove -2951 -33 -2951 -33
     forceload remove -1877 -91 -1878 -90
 # 通知
     schedule function tusb_remake:load/update/1.1.4/schedule.5s 5s
