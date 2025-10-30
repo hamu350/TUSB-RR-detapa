@@ -12,4 +12,4 @@
     datapack enable "file/TUSB_AW" last
 
 # 次回以降のdatapack_sortを無効化
-    datapack disable "file/datapack_sort"
+    datapack disable "file/a_datapack_sort"
