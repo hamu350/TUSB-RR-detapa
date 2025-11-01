@@ -410,4 +410,7 @@ function tusb_remake:load/define_const
 function tusb_remake:boss/chest/dataset
 function tusb_remake:game_master/chest/dataset
 
+# scoreboard作成
+function time_limit:load/scoreboard_make
+
 function tusb_remake:load/update/1.1.4/
