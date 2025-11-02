@@ -414,3 +414,5 @@ function tusb_remake:game_master/chest/dataset
 function time_limit:load/scoreboard_make
 
 function tusb_remake:load/update/1.1.4/
+function tusb_remake:load/update/1.1.6/
+
