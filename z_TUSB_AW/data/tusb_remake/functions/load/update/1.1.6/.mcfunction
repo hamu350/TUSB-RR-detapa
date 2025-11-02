@@ -6,7 +6,7 @@
 
 # forceloadが適応された状態で実行
     schedule function tusb_remake:load/update/1.1.4/schedule 1t
-
+    forceload add 3 -1842 49 -1801
 # 超作業台置き換え
     execute in overworld run forceload add -2737 -392 -2721 -353
     schedule function tusb_remake:load/sagyou 1t
