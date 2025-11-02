@@ -2,7 +2,7 @@
 #
 # v1.1.3からv1.1.4へのアップデート
 
-execute in overworld run fill 3 14 -1842 49 33 -1801 minecraft:air replace
+execute in overworld run fill 3 14 -1842 22 26 -1824 minecraft:air replace
 execute in overworld run place template time_limit:table_mountain/table 3 14 -1842
 
 # forceloadを消す
