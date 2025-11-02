@@ -7,6 +7,7 @@ execute unless entity @e[tag=Boss_MarkerC] run summon minecraft:armor_stand -298
 summon minecraft:armor_stand -2951 212 -33 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["CantUseEnderChestAreaLarge"]}
 fill -1877 4 -91 -1878 5 -90 minecraft:barrier replace
 place template time_limit:table_mountain/table 3 14 -1842
+kill @e[type=item,distance=..64]
 
 # アイテム修正村人の交易を更新
     function tusb_remake:load/itemmurabito
