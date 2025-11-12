@@ -9,8 +9,12 @@
 # ファントムを自然スポーンさせない
     gamerule doInsomnia false
 
+# アイテム全滅設置
+    setblock -2717 89 -371 minecraft:birch_wall_sign[facing=north]{Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @e[distance=..30,tag=!dummy] at @s run particle minecraft:witch ~ ~ ~ 0.3 0.3 0.3 0 100 normal\"},\"text\":\"\"}",Text2:"{\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tag @e[distance=..30,type=minecraft:item,nbt=!{Invulnerable:true}] add Garbage\"},\"text\":\"_✞_✞_✞_\"}"} replace
+
 # forceloadを消す
     execute in minecraft:overworld positioned -1896 97 -139 run forceload remove ~ ~
+    execute in minecraft:overworld positioned -2717 89 -371 run forceload remove ~ ~
 
 # 通知
     schedule function tusb_remake:load/update/1.1.7/schedule.5s 5s
