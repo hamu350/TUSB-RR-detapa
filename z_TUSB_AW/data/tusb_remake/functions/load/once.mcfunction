@@ -355,7 +355,7 @@ gamerule doFireTick true
 gamerule doMobLoot true
 gamerule doMobSpawning true
 gamerule doTileDrops true
-gamerule doInsomnia true
+gamerule doInsomnia false
 gamerule doWardenSpawning true
 gamerule doTraderSpawning true
 gamerule randomTickSpeed 10
