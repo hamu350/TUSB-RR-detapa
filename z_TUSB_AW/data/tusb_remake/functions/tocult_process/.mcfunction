@@ -21,8 +21,8 @@ execute if entity @s[tag=RemoveTorch,tag=RemoveTorchInWater] run function tusb_r
 
 ### 村人の近くは敵が出ない
 execute if entity @e[distance=..16,type=villager,tag=!Enemy,limit=1] run tag @s remove RemoveTorch
-### エンカウント処理
-execute if entity @s[tag=RemoveTorch] if block ~ ~8 ~ minecraft:air run scoreboard players remove @s ISFEncount 1
-execute if entity @s[scores={ISFEncount=..0}] run function tusb_remake:tocult_process/encount
+### エンカウント処理しない
+# execute if entity @s[tag=RemoveTorch] if block ~ ~8 ~ minecraft:air run scoreboard players remove @s ISFEncount 1
+# execute if entity @s[scores={ISFEncount=..0}] run function tusb_remake:tocult_process/encount
 
 tag @s[tag=RemoveTorch] remove RemoveTorch
