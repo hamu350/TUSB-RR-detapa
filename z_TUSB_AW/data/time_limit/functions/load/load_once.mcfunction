@@ -61,5 +61,5 @@ data modify storage time_limit:storage shield_data set value {tag:{version:1,Enc
 
 # tagが多分必要、、、? 
 # msg
-function time_limit:load/msg
+# function time_limit:load/msg
 # ここでdisableするとmsgでひっかかってわろた
