@@ -413,4 +413,6 @@ function tusb_remake:game_master/chest/dataset
 # scoreboard作成
 function time_limit:load/scoreboard_make
 
+function tusb_remake:load/update/1.1.4/
+
 data modify storage tusb_remake: settings.version set value "1.2.0"
